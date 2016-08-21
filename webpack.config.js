@@ -67,13 +67,18 @@ else {
 
 loaders.push({
     test: /\.ejs$/,
-    loader: 'ejs-tpl?variable=data&attrs[]=img:src!ejs-html'
+    loader: 'ejs-compiled'
 });
+
+// loaders.push({
+//     test: /\.ejs$/,
+//     loader: 'ejs-tpl?variable=data&attrs[]=img:src!ejs-html'
+// });
 //
-// plugins.push(new CopyWebpackPlugin([{
-//     from: './src/asset',
-//     to: './asset'
-// }]));
+plugins.push(new CopyWebpackPlugin([{
+    from: './src/img',
+    to: './img'
+}]));
 
 plugins.push(new HtmlWebpackPlugin({
     title: '浙盐集团业务综合管理系统',
@@ -81,11 +86,11 @@ plugins.push(new HtmlWebpackPlugin({
     filename: './index.html'
 }));
 
-plugins.push(new HtmlWebpackPlugin({
-    title: '浙盐集团业务综合管理系统-登录',
-    template: 'src/login.ejs',
-    filename: './login.html'
-}))
+// plugins.push(new HtmlWebpackPlugin({
+//     title: '浙盐集团业务综合管理系统-登录',
+//     template: 'src/login.ejs',
+//     filename: './login.html'
+// }))
 
 module.exports = {
     entry: './src/js/app',
