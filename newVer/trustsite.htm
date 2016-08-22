@@ -1,0 +1,102 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>添加受信站点</title>
+<link rel="stylesheet" href="/css/download.css" type="text/css">
+</head>
+
+<body BGCOLOR=EDF5FF text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onload="top.resizeTo(450,350);">
+  <script language="VBScript">
+on error resume next
+Const HKEY_CURRENT_USER = &H80000001
+strComputer = "."
+
+Set objReg=GetObject("winmgmts:\\" & strComputer & "\root\default:StdRegProv")
+strKeyPath = "Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Domains\com\*.localhost"
+objReg.CreateKey HKEY_CURRENT_USER,strKeyPath
+strValueName = "http"
+dwValue="2"
+objReg.setDWORDValue HKEY_CURRENT_USER,strKeyPath,strValueName,dwValue
+
+</script>
+<table width="100%" height="3" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="3"></td>
+  </tr>
+</table>
+<table width="98%" height="98%" border="0" align="center" cellpadding="1" cellspacing="1" bgcolor="#006666" >
+  <tr>
+    <td width="100%" height="100%" align="center" valign="middle">
+      <table width="100%" height="100%" cellpadding="2" cellspacing="1" bgcolor="#FFFFFF">
+        <tr>
+          <td align="center" height="30" valign="middle"><font color="#990000" size="2"><strong>操作提示</strong></font></td>
+        </tr>
+        <tr>
+          <td> 1.系统已为您的IE浏览器添加受信任站点：<br>
+            http://*.localhost
+              <br>2.请查看您的IE浏览器的受信任站点信息，操作如下：<br />
+                (1). 在IE工具菜单，点击Internet选项。<br />
+    			(2). 在Internet 选项的对话框中，点击安全标签。<br />
+    			(3). 点击受信任站点的图标，并点击网站按钮。
+              <br>3.如发现上述站点未添加到受信任站点列表，您可以在IE设置里面添加上述站点，或者点击文件下载，将文件下载到您的机器上运行。
+           <br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="help/trust.htm" class="orange"><font color="#FF9933">文件下载</font></a>
+              </td>
+        </tr>
+
+      </table> </td>
+  </tr>
+</table>
+<script type="text/javascript">
+　　//<!-- 
+　　//var test=new ActiveXObject("WScript.Shell"); 
+　　//添加信任站点ip 
+　　/*
+　　test.RegWrite("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\ZoneMap\\Ranges\\Range100\\",""); 
+　　test.RegWrite("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\ZoneMap\\Ranges\\Range100\\http","2","REG_DWORD"); 
+　　test.RegWrite("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\ZoneMap\\Ranges\\Range100\\:Range","172.18.2.122"); 
+　　test.RegWrite("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\ZoneMap\\Ranges\\Range101\\",""); 
+　　test.RegWrite("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\ZoneMap\\Ranges\\Range101\\http","2","REG_DWORD"); 
+　　test.RegWrite("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\ZoneMap\\Ranges\\Range101\\:Range","172.18.2.122"); 
+　　//修改IE ActiveX安全设置 
+　　
+　　test.RegWrite("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\1001","0","REG_DWORD"); 
+　　test.RegWrite("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\1004","0","REG_DWORD"); 
+　　test.RegWrite("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\1200","0","REG_DWORD"); 
+　　test.RegWrite("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\1201","0","REG_DWORD"); 
+　　test.RegWrite("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\1405","0","REG_DWORD"); 
+　　test.RegWrite("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3\\2201","0","REG_DWORD"); 
+　　*/
+　　//禁用xinxp弹出窗口阻止程序 
+　　//test.RegWrite("HKCU\\Software\\Microsoft\\Internet Explorer\\New Windows\\PopupMgr","no"); 
+　　//alert("active控件安全设置，弹出窗口设置，信任站点设置成功"); 
+　　//--> 
+　　
+　　
+　　/*
+　　信任站点的注册表项 
+　　HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Ranges\Range[*] 
+　　ActiveX的注册表项 
+　　HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\[0-4]\[*] 
+　　[0-4] 
+　　值 设置 
+　　------------------------------ 
+　　0 我的电脑 
+　　1 本地 Intranet 区域 
+　　2 受信任的站点区域 
+　　3 Internet 区域 
+　　4 受限制的站点区域 
+　　[*] 
+　　1001 下载已签名的 ActiveX 控件 
+　　1004 下载未签名的 ActiveX 控件 
+　　1200 运行 ActiveX 控件和插件 
+　　1201 对没有标记为安全的 ActiveX 控件进行初始化和脚本运行 
+　　1405 对标记为可安全执行脚本的 ActiveX 控件执行脚本 
+　　2201 ActiveX 控件自动提示 ** 
+　　弹出窗口阻止程序的注册表项 
+　　HKEY_CURRENT_USERHKCU\Software\Microsoft\Internet Explorer\New Windows\PopupMgr 　　
+　　*/
+</script>
+</body>
+</html>
+

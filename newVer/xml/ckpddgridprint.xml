@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<wFaceGridPrintStyle>
+	<TitleSize>10</TitleSize>
+	<MulPageSpace>0</MulPageSpace>
+	<DataSize>12</DataSize>
+	<TitleHeight>40</TitleHeight>
+	<DataHeight>21</DataHeight>
+	<Rows>6</Rows>
+	<VerticalLine>True</VerticalLine>
+	<HorizontalLine>True</HorizontalLine>
+	<OnlyData>False</OnlyData>
+	<Title>no</Title>
+	<SumRow>True</SumRow>
+	<SumTitle>合计金额：</SumTitle>
+	<wFaceGridPrintCell>
+		<PrintCell>wFaceGridPrintCell</PrintCell>
+		<Width>175</Width>
+		<HeaderText>品   名</HeaderText>
+		<MappingName>sp</MappingName>
+		<Money>False</Money>
+		<Alignment>left</Alignment>
+	</wFaceGridPrintCell>
+	<wFaceGridPrintCell>
+		<PrintCell>wFaceGridPrintCell</PrintCell>
+		<Width>50</Width>
+		<HeaderText>单位</HeaderText>
+		<MappingName>dw</MappingName>
+		<Money>False</Money>
+		<Alignment>right</Alignment>
+	</wFaceGridPrintCell>
+	
+	<wFaceGridPrintCell>
+		<PrintCell>wFaceGridPrintCell</PrintCell>
+		<Width>100</Width>
+		<HeaderText>统计量</HeaderText>
+		<MappingName>tjl</MappingName>
+		<Money>False</Money>
+		<Alignment>right</Alignment>
+	</wFaceGridPrintCell>
+	<wFaceGridPrintCell>
+		<PrintCell>wFaceGridPrintCell</PrintCell>
+		<Width>100</Width>
+		<HeaderText>盘点量</HeaderText>
+		<MappingName>pdl</MappingName>
+		<Money>False</Money>
+		<Alignment>right</Alignment>
+	</wFaceGridPrintCell>
+	<wFaceGridPrintCell>
+		<PrintCell>wFaceGridPrintCell</PrintCell>
+		<Width>60</Width>
+		<HeaderText>单 价</HeaderText>
+		<MappingName>dj</MappingName>
+		<Money>False</Money>
+		<Alignment>right</Alignment>
+	</wFaceGridPrintCell>
+	<wFaceGridPrintCell>
+		<PrintCell>wFaceGridPrintCell</PrintCell>
+		<Width>120</Width>
+		<HeaderText>金额</HeaderText>
+		<MappingName>je</MappingName>
+		<Money>False</Money>
+		<Alignment>right</Alignment>
+	</wFaceGridPrintCell>
+	<wFaceGridSumRow>
+		<SumRowCell>SumRowCell</SumRowCell>
+		<Left>80</Left>
+		<Width>300</Width>
+		<China>true</China>
+		<MappingName>je</MappingName>
+	</wFaceGridSumRow>
+</wFaceGridPrintStyle>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<wFaceGridPrintStyle>
+	<TitleSize>10</TitleSize>
+	<MulPageSpace>0</MulPageSpace>
+	<DataSize>12</DataSize>
+	<TitleHeight>40</TitleHeight>
+	<DataHeight>21</DataHeight>
+	<Rows>36</Rows>
+	<VerticalLine>True</VerticalLine>
+	<HorizontalLine>True</HorizontalLine>
+	<OnlyData>False</OnlyData>
+	<Title>no</Title>
+	<SumRow>False</SumRow>
+	<SumTitle>合计金额：</SumTitle>
+	<wFaceGridPrintCell>
+		<PrintCell>wFaceGridPrintCell</PrintCell>
+		<Width>100</Width>
+		<HeaderText>仓位</HeaderText>
+		<MappingName>WhpName</MappingName>
+		<Money>False</Money>
+		<Alignment>right</Alignment>
+	</wFaceGridPrintCell>
+	<wFaceGridPrintCell>
+		<PrintCell>wFaceGridPrintCell</PrintCell>
+		<Width>275</Width>
+		<HeaderText>品   名</HeaderText>
+		<MappingName>ProductName</MappingName>
+		<Money>False</Money>
+		<Alignment>left</Alignment>
+	</wFaceGridPrintCell>
+	<wFaceGridPrintCell>
+		<PrintCell>wFaceGridPrintCell</PrintCell>
+		<Width>80</Width>
+		<HeaderText>规 格</HeaderText>
+		<MappingName>SpecName</MappingName>
+		<Money>False</Money>
+		<Alignment>left</Alignment>
+	</wFaceGridPrintCell>
+	<wFaceGridPrintCell>
+		<PrintCell>wFaceGridPrintCell</PrintCell>
+		<Width>40</Width>
+		<HeaderText>单位</HeaderText>
+		<MappingName>UnitName</MappingName>
+		<Money>False</Money>
+		<Alignment>left</Alignment>
+	</wFaceGridPrintCell>
+	<wFaceGridPrintCell>
+		<PrintCell>wFaceGridPrintCell</PrintCell>
+		<Width>80</Width>
+		<HeaderText>账面数量</HeaderText>
+		<MappingName>BookQty</MappingName>
+		<Money>False</Money>
+		<Alignment>right</Alignment>
+	</wFaceGridPrintCell>
+	<wFaceGridPrintCell>
+		<PrintCell>wFaceGridPrintCell</PrintCell>
+		<Width>80</Width>
+		<HeaderText>实际数量</HeaderText>
+		<MappingName>RealQty</MappingName>
+		<Money>False</Money>
+		<Alignment>right</Alignment>
+	</wFaceGridPrintCell>
+</wFaceGridPrintStyle>

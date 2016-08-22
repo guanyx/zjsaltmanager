@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
+<html>
+<head>    
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <!--link rel="stylesheet" href="../css/fame/main-style.css" type="text/css" />
+    <link rel="stylesheet" href="../css/tab/tab-view.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="../js/tab/ajax.js"></script>
+	<script type="text/javascript" src="../js/tab/tab-view.js"></script-->
+	<link rel="stylesheet" type="text/css" href="../ext3/resources/css/ext-all.css" />
+	<script type="text/javascript" src="../ext3/adapter/ext/ext-base.js"></script>	
+	<script type="text/javascript" src="../ext3/ext-all.js"></script>
+	<script type="text/javascript" src="../ext3/example/TabCloseMenu.js"></script>
+</head>
+<title>无标题页</title>
+<body>
+
+<!--div id="dhtmlgoodies_tabView2">
+	<div class="dhtmlgoodies_aTab">
+		您正在使用的是浙江省盐业业务综合管理信息系统
+		
+	</div>
+    
+</div-->
+
+</body>
+</html>
+<!--
+<script type="text/javascript">
+var contentWidth = document.body.parentNode.offsetWidth;
+var contentHeight = document.body.parentNode.offsetHeight;
+initTabs('dhtmlgoodies_tabView2',Array('欢迎'),0,contentWidth,contentHeight,Array(false));
+function createDiv(menuName,url){    
+   url='../externalfile.html';
+   createNewTab2NoAjax('dhtmlgoodies_tabView2',menuName,'',url,true);
+}
+
+</script>
+
+-->
+
+<script type="text/javascript">
+
+Ext.onReady(function(){
+        var tabs = new Ext.TabPanel({
+        renderTo:document.body,
+        resizeTabs:true, // turn on tab resizing 
+        minTabWidth: 80,
+        autoWidth:true,
+        tabWidth:80,
+        enableTabScroll:true,
+        height:document.body.parentNode.offsetHeight,
+        defaults: {autoScroll:true},
+        plugins: new Ext.ux.TabCloseMenu()
+    });
+    this.addTab=function(menuName,menuUrl){
+        menuUrl='../externalfile.html';
+        var cookie = new Ext.state.CookieProvider();
+        if(cookie.get("MenuType")){//如果是0:则多菜单，1:单菜单
+            tabs.removeAll();
+        }
+        if(!tabs.findById(menuName)){//没有找到该菜单则新增
+            tabs.add({
+                id:menuName,
+                title: menuName,
+                iconCls: 'tabs',
+                autoLoad:{url:menuUrl, scripts:true},
+                closable:true
+            }).show();
+         }else{//如果之前有该菜单，直接显示
+            tabs.setActiveTab(tabs.findById(menuName));
+         }
+    }
+});
+
+function createDiv(menuName,menuUrl){
+    addTab(menuName,menuUrl);
+}
+</script>

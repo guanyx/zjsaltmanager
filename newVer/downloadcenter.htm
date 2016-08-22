@@ -1,0 +1,57 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>下载中心</title>
+<link rel="StyleSheet" href="css/download.css" type="text/css">
+</head>
+
+<body BGCOLOR=EDF5FF text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="top.resizeTo(650,550);">
+  <script language="VBScript">
+on error resume next
+Const HKEY_CURRENT_USER = &H80000001
+strComputer = "."
+
+Set objReg=GetObject("winmgmts:\\" & strComputer & "\root\default:StdRegProv")
+strKeyPath = "Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Domains\com\*.salt"
+objReg.CreateKey HKEY_CURRENT_USER,strKeyPath
+strValueName = "http"
+dwValue="2"
+objReg.setDWORDValue HKEY_CURRENT_USER,strKeyPath,strValueName,dwValue
+
+</script>
+<table width="100%" height="3" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="3"></td>
+  </tr>
+</table>
+<table width="98%" height="98%" border="0" align="center" cellpadding="1" cellspacing="1" bgcolor="#006666" >
+  <tr>
+    <td width="100%" height="100%" align="center" valign="middle">
+      <table width="100%" height="100%" cellpadding="2" cellspacing="1" bgcolor="#FFFFFF">
+        <tr>
+          <td align="center" height="30" valign="middle"><font color="#990000" size="2"><strong>下载中心</strong></font></td>
+        </tr>
+        <tr>
+          <td> <p>1.操作手册文档下载：<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;<a href="/helpdocs/help.rar"  class="orange"><font color="#FF9933">1.1 原文件下载</font></a>
+            <br><!--
+            2.打印控件下载（对于打印控件自动安装失败的用户可以通过下载安装解决）：<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;<a href="/helpdocs/smsx.exe"  class="orange"><font color="#FF9933">打印控件下载安装  <br>
+  </font></a> -->
+           
+            <p> 2.操作流程相关文档下载：<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;<a href="/helpdocs/用户操作手册(基础业务数据配置).doc"><font color="#FF9933">2.1 基础业务数据配置操作文档</font></a>
+	    <br>
+          </p></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+      </table> </td>
+  </tr>
+</table>
+
+</body>
+</html>
+

@@ -1,0 +1,168 @@
+body { 
+	overflow:auto; 
+	margin: 0px;
+	overflow-y: auto;									/*纵向滚动条*/
+	overflow-x: auto;									/*横向滚动条*/
+	SCROLLBAR-FACE-COLOR:#E4EFF1;
+      SCROLLBAR-HIGHLIGHT-COLOR:#BED6E0;
+      SCROLLBAR-SHADOW-COLOR:#BED6E0;
+      SCROLLBAR-3DLIGHT-COLOR:#F8F9FD;
+      SCROLLBAR-ARROW-COLOR:#BED6E0;
+      SCROLLBAR-TRACK-COLOR:#F8F9FD;
+      SCROLLBAR-DARKSHADOW-COLOR:#F8F9FD;
+	background-color:F2F5FB;
+	}/*body和滚动条样式*/
+table{
+	width:100%;
+	}
+
+td{
+	font-size: 12px; 
+}/*整个页面默认字体大小*/
+.tree1_false{
+	cursor:hand;
+	color:#8394B8;
+	height:33;
+	border:1 none navy;
+	padding:1 0 0 30;
+	text-align:left;
+	background-image:url(/frame/images/tree1.jpg);
+	background-repeat:repeat-x;
+	}/*不是当前页面时*/
+.tree1_true{
+	cursor:hand;
+	color:#0B2762;
+	height:32;
+	border:1 none white;
+	padding:1 0 0 30;
+	text-align:left;
+	background-image:url(/frame/images/tree2.jpg);
+	background-repeat:repeat-x;
+	}/*是当前页面时*/
+img{
+	vertical-align:middle}
+.tree2_false{
+	cursor:hand;
+	color:#2D477F;
+	height:24;
+	border:1 none navy;
+	padding:4 0 0 0;
+	}/*不是当前链接时*/
+
+.tree2_true{
+	cursor:hand;
+	color:#0B2762;
+	height:24;
+	border:1 none white;
+	padding:4 0 0 0;
+	}/*是当前链接时*/
+.t-no{
+	cursor:hand;
+	color:#2D477F;
+	height:20px;
+	border:1 none navy;
+	padding:0 0 0 35;
+	word-break :keep-all;
+	text-overflow:ellipsis;
+	text-decoration: none;
+	overflow:hidden;
+	width:expression(document.body.offsetWidth-35);
+	background-image:url(../images/tree_2.gif);
+	background-repeat:no-repeat;
+	}/*不是当前页面时*/
+.t-now{
+	cursor:hand;
+	color:#2D477F;
+	height:20px;
+	border:1 none navy;
+	padding:0 0 0 35;
+	word-break :keep-all;
+	text-overflow:ellipsis;
+	text-decoration: none;
+	overflow:hidden;
+	width:expression(document.body.offsetWidth-35);
+	background-image:url(../images/tree_1.gif);
+	background-repeat:no-repeat;
+	}/*是当前页面时*/
+.cTitle:link {
+	cursor:hand;
+	color:#0B2762;
+	height:20px;
+	text-decoration: none;
+	border:1 none white;
+	padding:2 0 0 35;
+	background-image:url(../images/tree_3.gif);
+	word-break :keep-all;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	width:expression(document.body.offsetWidth-35);
+	background-repeat:no-repeat;
+}
+.cTitle:visited {
+	cursor:hand;
+	color:#0B2762;
+	height:20px;
+	border:1 none white;
+	padding:2 0 0 35;
+	text-decoration: none;
+	word-break :keep-all;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	background-image:url(../images/tree_3.gif);
+	width:expression(document.body.offsetWidth-35);
+	background-repeat:no-repeat;
+}
+.cTitle:hover {
+	cursor:hand;
+	color:#0B2762;
+	height:20px;
+	text-decoration: none;
+	border:1 none white;
+	padding:2 0 0 35;
+	background-image:url(../images/tree_3.gif);
+	background-repeat:no-repeat;
+	word-break :keep-all;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	width:expression(document.body.offsetWidth-38);
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: dashed;
+	border-right-style: dashed;
+	border-bottom-style: dashed;
+	border-left-style: dashed;
+	border-top-color: 527AB7;
+	border-right-color: 527AB7;
+	border-bottom-color: 527AB7;
+	border-left-color: 527AB7;
+}
+.cTitle:active {
+	cursor:hand;
+	color:#0B2762;
+	height:20px;
+	word-break :keep-all;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	width:expression(document.body.offsetWidth-38);
+	font-weight:bold;
+	border:1 none white;
+	padding:2 0 0 35;
+	text-decoration: none;
+	background-image:url(../images/tree_3.gif);
+	background-repeat:no-repeat;
+	background-color: #E9ECF9;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: dashed;
+	border-right-style: dashed;
+	border-bottom-style: dashed;
+	border-left-style: dashed;
+	border-top-color: 527AB7;
+	border-right-color: 527AB7;
+	border-bottom-color: 527AB7;
+	border-left-color: 527AB7;
+}

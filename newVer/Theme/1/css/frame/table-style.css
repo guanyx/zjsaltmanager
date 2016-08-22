@@ -1,0 +1,630 @@
+body {
+	margin: 0px;
+	overflow:auto;
+	}/*body和滚动条样式*/
+
+td{
+	font-size: 13px;
+	}/*整个页面默认字体大小*/
+.td_b{
+	width:5px;
+}
+.tab_bc{
+	background-image:url(/frame/images/tab-bc.gif);
+	vertical-align:top;
+	}/*tad背景样式*/
+
+.tab_3bc{
+	border:#A9D0EA solid;
+	border-width:0 0 1 0;
+	}
+.table_b{
+	color:#7C95CD;
+	font-weight: 600;
+	padding:2 2 2 2;
+	text-decoration:none;
+	font-style: normal;
+	border:#CFCFCF solid;
+	border-width:0 1 1 1;
+	word-break :keep-all;
+	}/*蓝色tad样式*/
+.table_b2{
+	color:#7C95CD;
+	font-weight: 600;
+	padding:0 4 0 0;
+	text-decoration:none;
+	font-style: normal;
+	border:#A9D0EA solid;
+	border-width:1 1 1 1;
+	word-break :keep-all;
+	background-color:#E1EDFA;
+	}/*蓝色tad样式*/
+ .table_b3{
+	color:#7C95CD;
+	font-weight: 600;
+	padding:8 8 8 8;
+	text-decoration:none;
+	font-style: normal;
+	border:#CFCFCF solid;
+	border-width:1 1 1 1;
+	word-break :keep-all;
+	}/*蓝色tad样式*/
+.tab_yellow{
+	height:27;
+	color:#7C95CD;
+	font-weight: 600;
+	text-decoration:none;
+	font-style: normal;
+	border:#A9D0EA solid;
+	border-width:0 1 0 1;
+	word-break :keep-all;
+	background-color:#FFF8E6;
+	}/*黄色tad样式*/
+.tab_a{
+	height:27;
+	color:#999999;
+	text-align:center;
+	font-weight: 600;
+	text-decoration:none;
+	font-style: normal;
+	border:#A9D0EA solid;
+	border-width:0 1 0 0;
+	word-break :keep-all;
+	padding-top:8px;
+	background-color:#FFF8E6;
+	cursor:hand;
+	}/*tab链接正常样式*/
+.tab_v{
+	height:27;
+	color:#666666;
+	text-align:center;
+	font-weight: 600;
+	text-decoration:none;
+	font-style: normal;
+	border:#A9D0EA solid;
+	border-width:0 1 0 0;
+	word-break :keep-all;
+	padding-top:8px;
+	background-image:url(/frame/images/tab-v.gif)
+	}/*tab链接点击过后样式*/
+
+.tab_v1{
+	height:27;
+	color:#666666;
+	text-align:center;
+	font-weight: 600;
+	text-decoration:none;
+	font-style: normal;
+	border:#A9D0EA solid;
+	border-width:1 1 0 0;
+	word-break :keep-all;
+	padding-top:7px;
+	background-image:url(/frame/images/tab-v.gif)
+	}/*当前页面下的tab链接点击过后样式*/
+.tab_v2 {
+	height:20;
+	color:#666666;
+	font-weight: 600;
+	text-decoration:none;
+	text-align:center;
+	font-style: normal;
+	word-break :keep-all;
+	padding-top:4px;
+	padding-bottom:4px;
+	border:#A9D0EA solid;
+	border-width:1 1 1 0;
+	background-image:url(/frame/images/tab-v.gif);
+	cursor:hand;
+}
+.tab_bule{	color:#7C95CD;
+	font-weight: 600;
+	padding:5 5 5 5;
+	text-decoration:none;
+	font-style: normal;
+	border:#A9D0EA solid;
+	border-width:1 1 1 1;
+	word-break :keep-all;
+	background-color:#E1EDFA;
+	vertical-align:top;
+}
+.tab_yellow{
+	height:27;
+	color:#7C95CD;
+	font-weight: 600;
+	text-decoration:none;
+	font-style: normal;
+	border:#A9D0EA solid;
+	border-width:0 1 0 1;
+	word-break :keep-all;
+	background-color:#FFF8E6;
+}
+.tab_bule1{
+	width:80;
+	height:21;
+	color:#76C5D6;
+	font-weight: 600;
+	text-decoration:none;
+	font-style: normal;
+	border:#A9D0EA solid;
+	border-width:1 1 1 1;
+	word-break :keep-all;
+	padding:5 3 0 5;
+	background-image:url(/frame/images/tab-bule.gif);
+	cursor:hand;
+	}/*蓝色tad样式*/
+.tab_yellow1{
+	width:80;
+	height:21;
+	text-decoration:none;
+	font-style: normal;
+	color:#646464;
+	font-weight: 600;
+	word-break :keep-all;
+	border:#A9D0EA solid;
+	border-width:0 1 0 1;
+	background-image:url(/frame/images/tab-yellow.gif);
+	padding:5 3 0 27;
+	}/*黄色tad样式*/
+.tab2_close{
+	text-align:right;
+	padding:2 10 0 10;
+	}
+.input{
+	width:120px;
+	height:20px;
+	border-width:1 1 1 1;
+	border:#7FC2D3 1px solid;
+	}
+.input-h{
+	width:100px;
+	height:18px;
+	background-color:#ECF5FA;
+	border-width:1 1 1 1;
+	border:#7FC2D3 1px solid;
+	}
+.yw-bc{
+	background-image:url(/frame/images/yw-topbc.gif);
+	height:22px;
+	}
+.yw-bc1{
+	background-image:url(/frame/images/yw-topbc.gif);
+	height:22px;
+	padding:0 0 0 10;
+	vertical-align:middle;
+	text-align:right;
+	}
+.yw-left{
+	background-image:url(/frame/images/yw-top.gif);
+	color:#026A95;
+	font-weight:600;
+	padding:5 2 0 2;
+}
+.yw-nr{
+	padding:0 0 0 6;
+	}
+.btn-1word {
+	font-size: 12px;
+	color:026A95;
+	text-decoration: none;
+	background-image: url(/images/btn-1.gif);
+	height: 18px;
+	width: 34px;
+	border: none;
+	cursor:hand;
+	letter-spacing: 2px;
+	margin: 0px;
+	padding: 2 0 0 0;
+}/*2个字的按钮*/
+.btn-2word {
+	font-size: 12px;
+	color:026A95;
+	text-decoration: none;
+	background-image: url(/images/btn-2.gif);
+	height: 18px;
+	width: 48px;
+	border: none;
+	cursor:hand;
+	letter-spacing: 2px;
+	margin: 0px;
+	padding: 2 0 0 0;
+}/*2个字的按钮*/
+.btn-3word {
+	font-size: 12px;
+	color:026A95;
+	text-decoration: none;
+	background-image: url(/images/btn-3.gif);
+	height: 18px;
+	width: 60px;
+	margin: 0px;
+	padding: 2 0 0 0;
+	border: none;
+	cursor:hand;
+	letter-spacing: 2px;
+}/*3个字的按钮*/
+.btn-4word {
+	font-size: 12px;
+	color:026A95;
+	text-decoration: none;
+	background-image: url(/images/btn-4.gif);
+	height: 18px;
+	width: 72px;
+	margin: 0px;
+	padding: 2 0 0 0;
+	border: none;
+	cursor:hand;
+	letter-spacing: 2px;
+}/*4个字的按钮*/
+.btn-5word {
+	font-size: 12px;
+	color:026A95;
+	text-decoration: none;
+	background-image: url(/images/btn-5.gif);
+	height: 18px;
+	width: 84px;
+	margin: 0px;
+	padding: 2 0 0 0;
+	border: none;
+	cursor:hand;
+	letter-spacing: 1px;
+}/*5个字的按钮*/
+.btn-6word {
+	font-size: 12px;
+	color:026A95;
+	text-decoration: none;
+	background-image: url(/images/btn-6.gif);
+	height: 18px;
+	width: 96px;
+	margin: 0px;
+	padding: 2 0 0 0;
+	border: none;
+	cursor:hand;
+	letter-spacing: 1px;
+}/*6个字的按钮*/
+.btn-7word {
+	font-size: 12px;
+	color:026A95;
+	text-decoration: none;
+	background-image: url(/images/btn-7.gif);
+	height: 18px;
+	width: 108px;
+	margin: 0px;
+	padding: 2 0 0 0;
+	border: none;
+	cursor:hand;
+	letter-spacing: 1px;
+}/*7个字的按钮*/
+.btn-8word {
+	font-size: 12px;
+	color:026A95;
+	text-decoration: none;
+	background-image: url(/images/btn-8.gif);
+	height: 18px;
+	width: 120px;
+	margin: 0px;
+	padding: 2 0 0 0;
+	border: none;
+	cursor:hand;
+	letter-spacing: 1px;
+}/*8个字的按钮*/
+.btn-1word-gray {
+	font-size: 12px;
+	color: #777777;
+	text-decoration: none;
+	background-image: url(/images/btn-1gray.gif);
+	height: 18px;
+	width: 34px;
+	margin: 0px;
+	padding: 2 0 0 0;
+	border: none;
+	cursor:Default;
+	letter-spacing: 1px;
+}/*在需要disable时呈灰色的2个字的按钮*/
+.btn-2word-gray {
+	font-size: 12px;
+	color: #777777;
+	text-decoration: none;
+	background-image: url(/images/btn-2gray.gif);
+	height: 18px;
+	width: 48px;
+	margin: 0px;
+	padding: 2 0 0 0;
+	border: none;
+	cursor:Default;
+	letter-spacing: 1px;
+}/*在需要disable时呈灰色的2个字的按钮*/
+.btn-3word-gray {
+	font-size: 12px;
+	color: #777777;
+	text-decoration: none;
+	background-image: url(/images/btn-3gray.gif);
+	height: 18px;
+	width: 60px;
+	margin: 0px;
+	padding: 2 0 0 0;
+	border: none;
+	cursor:Default;
+	letter-spacing: 1px;
+}/*在需要disable时呈灰色的3个字的按钮*/
+.btn-4word-gray {
+	font-size: 12px;
+	color: #777777;
+	text-decoration: none;
+	background-image: url(/images/btn-4gray.gif);
+	height: 18px;
+	width: 72px;
+	margin: 0px;
+	padding: 2 0 0 0;
+	border: none;
+	cursor:Default;
+	letter-spacing: 1px;
+}/*在需要disable时呈灰色的4个字的按钮*/
+.btn-5word-gray {
+	font-size: 12px;
+	color: #777777;
+	text-decoration: none;
+	background-image: url(/images/btn-5gray.gif);
+	height: 18px;
+	width: 84px;
+	margin: 0px;
+	padding: 2 0 0 0;
+	border: none;
+	cursor:Default;
+	letter-spacing: 1px;
+}/*在需要disable时呈灰色的5个字的按钮*/
+.btn-6word-gray {
+	font-size: 12px;
+	color: #777777;
+	text-decoration: none;
+	background-image: url(/images/btn-6gray.gif);
+	height: 18px;
+	width: 96px;
+	margin: 0px;
+	padding: 2 0 0 0;
+	border: none;
+	cursor:Default;
+	letter-spacing: 1px;
+}/*在需要disable时呈灰色的6个字的按钮*/
+.btn-7word-gray {
+	font-size: 12px;
+	color: #777777;
+	text-decoration: none;
+	background-image: url(/images/btn-7gray.gif);
+	height: 18px;
+	width: 108px;
+	margin: 0px;
+	padding: 2 0 0 0;
+	border: none;
+	cursor:Default;
+	letter-spacing: 1px;
+}/*在需要disable时呈灰色的7个字的按钮*/
+.btn-8word-gray {
+	font-size: 12px;
+	color: #777777;
+	text-decoration: none;
+	background-image: url(/images/btn-8gray.gif);
+	height: 18px;
+	width: 120px;
+	margin: 0px;
+	padding: 2 0 0 0;
+	border: none;
+	cursor:Default;
+	letter-spacing: 1px;
+}/*在需要disable时呈灰色的8个字的按钮*/
+.tab_bule2 {
+	color:#7C95CD;
+	font-weight: 600;
+	padding:5 5 5 5;
+	text-decoration:none;
+	font-style: normal;
+	border:#A9D0EA solid;
+	border-width:1 1 1 1;
+	word-break :keep-all;
+	background-color:#E1EDFA;
+	vertical-align:top;
+}
+a {
+	font-size: 12px;
+	color: #026A95;
+	text-decoration: inherit;
+	padding:2 0 0 0;
+}
+a:hover {
+	font-size: 12px;
+	color: #026A95;
+	text-decoration: underline;
+	padding:2 0 0 0;
+}
+a:active {
+
+	font-size: 12px;
+	color: #026A95;
+	text-decoration: underline;
+	padding:2 0 0 0;
+}
+.yw_icon{
+	height:26 px;
+	font-weight:600;
+	color:#444444;
+	text-decoration:none;
+	font-style: normal;
+	padding:5 15 0 25;
+	background-image:url(/images/yw-top2.jpg);
+	background-position:left;
+	background-repeat:no-repeat;
+	}
+.table-top {
+	border:#BED6E0 solid;
+	border-width:1 1 1 1;
+	color:#8DA0BB;
+	font-weight:600;
+	height:22px;
+	background-image: url(/images/cx_bc.jpg);
+	background-repeat: repeat-x;
+}
+.table-top2 {
+	border-top: 0 solid #7FC2D3;
+	border-right: 1 solid #7FC2D3;
+	border-bottom: 1 solid #7FC2D3;
+	border-left: 1 solid #7FC2D3;
+	color:#026A95;
+	font-weight:600;
+	height:22px;
+	background-image: url(/images/cx-bc.gif);
+	background-repeat: repeat-x;
+}
+.table-q{
+	border-top: 0 solid #BED6E0;
+	border-right: 1 solid #BED6E0;
+	border-bottom: 1 solid #BED6E0;
+	border-left: 1 solid #BED6E0;
+	}
+.table-qtd{
+	padding:3 3 3 3;
+	text-align:center;
+	border-top: 0 solid #7FC2D3;
+	border-right: 1 solid #7FC2D3;
+	border-bottom: 1 solid #7FC2D3;
+	border-left: 0 solid #7FC2D3;
+}
+.table-qwtd{
+	padding:3 3 3 3;
+	line-height:20px;
+	background-color:#EAF4FF;
+	border:#7FC2D3 1px solid;
+	border-width:0 1 0 0;
+}
+.table-qtd2{
+	padding:3 0 3 0;
+	color:#777777;
+	font-weight: 600;
+	text-align:center;
+	border:#BED6E0 1px solid;
+	border-width:1 1 0 0;
+  	background-color:#FFFFFF;
+}
+.tab_bule{
+	color:#7C95CD;
+	font-weight: 600;
+	padding:8 8 8 8;
+	text-decoration:none;
+	font-style: normal;
+	vertical-align:top;
+	border:#A9D0EA solid;
+	border-width:1 1 1 1;
+	word-break :keep-all;
+	background-color:#E1EDFA;
+	}/*蓝色tad样式*/
+
+.menu-border4{
+	border:#BED6E0 solid;
+	border-width:1 0 0 0;
+	padding:3 3 3 3;
+
+	}
+.menu_a {
+	font-size: 12px;
+	color: #026A95;
+	text-decoration: none;
+}
+.menu_a :hover {
+	font-size: 12px;
+	color: #026A95;
+	text-decoration: underline;
+}
+.menu_a :active {
+	font-size: 12px;
+	color: #026A95;
+	text-decoration: underline;
+}
+.tab_disable_style{
+	width:120px;
+	height:20px;
+	background-color:#ECF5FA;
+	border-width:1 1 1 1;
+	border:#7FC2D3 1px solid;
+}
+/*zhangxm2 add 不返回任何组织按钮样式*/
+.buttoncss {
+      BACKGROUND:#FFFFFF;
+      COLOR:#08346B;
+      BORDER-TOP:1 Solid #08346B;
+      BORDER-LEFT:1 Solid #08346B;
+      BORDER-RIGHT:1 Solid #08346B;
+      BORDER-BOTTOM:1 Solid #08346B;
+      FONT-SIZE:9pt;
+      FONT-FAMILY:宋体,verdana,Arial, Helvetica;
+      FONT-WEIGHT:Normal;
+      TEXT-DECORATION: None;
+      CURSOR:Hand;
+}
+/*-----------新增样式------------*/
+.td_title {
+	border:#BED6E0 solid;
+	border-width:0 1 1 0;
+	height:19px;
+	background-image:url(/images/tab_bg1.jpg);
+	background-repeat:repeat-x;
+}
+.title_pad{
+	padding:4 0 0 8;
+	color: #4D6C98;
+        font-size: 13px;
+	text-align: left;
+	font-weight:bold;
+	word-break: break-all;
+	text-decoration: none;
+}
+/*表格头部TD中嵌套表格Td的样式*/
+.title_pad_Table{
+	padding:0 0 0 3;
+	color: #4D6C98;
+        font-size: 13px;
+	text-align: left;
+	font-weight:bold;
+	word-break: break-all;
+	text-decoration: none;
+}
+.DBForm_Layout_Table_TopLine{
+        text-decoration: none;
+	border:#BED6E0 solid;
+	border-width:0 1 1 1;
+	margin: 0px;
+	padding: 0px;
+	border-collapse: collapse;
+}
+.tsxx{
+	color: #1B53A6;
+	font-weight:100;
+	font-size:12px;
+	word-break: break-all;
+	text-decoration: none;
+}
+.selectspan{
+  height:20px;border:1px solid #D1E4EC;
+}
+/*与table_b相同样式，表格边距内容更小*/
+.table_b_s{
+	color:#7C95CD;
+	font-weight: 600;
+	padding:4 4 4 4;
+	text-decoration:none;
+	font-style: normal;
+	border:#A9D0EA solid;
+	border-width:0 1 1 1;
+	word-break :keep-all;
+}
+/*-------进度条------------*/
+.tsxxk{
+	text-decoration: none;
+	border:#82AAD2 solid;
+	border-width:1 1 1 1;
+}
+.td_title_bar {
+	border:#BED6E0 solid;
+	border-width:0 0 1 0;
+	height:19px;
+	color: #1B53A6;
+	background-image:url(/images/tab_bg1.jpg);
+	background-repeat:repeat-x;
+	font-weight:bold;
+}

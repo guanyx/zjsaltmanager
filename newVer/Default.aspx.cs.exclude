@@ -1,0 +1,410 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.ServiceModel;
+using CRMCustomerService;
+using CRMWarehouseService;
+
+public partial class _Default : System.Web.UI.Page
+{
+    CRMCustomerServiceContractClient client = new CRMCustomerServiceContractClient();
+    CRMWarehouseServiceContractClient wClient = new CRMWarehouseServiceContractClient();
+
+    protected void Page_Load( object sender, EventArgs e )
+    {
+        CustomerQueryWhere where = new CustomerQueryWhere( );
+
+        where.CreateEndDate = System.DateTime.Now;
+        where.CreateStartDate = System.DateTime.Now.AddDays( -100 );
+        string method = "";
+        try
+        {
+            method = Request.QueryString["method"];
+        }
+        catch ( Exception ex )
+        {
+        }
+
+        if ( "getAllBank".Equals( method ) )
+        {
+            //模拟数据
+            System.Collections.ArrayList al = new System.Collections.ArrayList( );
+            al.Add( new string[] { "1", "中国银行" } );
+            al.Add( new string[] { "2", "工商银行" } );
+            al.Add( new string[] { "3", "农业银行" } );
+            al.Add( new string[] { "4", "建设银行" } );
+
+            string response = string.Empty;
+            response = "{'totalProperty':'" + al.Count + "','root':[";
+
+            foreach ( String[] itator in al )
+            {
+                response += "{'bankId':'" + itator[0] + "'" +
+                    ",'bankName':'" + itator[1] + "'},";
+            }
+            response = response.Substring( 0, response.Length - 1 );
+            response += "]}";
+            Response.Write( response );
+            Response.End( );
+        }
+
+        if ( "getCustType".Equals( method ) )
+        {
+            //模拟数据
+            System.Collections.ArrayList al = new System.Collections.ArrayList( );
+            al.Add( new string[] { "1", "内部客户" } );
+            al.Add( new string[] { "2", "外部客户" } );
+            al.Add( new string[] { "3", "客商" } );
+            al.Add( new string[] { "4", "其他客商" } );
+
+            string response = string.Empty;
+            response = "{'totalProperty':'" + al.Count + "','root':[";
+
+            foreach ( String[] itator in al )
+            {
+                response += "{'custId':'" + itator[0] + "'" +
+                    ",'custName':'" + itator[1] + "'},";
+            }
+            response = response.Substring( 0, response.Length - 1 );
+            response += "]}";
+            Response.Write( response );
+            Response.End( );
+        }
+
+        if ( "modify".Equals( method ) )
+        {
+            string reponse = string.Empty;
+            reponse = "{cid:'123',name:'封立新',jc:'flx',credit:'120',operatorer:'jgl',supply:'1',updatedate:'10/30/2009',bank:'2'}";
+            Response.Write( reponse );
+            Response.End( );
+        }
+
+        if ( "delete".Equals( method ) || "forbidden".Equals( method ) )
+        {
+            string reponse = string.Empty;
+            Response.Write( reponse );
+            Response.End( );
+        }
+
+        if ( "add".Equals( method ) )
+        {
+            string credit = Request.Params["credit"];
+            string zjm = Request.Params["zjm"];
+            string kp = Request.Params["kp"];
+            string supply = Request.Params["supply"];
+            string innercus = Request.Params["innercus"];
+            string operatorer = Request.Params["operatorer"];
+            string bank = Request.Params["bank"];
+            string begindate = Request.Params["begindate"];
+            Response.Write( "" );
+            Response.End( );
+        }
+
+        if ( "getCusByCon".Equals( method ) )
+        {
+            string query = Request.Params["query"];
+            int limit = int.Parse( Request.Form["limit"] );
+            int start = int.Parse( Request.Form["start"] );
+
+            string response = string.Empty;
+
+            int recordCount = 0;
+
+            int pageIndex = start / limit + 1;//页码
+            int pageSize = limit;//每页行数
+            CRM_CUSTOMER_LIST list = client.GetPageList( where, pageIndex, pageSize, "CUSTOMERID", out recordCount );
+
+            response = "{'totalProperty':'" + recordCount + "','root':[";
+
+            if ( list != null )
+            {
+                foreach ( CRM_CUSTOMER cuntomer in list )
+                {
+                    response += "{'cusid':'" + cuntomer.CUSTOMERID + "'" +
+                        ",'name':'" + cuntomer.NAME + "'" +
+                        ",'lxr':'" + "王盛" + "'" +
+                        ",'lxdh':'" + "13800210021" + "'" +
+                        ",'phone':'" + cuntomer.TEL + "'" +
+                        ",'fax':'" + cuntomer.TEL + "'" +
+                        ",'pslx':'" + "自提" + "'" +
+                        ",'monthl':'" + "100" + "'" +
+                        ",'cus':'" + cuntomer.NAME + "'" +
+                         ",'supply':'" + cuntomer.NAME + "'" +
+                        ",'createDate':'" + cuntomer.CREATEDATE.ToString( ) + "'},";
+                }
+                response = response.Substring( 0, response.Length - 1 );
+            }
+            response += "]}";
+            Response.Write( response );
+            Response.End( );
+
+        }
+
+        if ( "getCus".Equals( method ) )
+        {
+            string cusid = Request.Params["cusid"];
+            string name = Request.Params["name"];
+            string cusType = Request.Params["cusType"];
+            int limit = int.Parse( Request.Form["limit"] );
+            int start = int.Parse( Request.Form["start"] );
+
+            string response = string.Empty;
+
+            int recordCount = 0;
+
+            int pageIndex = start / limit + 1;//页码
+            int pageSize = limit;//每页行数
+            CRM_CUSTOMER_LIST list = client.GetPageList( where, pageIndex, pageSize, "CUSTOMERID", out recordCount );
+
+            response = "{'totalProperty':'" + recordCount + "','root':[";
+
+            if ( list != null )
+            {
+                foreach ( CRM_CUSTOMER cuntomer in list )
+                {
+                    response += "{'cusid':'" + cuntomer.CUSTOMERID + "'" +
+                        ",'name':'" + cuntomer.NAME + "'" +
+                        ",'lxr':'" + "王盛" + "'" +
+                        ",'lxdh':'" + "13800210021" + "'" +
+                        ",'phone':'" + cuntomer.TEL + "'" +
+                        ",'fax':'" + cuntomer.TEL + "'" +
+                        ",'pslx':'" + "自提" + "'" +
+                        ",'monthl':'" + "100" + "'" +
+                        ",'cus':'" + cuntomer.NAME + "'" +
+                         ",'supply':'" + cuntomer.NAME + "'" +
+                        ",'createDate':'" + cuntomer.CREATEDATE.ToString( ) + "'},";
+                }
+                response = response.Substring( 0, response.Length - 1 );
+            }
+            response += "]}";
+            Response.Write( response );
+            Response.End( );
+
+        }
+    }
+
+    protected void Button3_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            CustomerQueryWhere where = new CustomerQueryWhere();
+
+            where.CreateEndDate = System.DateTime.Now;
+            where.CreateStartDate = System.DateTime.Now.AddDays(-10);
+
+            string dateDiff = null;
+
+            TimeSpan ts1 = new TimeSpan(System.DateTime.Now.Ticks);
+
+            CRM_CUSTOMER_LIST list = new CRM_CUSTOMER_LIST();
+
+            CRM_CUSTOMER customer = client.GetCustomer(123);
+
+
+            if (customer == null)
+            {
+                this.GridView1.DataSource = list;
+                this.GridView1.DataBind();
+                return;
+            }
+
+            list.Add(customer);
+
+            this.GridView1.DataSource = list;
+            this.GridView1.DataBind();
+
+            TimeSpan ts2 = new TimeSpan(System.DateTime.Now.Ticks);
+            TimeSpan ts = ts1.Subtract(ts2).Duration();
+            dateDiff = ts.Days.ToString() + "天"
+                + ts.Hours.ToString() + "小时"
+                + ts.Minutes.ToString() + "分钟"
+                + ts.Seconds.ToString() + "秒";
+
+            this.Label1.Text = "此方法执行时间为：" + dateDiff;
+        }
+        catch (FaultException<CRMCustomerService.FaultContract> ex)
+        {
+            CRMCustomerService.FaultContract error = ex.Detail;
+            this.Label1.Text = string.Format("An Fault is thrown.\n\tFault Type:{0}\n\tFault Reason:{1}\n\tError Code:{2}\n\tError Message:{3}", ex.GetType().ToString(), ex.Reason, error.ERRCODE, error.ERRMESSAGE);
+        }
+        catch (Exception ex)
+        {
+            this.Label1.Text = string.Format("An Exception is thrown.\n\tException Type:{0}\n\tError Message:{1}", ex.GetType(), ex.Message);
+        }
+    }
+    protected void Button4_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            CustomerQueryWhere where = new CustomerQueryWhere();
+
+            where.CreateEndDate = System.DateTime.Now;
+            where.CreateStartDate = System.DateTime.Now.AddDays(-10);
+
+            string dateDiff = null;
+
+            TimeSpan ts1 = new TimeSpan(System.DateTime.Now.Ticks);
+
+            int recordCount = 0;
+            CRM_CUSTOMER_LIST list = client.GetPageList(where, 1, 10, "CUSTOMERID", out recordCount);
+            this.GridView1.DataSource = list;
+            this.GridView1.DataBind();
+
+            TimeSpan ts2 = new TimeSpan(System.DateTime.Now.Ticks);
+            TimeSpan ts = ts1.Subtract(ts2).Duration();
+            dateDiff = ts.Days.ToString() + "天"
+                + ts.Hours.ToString() + "小时"
+                + ts.Minutes.ToString() + "分钟"
+                + ts.Seconds.ToString() + "秒";
+
+            this.Label1.Text = "此方法执行时间为：" + dateDiff;
+        }
+        catch (FaultException<CRMCustomerService.FaultContract> ex)
+        {
+            CRMCustomerService.FaultContract error = ex.Detail;
+            this.Label1.Text = string.Format("An Fault is thrown.\n\tFault Type:{0}\n\tFault Reason:{1}\n\tError Code:{2}\n\tError Message:{3}", ex.GetType().ToString(), ex.Reason, error.ERRCODE, error.ERRMESSAGE);
+        }
+        catch (Exception ex)
+        {
+            this.Label1.Text = string.Format("An Exception is thrown.\n\tException Type:{0}\n\tError Message:{1}", ex.GetType(), ex.Message);
+        }
+    }
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        CRM_CUSTOMER crm_customer = new CRM_CUSTOMER();
+        crm_customer.ADDRESS = "地址" + System.DateTime.Now.ToLongDateString();
+        crm_customer.CUSTOMERID = 123;// 123;
+        crm_customer.NAME = "名字" + System.DateTime.Now.ToLongDateString();
+        crm_customer.OPERATOR = "Fenglx";
+        crm_customer.REMARK = "";
+        crm_customer.SALESMAN = "Flx";
+        crm_customer.TEL = "057188888888";
+        crm_customer.ZIPCODE = "310000";
+
+        try
+        {
+
+            string dateDiff = null;
+
+            TimeSpan ts1 = new TimeSpan(System.DateTime.Now.Ticks);
+
+            client.Add(crm_customer);
+
+            TimeSpan ts2 = new TimeSpan(System.DateTime.Now.Ticks);
+            TimeSpan ts = ts1.Subtract(ts2).Duration();
+            dateDiff = ts.Days.ToString() + "天"
+                + ts.Hours.ToString() + "小时"
+                + ts.Minutes.ToString() + "分钟"
+                + ts.Seconds.ToString() + "秒";
+
+            this.Label1.Text = "此方法执行时间为：" + dateDiff;
+        }
+        catch (FaultException<CRMCustomerService.FaultContract> ex)
+        {
+            CRMCustomerService.FaultContract error = ex.Detail;
+            this.Label1.Text = string.Format("An Fault is thrown.\n\tFault Type:{0}\n\tFault Reason:{1}\n\tError Code:{2}\n\tError Message:{3}", ex.GetType().ToString(), ex.Reason, error.ERRCODE, error.ERRMESSAGE);
+        }
+        catch (Exception ex)
+        {
+            this.Label1.Text = string.Format("An Exception is thrown.\n\tException Type:{0}\n\tError Message:{1}", ex.GetType(), ex.Message);
+        }
+    }
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+        CRM_CUSTOMER crm_customer = new CRM_CUSTOMER();
+        crm_customer.ADDRESS = "地址" + System.DateTime.Now.ToLongDateString();
+        crm_customer.CUSTOMERID = 123;
+        crm_customer.NAME = "名字" + System.DateTime.Now.ToLongDateString();
+        crm_customer.OPERATOR = "Fenglx";
+        crm_customer.REMARK = "";
+        crm_customer.SALESMAN = "Flx";
+        crm_customer.CREATEDATE = System.DateTime.Now;
+        crm_customer.TEL = "057188888888";
+        crm_customer.ZIPCODE = "000000";
+
+        try
+        {
+
+            string dateDiff = null;
+
+            TimeSpan ts1 = new TimeSpan(System.DateTime.Now.Ticks);
+
+            client.Update(crm_customer);
+
+            TimeSpan ts2 = new TimeSpan(System.DateTime.Now.Ticks);
+            TimeSpan ts = ts1.Subtract(ts2).Duration();
+            dateDiff = ts.Days.ToString() + "天"
+                + ts.Hours.ToString() + "小时"
+                + ts.Minutes.ToString() + "分钟"
+                + ts.Seconds.ToString() + "秒";
+
+            this.Label1.Text = "此方法执行时间为：" + dateDiff;
+        }
+        catch (FaultException<CRMCustomerService.FaultContract> ex)
+        {
+            CRMCustomerService.FaultContract error = ex.Detail;
+            this.Label1.Text = string.Format("An Fault is thrown.\n\tFault Type:{0}\n\tFault Reason:{1}\n\tError Code:{2}\n\tError Message:{3}", ex.GetType().ToString(), ex.Reason, error.ERRCODE, error.ERRMESSAGE);
+        }
+        catch (Exception ex)
+        {
+            this.Label1.Text = string.Format("An Exception is thrown.\n\tException Type:{0}\n\tError Message:{1}", ex.GetType(), ex.Message);
+        }
+    }
+    protected void Button5_Click(object sender, EventArgs e)
+    {
+        CRM_CUSTOMER crm_customer = new CRM_CUSTOMER();
+        crm_customer.CUSTOMERID = Decimal.Parse(tbox_customer.Text);
+        ResMessage rm = new ResMessage();
+        try
+        {
+            rm = client.Remove(crm_customer.CUSTOMERID);
+        }
+        catch (Exception ex)
+        {
+            this.Label1.Text = ex.Message + "--Code = " + rm.code + "--Name = " + rm.name;
+        }
+        if (rm.code == 0) this.Label1.Text = rm.name;
+    }
+
+    protected void AddWarehouse_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            CRMWarehouseEntity entity = new CRMWarehouseEntity();
+            entity.Code = "100101";
+            entity.Name = "闸北仓库";
+            entity.Address = "杭州市九堡经济开发区";
+            entity.Description = "原料仓库";
+            entity.CreateDate = DateTime.Now;
+            entity.UpdateDate = DateTime.Now;
+            entity.OrgID = 1;
+            entity.OperID = 10001;
+            entity.OwnID = 1;
+            entity.StationID = 100010001;
+            entity.Status = 0;
+            entity.Remark = "测试测试....";
+            long id = 0;
+            if ((id=wClient.Add(entity)) > 0)
+            {
+                this.Label1.Text = "新增仓库成功!!!ID = "+id.ToString();
+            }
+            else
+            {
+                this.Label1.Text = "新增仓库失败!!!";
+            }
+        }
+        catch (FaultException<CRMWarehouseService.FaultContract> ex)
+        {
+            CRMWarehouseService.FaultContract error = ex.Detail;
+            this.Label1.Text = string.Format("An Fault is thrown.\n\tFault Type:{0}\n\tFault Reason:{1}\n\tError Code:{2}\n\tError Message:{3}", ex.GetType().ToString(), ex.Reason, error.ERRCODE, error.ERRMESSAGE);
+        }
+        catch (Exception ex)
+        {
+            this.Label1.Text = string.Format("An Exception is thrown.\n\tException Type:{0}\n\tError Message:{1}", ex.GetType(), ex.Message);
+        }
+    }
+
+}

@@ -1,0 +1,532 @@
+<html>
+<head>
+<title></title>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<style type="text/css">
+    /*通用样式*/
+html,body,div,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,object,iframe,form,blockquote,fieldset,input,textarea,code,address,caption,cite,code,em,i,ins{margin:0;padding:0;font-style:normal;font-size:12px;font-weight:normal;}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<link rel="stylesheet" type="text/css" href="../../ext3/resources/css/ext-all.css" />
+<script type="text/javascript" src="../../ext3/adapter/ext/ext-base.js"></script>
+<script type="text/javascript" src="../../ext3/ext-all.js"></script>
+</head>
+<body>
+ <div id='alert-main'></div>
+<script type ="text/javascript">
+function GetUrlParms() {
+    var args = new Object();
+    var query = location.search.substring(1); //获取查询串   
+    var pairs = query.split("&"); //在逗号处断开   
+    for (var i = 0; i < pairs.length; i++) {
+        var pos = pairs[i].indexOf('='); //查找name=value   
+        if (pos == -1) continue; //如果没有找到就跳过   
+        var argname = pairs[i].substring(0, pos); //提取name   
+        var value = pairs[i].substring(pos + 1); //提取value   
+        args[argname] = unescape(value); //存为属性   
+    }
+    return args;
+}
+    var dsProductList=null;
+    var dsOrderProduct = null;
+    var args = new Object();
+    args = GetUrlParms();
+    var methods="";
+    
+Ext.BLANK_IMAGE_URL = "../../ext3/resources/images/default/s.gif";  //作为：让下拉框的三角形下拉图片显示
+Ext.onReady(function(){
+    switch(args["method"])
+    {
+        case "purchase":
+            methods ="getPurchaseAlermList";
+        case "distribute":
+            if(methods == "")
+                methods ="getDistributeAlermList";
+        var dspurchasegridData = new Ext.data.Store
+            ({
+            url: '../../DeskTop.aspx?method='+methods,
+            reader:new Ext.data.JsonReader({
+	            totalProperty:'totalProperty',
+	            root:'root'
+            },[
+	            {		name:'CustomerNo'	},
+	            {		name:'ShortName'	},
+	            {		name:'DestInfo'	},
+	            {		name:'ShipNo'	},
+	            {		name:'ProductNo'	},
+	            {		name:'ProductName'	},
+	            {		name:'Qty'	},
+	            {		name:'TransType'	},
+	            {		name:'SendDate'	},
+	            {		name:'CreateDate'	
+	            }	])
+	            ,
+	            listeners:
+	            {
+		            scope:this,
+		            load:function(){
+		            }
+	            }
+            });
+            var purchasegridData = new Ext.grid.GridPanel({
+	        width:500,
+	        height:'100%',
+	        autoScroll:true,
+	        layout: 'fit',
+	        id: '',
+	        store: dspurchasegridData,
+	        loadMask: {msg:'正在加载数据，请稍侯……'},
+	        cm: new Ext.grid.ColumnModel([
+		        {
+                    header: '供应商编号',
+                    width: 80,
+                    dataIndex: 'CustomerNo',
+                    id: 'CustomerNo'
+                },
+                {
+                    header: '供应商名称',
+                    width: 90,
+                    dataIndex: 'ShortName',
+                    id: 'ShortName'
+                },
+                {
+                    header:'车船号',
+                    width:60,
+                    dataIndex:'ShipNo',
+                    id:'ShipNo'
+                },
+                {
+                    header: '到站信息',
+                    width: 75,
+                    dataIndex: 'DestInfo',
+                    id: 'DestInfo'
+                },
+                {
+                    header: '商品编码',
+                    width: 60,
+                    dataIndex: 'ProductNo',
+                    id: 'ProductNo'
+                },
+                {
+                    header: '商品名称',
+                    width: 150,
+                    dataIndex: 'ProductName',
+                    id: 'DestInfo'
+                },
+                {
+                    header: '数量',
+                    width: 65,
+                    dataIndex: 'Qty',
+                    id: 'Qty',
+                    align:'right',
+                    renderer:function(v){
+                        return v+" 吨"
+                    }
+                },
+                {
+                    header: '发货日期',
+                    width: 105,
+                    dataIndex: 'SendDate',
+                    id: 'SendDate',
+                    renderer: Ext.util.Format.dateRenderer('Y年m月d日')
+                }	,
+                {
+                    header: '发运方式',
+                    width: 60,
+                    dataIndex: 'TransType',
+                    id: 'TransType',
+                    renderer:function(v){
+                        if(v=='A401') return '铁路';    
+                        if(v=='A402') return '水路';
+                        if(v=='A403') return '公路';        
+                        if(v=='A404') return '集装箱';  
+                        if(v=='A405') return '自提';  
+                    }
+                },
+                {
+                    header: '创建日期',
+                    width: 105,
+                    dataIndex: 'CreateDate',
+                    id: 'CreateDate',
+                    renderer: Ext.util.Format.dateRenderer('Y年m月d日')
+                }	
+		        ]),
+		        bbar: new Ext.PagingToolbar({
+			        pageSize: 10,
+			        store: dspurchasegridData,
+			        displayMsg: '显示第{0}条到{1}条记录,共{2}条',
+			        emptyMsy: '没有记录',
+			        displayInfo: true
+		        }),
+		        viewConfig: {
+			        columnsText: '显示的列',
+			        scrollOffset: 20,
+			        sortAscText: '升序',
+			        sortDescText: '降序',
+			        forceFit: false
+		        },
+		        height: 340,
+		        closeAction: 'hide',
+		        stripeRows: true,
+		        loadMask: true//,
+		        //autoExpandColumn: 2
+	        });	
+            var alermPurchaseform = new Ext.form.FormPanel({
+                title:'发货单提交提醒',
+                frame: true,
+                renderTo:'alert-main',
+                width:'100%',
+                height:'100%',
+                layout: 'fit',
+                labelAlign: 'left',
+                buttonAlign: 'center',
+                //collapsible: true,
+                //collapsed:true,
+                items:[purchasegridData]
+            });
+            alermPurchaseform.render();
+            dspurchasegridData.load({params:{start:0,limit:10}});        
+        break;
+        
+        case "stock":
+            var dssendgridData = new Ext.data.Store
+            ({
+            url: '../../DeskTop.aspx?method=getSendAlermList',
+            reader:new Ext.data.JsonReader({
+	            totalProperty:'totalProperty',
+	            root:'root'
+            },[
+	            {		name:'CustomerNo'	},
+	            {		name:'ShortName'	},
+	            {		name:'DestInfo'	},
+	            {		name:'CarBoatNo'	},
+	            {		name:'TransType'	},
+	            {		name:'CreateDate'	
+	            }	])
+	            ,
+	            listeners:
+	            {
+		            scope:this,
+		            load:function(){
+		            }
+	            }
+            });
+            var sendgridData = new Ext.grid.GridPanel({
+	        width:500,
+	        height:'100%',
+	        autoScroll:true,
+	        layout: 'fit',
+	        id: '',
+	        store: dssendgridData,
+	        loadMask: {msg:'正在加载数据，请稍侯……'},
+	        cm: new Ext.grid.ColumnModel([
+		        {
+                    header: '供应商编号',
+                    width: 80,
+                    dataIndex: 'CustomerNo',
+                    id: 'CustomerNo'
+                },
+                {
+                    header: '供应商名称',
+                    width: 80,
+                    dataIndex: 'ShortName',
+                    id: 'ShortName'
+                },
+                {
+                    header:'车船号',
+                    width:80,
+                    dataIndex:'CarBoatNo',
+                    id:'CarBoatNo'
+                },
+                {
+                    header: '到站信息',
+                    width: 80,
+                    dataIndex: 'DestInfo',
+                    id: 'DestInfo'
+                },
+                {
+                    header: '发运方式',
+                    width: 80,
+                    dataIndex: 'TransType',
+                    id: 'TransType',
+                    renderer:function(v){
+                        if(v=='A401') return '铁路';    
+                        if(v=='A402') return '水路';
+                        if(v=='A403') return '公路';        
+                    }
+                },
+                {
+                    header: '日期',
+                    width: 100,
+                    dataIndex: 'CreateDate',
+                    id: 'CreateDate',
+                    renderer: Ext.util.Format.dateRenderer('Y年m月d日')
+                }	
+		        ]),
+		        bbar: new Ext.PagingToolbar({
+			        pageSize: 10,
+			        store: dssendgridData,
+			        displayMsg: '显示第{0}条到{1}条记录,共{2}条',
+			        emptyMsy: '没有记录',
+			        displayInfo: true
+		        }),
+		        viewConfig: {
+			        columnsText: '显示的列',
+			        scrollOffset: 20,
+			        sortAscText: '升序',
+			        sortDescText: '降序',
+			        forceFit: true
+		        },
+		        height: 340,
+		        closeAction: 'hide',
+		        stripeRows: true,
+		        loadMask: true,
+		        autoExpandColumn: 2
+	        });	
+            var alermSendform = new Ext.form.FormPanel({
+                title:'采购入库提醒',
+                frame: true,
+                renderTo:'alert-main',
+                width:'100%',
+                height:'100%',
+                layout: 'fit',
+                labelAlign: 'left',
+                buttonAlign: 'center',
+                //collapsible: true,
+                //collapsed:true,
+                items:[sendgridData]
+            });
+            alermSendform.render();
+            dssendgridData.load({params:{start:0,limit:10}});
+        break;
+        
+        case "wharehouse":
+            var dsWhgridData = new Ext.data.Store
+            ({
+            url: '../../DeskTop.aspx?method=getWhAlermList',
+            reader:new Ext.data.JsonReader({
+	            totalProperty:'totalProperty',
+	            root:'root'
+            },[
+	            {		name:'WhName'	},
+	            {		name:'WarningName'	},
+	            {		name:'ProductNo'	},
+	            {		name:'ProductName'	},
+	            {		name:'SpecificationsText'	},
+	            {		name:'RealQty'	},
+	            {		name:'WarningValue'	},
+	            {		name:'UnitText'	}
+	    	        ])
+	            ,
+	            listeners:
+	            {
+		            scope:this,
+		            load:function(){
+		            }
+	            }
+            });
+            var whgridData = new Ext.grid.GridPanel({
+	        width:500,
+	        height:'100%',
+	        autoScroll:true,
+	        layout: 'fit',
+	        id: '',
+	        store: dsWhgridData,
+	        loadMask: {msg:'正在加载数据，请稍侯……'},
+	        cm: new Ext.grid.ColumnModel([
+		        {
+                    header: '仓库名称',
+                    width: 70,
+                    dataIndex: 'WhName',
+                    id: 'WhName'
+                },
+                {
+                    header: '告警类型',
+                    width: 30,
+                    dataIndex: 'WarningName',
+                    id: 'WarningName'
+                },
+                {
+                    header: '产品编号',
+                    width: 30,
+                    dataIndex: 'ProductNo',
+                    id: 'ProductNo'
+                },
+                {
+                    header: '产品名称',
+                    width: 30,
+                    dataIndex: 'ProductName',
+                    id: 'ProductName'
+                },
+                {
+                    header: '规格',
+                    width: 30,
+                    dataIndex: 'SpecificationsText',
+                    id: 'SpecificationsText'
+                },
+                {
+                    header: '单位',
+                    width: 40,
+                    dataIndex: 'UnitText',
+                    id: 'UnitText'	
+                },
+                {
+                    header: '实际数量',
+                    width: 30,
+                    dataIndex: 'RealQty',
+                    id: 'RealQty'
+                }	,
+                {
+                    header: '告警数量',
+                    width: 30,
+                    dataIndex: 'WarningValue',
+                    id: 'WarningValue'
+                }	
+		        ]),
+		        bbar: new Ext.PagingToolbar({
+			        pageSize: 10,
+			        store: dsWhgridData,
+			        displayMsg: '显示第{0}条到{1}条记录,共{2}条',
+			        emptyMsy: '没有记录',
+			        displayInfo: true
+		        }),
+		        viewConfig: {
+			        columnsText: '显示的列',
+			        scrollOffset: 20,
+			        sortAscText: '升序',
+			        sortDescText: '降序',
+			        forceFit: true
+		        },
+		        height: 340,
+		        closeAction: 'hide',
+		        stripeRows: true,
+		        loadMask: true,
+		        autoExpandColumn: 2
+	        });	
+            var alermWharehouseform = new Ext.form.FormPanel({
+                title:'仓库预警',
+                frame: true,
+                renderTo:'alert-main',
+                width:'100%',
+                height:'100%',
+                layout: 'fit',
+                labelAlign: 'left',
+                buttonAlign: 'center',
+                //collapsible: true,
+                //collapsed:true,
+                items:[whgridData]
+            });
+            alermWharehouseform.render();
+            dsWhgridData.load({params:{start:0,limit:10}});
+        break;
+        
+        case "receive":
+            var dsReceivegridData = new Ext.data.Store
+            ({
+            url: '../../DeskTop.aspx?method=getReceiveAlermList',
+            reader:new Ext.data.JsonReader({
+	            totalProperty:'totalProperty',
+	            root:'root'
+            },[
+	            {		name:'CustomerNo'	},
+	            {		name:'CustomerName'	},
+	            {		name:'TotalAmount',type:'float'	},
+	            {		name:'CreateDate'	},
+	            {		name:'PayTypeText'	
+	            }	])
+	            ,
+	            listeners:
+	            {
+		            scope:this,
+		            load:function(){
+		            }
+	            }
+            });
+            var receivegridData = new Ext.grid.GridPanel({
+	        width:500,
+	        height:'100%',
+	        autoScroll:true,
+	        layout: 'fit',
+	        id: '',
+	        store: dsReceivegridData,
+	        loadMask: {msg:'正在加载数据，请稍侯……'},
+	        cm: new Ext.grid.ColumnModel([
+		        {
+                    header: '客户编号',
+                    width: 100,
+                    dataIndex: 'CustomerNo',
+                    id: 'CustomerNo'
+                },
+                {
+                    header: '客户名称',
+                    width: 200,
+                    dataIndex: 'CustomerName',
+                    id: 'CustomerName'
+                },
+                {
+                    header: '日期',
+                    width: 200,
+                    dataIndex: 'CreateDate',
+                    id: 'CreateDate',
+                    renderer: Ext.util.Format.dateRenderer('Y年m月d日 H时i分s秒')
+                },
+                {
+                    header: '金额',
+                    width: 120,
+                    dataIndex: 'TotalAmount',
+                    id: 'TotalAmount',
+                    align:'right',
+                    renderer:function(v){
+                        return '￥ '+v.toFixed(2);
+                    }
+                },
+                {
+                    header: '收款类型',
+                    width: 80,
+                    dataIndex: 'PayTypeText',
+                    id: 'PayTypeText'	
+                }	
+		        ]),
+		        bbar: new Ext.PagingToolbar({
+			        pageSize: 10,
+			        store: dsReceivegridData,
+			        displayMsg: '显示第{0}条到{1}条记录,共{2}条',
+			        emptyMsy: '没有记录',
+			        displayInfo: true
+		        }),
+		        viewConfig: {
+			        columnsText: '显示的列',
+			        scrollOffset: 20,
+			        sortAscText: '升序',
+			        sortDescText: '降序',
+			        forceFit: false
+		        },
+		        height: 120,
+		        closeAction: 'hide',
+		        stripeRows: true,
+		        loadMask: true//,
+		        //autoExpandColumn: 2
+	        });	
+            var alermReceiveFundform = new Ext.form.FormPanel({
+                title:'应收款提醒',
+                frame: true,
+                renderTo:'alert-main',
+                width:'100%',
+                height:340,
+                layout: 'fit',
+                labelAlign: 'left',
+                buttonAlign: 'center',
+                //collapsible: true,
+                //collapsed:true,
+                items:[receivegridData]
+            });
+            alermReceiveFundform.render();
+            dsReceivegridData.load({params:{start:0,limit:10}});
+        break;
+    
+    }
+
+});
+</script>
+</body>
+</html>

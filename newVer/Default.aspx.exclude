@@ -1,0 +1,51 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true"  CodeFile="Default.aspx.cs" Inherits="_Default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    
+        <asp:Button ID="Button1" runat="server" Text="add" onclick="Button1_Click" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+        <br />
+        <br />
+        <asp:Button ID="Button2" runat="server" Text="Update" onclick="Button2_Click" />
+        <br />
+        <br />
+        <asp:Button ID="Button3" runat="server" onclick="Button3_Click" 
+            Text="GetCustomer" />
+        <br />
+        <br />
+        <asp:Button ID="Button4" runat="server" onclick="Button4_Click" 
+            Text="GetPageList" />
+        <br />
+        <asp:GridView ID="GridView1" runat="server" BackColor="White" 
+            BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" 
+            ForeColor="Black" GridLines="Vertical">
+            <RowStyle BackColor="#F7F7DE" />
+            <FooterStyle BackColor="#CCCC99" />
+            <PagerStyle BackColor="#F7F7DE" ForeColor="Black" HorizontalAlign="Right" />
+            <SelectedRowStyle BackColor="#CE5D5A" Font-Bold="True" ForeColor="White" />
+            <HeaderStyle BackColor="#6B696B" Font-Bold="True" ForeColor="White" />
+            <AlternatingRowStyle BackColor="White" />
+        </asp:GridView>
+        <asp:Button ID="btn_remove" runat="server" onclick="Button5_Click" 
+            Text="Remove" />
+        <asp:TextBox ID="tbox_customer" runat="server"></asp:TextBox>
+        <br />
+        <hr />
+        <br />
+        <asp:Button ID="AddWarehouse" runat="server" Text="Add Warehouse" 
+            onclick="AddWarehouse_Click" />
+        <br />
+    
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VoucherList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ufinterface roottag="voucher" billtype="gl" replace="Y" receiver="1101" sender="1101" proc="add">
+    <voucher id="6">
+      <voucher_head>
+        <company>0103</company>
+        <voucher_type>记账</voucher_type>
+        <fiscal_year>2010</fiscal_year>
+        <accounting_period>04</accounting_period>
+        <voucher_id>6</voucher_id>
+        <attachment_number>0</attachment_number>
+        <prepareddate>2010-4-15 23:56:30</prepareddate>
+        <enter>1000</enter>
+        <cashier>1000</cashier>
+        <signature>1000</signature>
+        <checker>1000</checker>
+        <posting_date>2010-04-19</posting_date>
+        <posting_person>钟卫成</posting_person>
+        <voucher_making_system>业务系统</voucher_making_system>
+      </voucher_head>
+      <voucher_body>
+        <entry>
+          <entry_id>0</entry_id>
+          <account_code>140501              </account_code>
+          <abstract>采购50公斤食用日晒盐(岱山盐业)201004150017</abstract>
+          <settlement />
+          <document_id />
+          <document_date />
+          <currency>人民币</currency>
+          <unit_price>0.0850</unit_price>
+          <exchange_rate1>1</exchange_rate1>
+          <debit_quantity>900</debit_quantity>
+          <primary_debit_amount>810000</primary_debit_amount>
+          <secondary_debit_amount>0</secondary_debit_amount>
+          <natural_debit_currency>810000</natural_debit_currency>
+          <primary_credit_amount>0</primary_credit_amount>
+          <secondary_credit_amount>0</secondary_credit_amount>
+          <natural_credit_currency>0</natural_credit_currency>
+          <bill_type />
+          <bill_date />
+        </entry>
+        <entry>
+          <entry_id>1</entry_id>
+          <account_code>2202</account_code>
+          <abstract>应付浙江省岱山县盐业公司货款</abstract>
+          <settlement />
+          <document_id />
+          <document_date />
+          <currency>人民币</currency>
+          <unit_price>0</unit_price>
+          <exchange_rate1>1</exchange_rate1>
+          <debit_quantity>0</debit_quantity>
+          <primary_debit_amount>0</primary_debit_amount>
+          <secondary_debit_amount>0</secondary_debit_amount>
+          <natural_debit_currency>0</natural_debit_currency>
+          <primary_credit_amount>0</primary_credit_amount>
+          <secondary_credit_amount>0</secondary_credit_amount>
+          <natural_credit_currency>0</natural_credit_currency>
+          <bill_type />
+          <bill_date />
+        </entry>
+      </voucher_body>
+    </voucher>
+  </ufinterface>
+</VoucherList>

@@ -1,0 +1,6 @@
+#C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727
+caspol.exe -listgroups
+#caspol.exe -q -remgroup 1.7
+#caspol.exe -q -addgroup 1.7 -site mis.saltzj.com/* FullTrust  
+caspol.exe -q -addgroup 1 -url http://mis.saltzj.com/* FullTrust 
+caspol.exe -q -addgroup 1 -url http://122.224.134.21/* FullTrust     

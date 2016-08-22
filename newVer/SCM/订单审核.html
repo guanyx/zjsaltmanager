@@ -1,0 +1,543 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GB2312">
+    <link rel="stylesheet" type="text/css" href="../ext3/resources/css/ext-all.css" />
+	<script type="text/javascript" src="../ext3/adapter/ext/ext-base.js"></script>	
+	<script type="text/javascript" src="../ext3/ext-all.js"></script>
+</head>
+<body>
+	 <div id="quota_form"></div>
+	 <div id="quota_toolbar"></div>
+	 <div id="quota_grid"></div>
+</body><script>
+	Ext.onReady(function(){
+	
+	 BLANK_IMAGE_URL = "../ext3resources/images/default/s.gif";
+               var Toolbar = new Ext.Toolbar({
+                   renderTo: "quota_toolbar",
+                   items: [{
+                       text: "查询",
+                       icon: '../../Theme/1/images/extjs/customer/add16.gif',
+                       handler: function() {
+                           // saveType = "add";
+                           // openAddQuotaWin();//点击后，弹出添加信息窗口
+                         
+                       }
+                   }, '-', {
+                       text: "审核",
+                       icon: '../../Theme/1/images/extjs/customer/delete16.gif',
+                       handler: function() {
+                           ///  deleteCustomer();
+                           
+                           var selectData = quotaGrid.getSelectionModel().getCount();
+                           if (selectData == 0) {
+                               Ext.Msg.alert("提示", "请选中要修改的记录！");
+                               return;
+                           }
+                           if (selectData > 1) {
+                               Ext.Msg.alert("提示", "一次只能修改一条记录！");
+                               return;
+                           }
+                      
+                        
+
+                       }
+                   }]
+                   });
+	
+	
+	
+	                     var shdz = new Ext.form.ComboBox({
+                           xtype: 'combo',
+                           store: new Ext.data.Store({
+                               autoLoad: true,
+                               baseParams: {
+                                   trancode: 'Menu'
+                               },
+                               proxy: new Ext.data.HttpProxy({
+                                   url: 'frmQtQuotaItemCfg.aspx?method=getType&key=Quota'
+                               }),
+                               // create reader that reads the project records
+                               reader: new Ext.data.JsonReader({ root: 'root' }, [
+                                { name: 'name', type: 'string' },
+                                { name: 'id', type: 'string' }
+
+                               ])
+                           })
+,
+                           valueField: 'id',
+                           displayField: 'name',
+                           mode: 'local',
+                           allowBlank: false,
+                           blankText: '订单类型',
+                           forceSelection: true,
+                           emptyText: '订单类型',
+                           editable: false,
+                           triggerAction: 'all',
+                           fieldLabel: '订单类型',
+                           selectOnFocus: true,
+                           anchor: '90%'
+                       });
+
+
+                   //进货仓库
+                       var jhck = new Ext.form.ComboBox({
+                           xtype: 'combo',
+                           store: new Ext.data.Store({
+                               autoLoad: true,
+                               baseParams: {
+                                   trancode: 'Menu'
+                               },
+                               proxy: new Ext.data.HttpProxy({
+                                   url: 'frmQtQuotaItemCfg.aspx?method=getType&key=Quota'
+                               }),
+                               // create reader that reads the project records
+                               reader: new Ext.data.JsonReader({ root: 'root' }, [
+                                { name: 'name', type: 'string' },
+                                { name: 'id', type: 'string' }
+
+                               ])
+                           })
+,
+                           valueField: 'id',
+                           displayField: 'name',
+                           mode: 'local',
+                           allowBlank: false,
+                           blankText: '销售部门',
+                           forceSelection: true,
+                           emptyText: '销售部门',
+                           editable: false,
+                           triggerAction: 'all',
+                           fieldLabel: '销售部门',
+                           selectOnFocus: true,
+                           anchor: '90%'
+                       });
+                       //配送方式
+                       var psfs = new Ext.form.ComboBox({
+                           xtype: 'combo',
+                           store: new Ext.data.Store({
+                               autoLoad: true,
+                               baseParams: {
+                                   trancode: 'Menu'
+                               },
+                               proxy: new Ext.data.HttpProxy({
+                                   url: 'frmQtQuotaItemCfg.aspx?method=getType&key=Control'
+                               }),
+                               // create reader that reads the project records
+                               reader: new Ext.data.JsonReader({ root: 'root' }, [
+                                { name: 'name', type: 'string' },
+                                { name: 'id', type: 'string' }
+                        ])
+                           })
+,
+                           valueField: 'id',
+                           displayField: 'name',
+                           mode: 'local',
+                           allowBlank: false,
+                           blankText: '配送方式',
+                           forceSelection: true,
+                           emptyText: '配送方式',
+                           editable: false,
+                           triggerAction: 'all',
+                           fieldLabel: '配送方式',
+                           selectOnFocus: true,
+                           anchor: '90%'
+                       });
+                        //受理日期
+                       var slrq = new Ext.form.ComboBox({
+                           xtype: 'combo',
+                           store: new Ext.data.Store({
+                               autoLoad: true,
+                               baseParams: {
+                                   trancode: 'Menu'
+                               },
+                               proxy: new Ext.data.HttpProxy({
+                                   url: 'frmQtQuotaItemCfg.aspx?method=getType&key=Control'
+                               }),
+                               // create reader that reads the project records
+                               reader: new Ext.data.JsonReader({ root: 'root' }, [
+                                { name: 'name', type: 'string' },
+                                { name: 'id', type: 'string' }
+                        ])
+                           })
+,
+                           valueField: 'id',
+                           displayField: 'name',
+                           mode: 'local',
+                           allowBlank: false,
+                           blankText: '受理日期',
+                           forceSelection: true,
+                           emptyText: '受理日期',
+                           editable: false,
+                           triggerAction: 'all',
+                           fieldLabel: '受理日期',
+                           selectOnFocus: true,
+                           anchor: '90%'
+                       });
+                        //受理人
+                       var slr = new Ext.form.ComboBox({
+                           xtype: 'combo',
+                           store: new Ext.data.Store({
+                               autoLoad: true,
+                               baseParams: {
+                                   trancode: 'Menu'
+                               },
+                               proxy: new Ext.data.HttpProxy({
+                                   url: 'frmQtQuotaItemCfg.aspx?method=getType&key=Control'
+                               }),
+                               // create reader that reads the project records
+                               reader: new Ext.data.JsonReader({ root: 'root' }, [
+                                { name: 'name', type: 'string' },
+                                { name: 'id', type: 'string' }
+                        ])
+                           })
+,
+                           valueField: 'id',
+                           displayField: 'name',
+                           mode: 'local',
+                           allowBlank: false,
+                           blankText: '受理人',
+                           forceSelection: true,
+                           emptyText: '受理人',
+                           editable: false,
+                           triggerAction: 'all',
+                           fieldLabel: '受理人',
+                           selectOnFocus: true,
+                           anchor: '90%'
+                       });
+                          //送货等级
+                       var shdj = new Ext.form.ComboBox({
+                           xtype: 'combo',
+                           store: new Ext.data.Store({
+                               autoLoad: true,
+                               baseParams: {
+                                   trancode: 'Menu'
+                               },
+                               proxy: new Ext.data.HttpProxy({
+                                   url: 'frmQtQuotaItemCfg.aspx?method=getType&key=Control'
+                               }),
+                               // create reader that reads the project records
+                               reader: new Ext.data.JsonReader({ root: 'root' }, [
+                                { name: 'name', type: 'string' },
+                                { name: 'id', type: 'string' }
+                        ])
+                           })
+,
+                           valueField: 'id',
+                           displayField: 'name',
+                           mode: 'local',
+                           allowBlank: false,
+                           blankText: '送货等级',
+                           forceSelection: true,
+                           emptyText: '送货等级',
+                           editable: false,
+                           triggerAction: 'all',
+                           fieldLabel: '送货等级',
+                           selectOnFocus: true,
+                           anchor: '90%'
+                       });
+                       
+                          //结算方式
+                       var jsfs = new Ext.form.ComboBox({
+                           xtype: 'combo',
+                           store: new Ext.data.Store({
+                               autoLoad: true,
+                               baseParams: {
+                                   trancode: 'Menu'
+                               },
+                               proxy: new Ext.data.HttpProxy({
+                                   url: 'frmQtQuotaItemCfg.aspx?method=getType&key=Control'
+                               }),
+                               // create reader that reads the project records
+                               reader: new Ext.data.JsonReader({ root: 'root' }, [
+                                { name: 'name', type: 'string' },
+                                { name: 'id', type: 'string' }
+                        ])
+                           })
+,
+                           valueField: 'id',
+                           displayField: 'name',
+                           mode: 'local',
+                           allowBlank: false,
+                           blankText: '结算方式',
+                           forceSelection: true,
+                           emptyText: '结算方式',
+                           editable: false,
+                           triggerAction: 'all',
+                           fieldLabel: '结算方式',
+                           selectOnFocus: true,
+                           anchor: '90%'
+                       });
+                       
+                       
+                        var kpfs = new Ext.form.ComboBox({
+                           xtype: 'combo',
+                           store: new Ext.data.Store({
+                               autoLoad: true,
+                               baseParams: {
+                                   trancode: 'Menu'
+                               },
+                               proxy: new Ext.data.HttpProxy({
+                                   url: 'frmQtQuotaItemCfg.aspx?method=getType&key=Control'
+                               }),
+                               // create reader that reads the project records
+                               reader: new Ext.data.JsonReader({ root: 'root' }, [
+                                { name: 'name', type: 'string' },
+                                { name: 'id', type: 'string' }
+                        ])
+                           })
+,
+                           valueField: 'id',
+                           displayField: 'name',
+                           mode: 'local',
+                           allowBlank: false,
+                           blankText: '开票方式',
+                           forceSelection: true,
+                           emptyText: '开票方式',
+                           editable: false,
+                           triggerAction: 'all',
+                           fieldLabel: '开票方式',
+                           selectOnFocus: true,
+                           anchor: '90%'
+                       });
+		
+		
+		  var customerListStore = new Ext.data.Store
+			({
+			    url: 'frmQtQuotaItemCfg.aspx?method=queryQuota',
+			    reader: new Ext.data.JsonReader({
+			        totalProperty: 'totalProperty',
+			        root: 'root'
+			    }, [
+			    { name: 'QuotaNo' },
+	            { name: 'QuotaName' },
+	            { name: 'QuotaAlias' },
+			    { name: 'QuotaUnit' },
+	            { name: 'QuotaType' },
+	            { name: 'QuotaTypeName'},
+	            { name: 'ControlType'},
+	            { name: 'ControlTypeName'},
+			    { name: 'SortId'},
+	            { name: 'CreateDate'},
+			    { name: 'OperName'}
+			    ])
+			   ,
+			    listeners:
+			      {
+			          scope: this,
+			          load: function() {
+			              //数据加载预处理,可以做一些合并、格式处理等操作
+			          }
+			      }
+			});
+                                           var sm = new Ext.grid.CheckboxSelectionModel(
+            {
+                singleSelect: false
+            }
+        );
+                                           var quotaGrid = new Ext.grid.GridPanel({
+
+                                               width: '100%',
+                                               height: '100%',
+                                               autoWidth: true,
+                                               autoHeight: true,
+                                               autoScroll: true,
+                                               layout: 'fit',
+                                               id: 'customerdatagrid',
+                                               store: customerListStore,
+                                               loadMask: { msg: '正在加载数据，请稍侯……' },
+                                               sm: sm,
+                                               /*  如果中间没有查询条件form那么可以直接用tbar来实现增删改
+                                               tbar:[{
+                                               text:"添加",
+                                               handler:this.showAdd,
+                                               scope:this
+                                               },"-",
+                                               {
+                                               text:"修改"
+                                               },"-",{
+                                               text:"删除",
+                                               handler:this.deleteBranch,
+                                               scope:this
+                                               }],
+                                               */
+                                               cm: new Ext.grid.ColumnModel([
+                       
+
+                        new Ext.grid.RowNumberer(), //自动行号
+                         sm,
+                                            { header: 'id', hidden: true, dataIndex: 'QuotaNo' },
+									        { header: '录入日期', dataIndex: 'QuotaName' },
+									        { header: '订单日期', hidden: true, dataIndex: 'QuotaAlias' },
+									        { header: '客户编码', dataIndex: 'QuotaUnit' },
+													{ header: '客户名称', dataIndex: 'QuotaType', hidden: true },
+													{ header: '数量', dataIndex: 'QuotaTypeName' },
+													{ header: '金额', dataIndex: 'ControlType' },
+													{ header: '订单类型', dataIndex: 'ControlTypeName' },
+													{ header: '数量', hidden: true,dataIndex: 'SortId' },
+													{ header: '单位', hidden: true,dataIndex: 'CreateDate' },
+													{ header: '金额', hidden: true,dataIndex: 'OperName' }
+			  ]), listeners:
+			  {
+			      rowselect: function(sm, rowIndex, record) {
+			          //行选中
+			          //Ext.MessageBox.alert("提示","您选择的出版号是：" + r.data.ASIN);
+			      },
+			      rowclick: function(grid, rowIndex, e) {
+			          //双击事件
+			      },
+			      rowdbclick: function(grid, rowIndex, e) {
+			          //双击事件
+			      },
+			      cellclick: function(grid, rowIndex, columnIndex, e) {
+			          //单元格单击事件			           
+			      },
+			      celldbclick: function(grid, rowIndex, columnIndex, e) {
+			          //单元格双击事件
+			          /*
+			          var record = grid.getStore().getAt(rowIndex); //Get the Record
+			          var fieldName = grid.getColumnModel().getDataIndex(columnIndex); //Get field name
+			          var data = record.get(fieldName);
+			          Ext.MessageBox.alert('show','当前选中的数据是'+data); 
+			          */
+			      }
+			  },
+                                               bbar: new Ext.PagingToolbar({
+                                                   pageSize: 10,
+                                                   store: customerListStore,
+                                                   displayMsg: '显示第{0}条到{1}条记录,共{2}条',
+                                                   emptyMsy: '没有记录',
+                                                   displayInfo: true
+                                               }),
+                                               viewConfig: {
+                                                   columnsText: '显示的列',
+                                                   scrollOffset: 20,
+                                                   sortAscText: '升序',
+                                                   sortDescText: '降序',
+                                                   forceFit: true
+                                               },
+                                               //width: 750, 
+                                               height: 265,
+                                               closeAction: 'hide',
+
+                                               stripeRows: true,
+                                               loadMask: true,
+                                               autoExpandColumn: 2
+                                           });
+                                          
+		
+		                       var gpanel = new Ext.form.FormPanel({
+                           renderTo:'quota_grid'
+                            ,  frame:true,       
+                            monitorValid: true, // 把有formBind:true的按钮和验证绑定
+                           labelWidth: 70,
+                           items: [{
+                               layout: 'form',
+                               xtype: "fieldset",
+                               title:'订单列表',
+                               layout: 'column',
+                               items: [quotaGrid]
+                                  }]});
+                                  
+                                   var fpanel = new Ext.form.FormPanel({
+                           renderTo:'quota_form'
+                            ,  frame:true,       
+                            monitorValid: true, // 把有formBind:true的按钮和验证绑定
+                           labelWidth: 70,
+                           items: [{
+                               layout: 'form',
+                               xtype: "fieldset",
+                               title:'查询条件',
+                               layout: 'column',
+                               items: [{
+                                   layout: 'form',
+                                   columnWidth: .33,  //该列占用的宽度，标识为20％
+                                   border: false,
+                                   items: [{cls: 'key',
+                                       xtype: 'textfield',
+                                       fieldLabel: '客户编码',
+                                       name: 'cuscode',
+                                       id: 'cuscode',
+                                       anchor: '90%'}]
+},{
+                                   layout: 'form',
+                                   columnWidth: .33,  //该列占用的宽度，标识为20％
+                                   border: false,
+                                   items: [{cls: 'key',
+                                       xtype: 'textfield',
+                                       fieldLabel: '受理人',
+                                       name: 'slr',
+                                       id: 'slr',
+                                       anchor: '90%'}]
+},{
+                                   layout: 'form',
+                                   columnWidth: .33,  //该列占用的宽度，标识为20％
+                                   border: false,
+                                   items: [{cls: 'key',
+                                       xtype: 'textfield',
+                                       fieldLabel: '订单编号',
+                                       name: 'num',
+                                       id: 'num',
+                                       anchor: '90%'}]
+},{
+                                   layout: 'form',
+                                   columnWidth: .33,  //该列占用的宽度，标识为20％
+                                   border: false,
+                                   items: [{cls: 'key',
+                                       xtype: 'textfield',
+                                       fieldLabel: '商品编号',
+                                       name: 'cpcode',
+                                       id: 'cpcode',
+                                       anchor: '90%'}]
+},{
+                                   layout: 'form',
+                                   columnWidth: .33,  //该列占用的宽度，标识为20％
+                                   border: false,
+                                   items: [jhck]},{
+                                   layout: 'form',
+                                   columnWidth: .33,  //该列占用的宽度，标识为20％
+                                   border: false,
+                                   items: [shdz]},
+                                   {
+                                   layout: 'form',
+                                   columnWidth: .33,  //该列占用的宽度，标识为20％
+                                   border: false,
+                                   items: [{cls: 'key',
+                                       xtype: 'datefield',
+                                       fieldLabel: '开始日期',
+                                       name: 'shrq',
+                                       id: 'shrq',
+                                       anchor: '90%'}]
+},{
+                                   layout: 'form',
+                                   columnWidth: .33,  //该列占用的宽度，标识为20％
+                                   border: false,
+                                   items: [psfs]},{
+                                   layout: 'form',
+                                   columnWidth: .33,  //该列占用的宽度，标识为20％
+                                   border: false,
+                                   items: [shdj]},{
+                                   layout: 'form',
+                                   columnWidth: .33,  //该列占用的宽度，标识为20％
+                                   border: false,
+                                   items: [{cls: 'key',
+                                       xtype: 'datefield',
+                                       fieldLabel: '结束日期',
+                                       name: 'jsrq',
+                                       id: 'jsrq',
+                                       anchor: '90%'}]
+},{
+                                   layout: 'form',
+                                   columnWidth: .33,  //该列占用的宽度，标识为20％
+                                   border: false,
+                                   items: [jsfs]},{
+                                   layout: 'form',
+                                   columnWidth: .33,  //该列占用的宽度，标识为20％
+                                   border: false,
+                                   items: [kpfs]}]
+                                  }]});
+		})
+	
+	</script></html>

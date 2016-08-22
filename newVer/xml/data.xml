@@ -1,0 +1,124 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:Locale="">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="OrderId" type="xs:decimal" minOccurs="0" />
+                <xs:element name="OutWhId" type="xs:decimal" minOccurs="0" />
+                <xs:element name="OutOperId" type="xs:decimal" minOccurs="0" />
+                <xs:element name="OutDate" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="InWhId" type="xs:decimal" minOccurs="0" />
+                <xs:element name="InOperId" type="xs:decimal" minOccurs="0" />
+                <xs:element name="InDate" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="DriverId" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Fare" type="xs:decimal" minOccurs="0" />
+                <xs:element name="OutStatus" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Remark" type="xs:string" minOccurs="0" />
+                <xs:element name="OrgId" type="xs:decimal" minOccurs="0" />
+                <xs:element name="OperId" type="xs:decimal" minOccurs="0" />
+                <xs:element name="OwnId" type="xs:decimal" minOccurs="0" />
+                <xs:element name="CreateDate" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="UpdateDate" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="IsCertificate" type="xs:decimal" minOccurs="0" />
+                <xs:element name="InStatus" type="xs:decimal" minOccurs="0" />
+                <xs:element name="OrderNumber" type="xs:string" minOccurs="0" />
+                <xs:element name="OutOrg" type="xs:decimal" minOccurs="0" />
+                <xs:element name="InOrg" type="xs:decimal" minOccurs="0" />
+                <xs:element name="AllotType" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Ext1" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Ext2" type="xs:string" minOccurs="0" />
+                <xs:element name="Ext3" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Ext4" type="xs:string" minOccurs="0" />
+                <xs:element name="SortIndexfieldalias" type="xs:decimal" minOccurs="0" />
+                <xs:element name="PJName" type="xs:string" default="浙江省盐业集团杭州市盐业有限公司内部移库单" minOccurs="0" />
+                <xs:element name="OutWhName" type="xs:string" minOccurs="0" />
+                <xs:element name="InWhName" type="xs:string" minOccurs="0" />
+                <xs:element name="OperName" type="xs:string" minOccurs="0" />
+                <xs:element name="InOperName" type="xs:string" minOccurs="0" />
+                <xs:element name="DriverName" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="WmsAllotOrderDetail">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="OrderDetailId" type="xs:decimal" minOccurs="0" />
+                <xs:element name="OrderId" type="xs:decimal" minOccurs="0" />
+                <xs:element name="ProductBn" type="xs:string" minOccurs="0" />
+                <xs:element name="ProductId" type="xs:decimal" minOccurs="0" />
+                <xs:element name="OutQty" type="xs:decimal" minOccurs="0" />
+                <xs:element name="InQty" type="xs:decimal" minOccurs="0" />
+                <xs:element name="ProductPrice" type="xs:decimal" minOccurs="0" />
+                <xs:element name="UnitId" type="xs:decimal" minOccurs="0" />
+                <xs:element name="SortIndexfieldalias" type="xs:decimal" minOccurs="0" />
+                <xs:element name="UnitName" type="xs:string" minOccurs="0" />
+                <xs:element name="ProductName" type="xs:string" minOccurs="0" />
+                <xs:element name="OutAmt" msdata:ReadOnly="true" msdata:Expression="ProductPrice*OutQty" type="xs:decimal" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table>
+    <OrderId>4781</OrderId>
+    <OutWhId>112</OutWhId>
+    <OutOperId>2233</OutOperId>
+    <OutDate>2010-09-02T08:49:19+08:00</OutDate>
+    <InWhId>111</InWhId>
+    <InOperId>0</InOperId>
+    <InDate>2010-09-02T08:50:24+08:00</InDate>
+    <DriverId>341</DriverId>
+    <Fare>0</Fare>
+    <OutStatus>1</OutStatus>
+    <OrgId>2</OrgId>
+    <OperId>2233</OperId>
+    <OwnId>2233</OwnId>
+    <CreateDate>2010-09-02T08:48:51+08:00</CreateDate>
+    <UpdateDate>2010-09-02T08:50:24+08:00</UpdateDate>
+    <IsCertificate>0</IsCertificate>
+    <InStatus>1</InStatus>
+    <OrderNumber>201009020001</OrderNumber>
+    <OutOrg>2</OutOrg>
+    <InOrg>2</InOrg>
+    <AllotType>0</AllotType>
+    <Ext1>0</Ext1>
+    <Ext3>0</Ext3>
+    <SortIndexfieldalias>1</SortIndexfieldalias>
+    <PJName>浙江省盐业集团杭州市盐业有限公司内部移库单</PJName>
+    <OutWhName>六堡仓库</OutWhName>
+    <InWhName>闸口仓库</InWhName>
+    <OperName>陈国娟</OperName>
+  </Table>
+  <WmsAllotOrderDetail>
+    <OrderDetailId>6181</OrderDetailId>
+    <OrderId>4781</OrderId>
+    <ProductId>571</ProductId>
+    <OutQty>1340</OutQty>
+    <InQty>1340</InQty>
+    <ProductPrice>1.12</ProductPrice>
+    <UnitId>1</UnitId>
+    <SortIndexfieldalias>1</SortIndexfieldalias>
+    <UnitName>箱</UnitName>
+    <ProductName>350克精制盐(中盐长江)</ProductName>
+    <OutAmt>1500.80</OutAmt>
+  </WmsAllotOrderDetail>
+  <WmsAllotOrderDetail>
+    <OrderDetailId>6182</OrderDetailId>
+    <OrderId>4781</OrderId>
+    <ProductId>616</ProductId>
+    <OutQty>97</OutQty>
+    <InQty>97</InQty>
+    <ProductPrice>45.70</ProductPrice>
+    <UnitId>1</UnitId>
+    <SortIndexfieldalias>2</SortIndexfieldalias>
+    <UnitName>箱</UnitName>
+    <ProductName>300克日晒自然盐(绿海)</ProductName>
+    <OutAmt>4432.90</OutAmt>
+  </WmsAllotOrderDetail>
+</NewDataSet>

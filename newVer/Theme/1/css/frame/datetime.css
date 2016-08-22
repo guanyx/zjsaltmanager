@@ -1,0 +1,35 @@
+body {
+	margin: 0px;
+	overflow:auto;
+
+	}/*body和滚动条样式*/
+td{
+	font-size: 12px;
+	color: #666666;
+	}/*整个页面默认字体大小*/
+Input,select{
+	height:20px;
+	color: #666666;
+	background: #ffffff;
+	BORDER-BOTTOM: 1px solid #9F9F9F ;
+	BORDER-LEFT: 1px solid #9F9F9F ;
+	BORDER-RIGHT: 1px solid #9F9F9F ;
+	BORDER-TOP: 1px solid #9F9F9F ;
+	white-space : inherit;
+	}
+textarea{
+	color: #666666;
+	background: #ffffff;
+	BORDER-BOTTOM: 1px solid #9F9F9F ;
+	BORDER-LEFT: 1px solid #9F9F9F ;
+	BORDER-RIGHT: 1px solid #9F9F9F ;
+	BORDER-TOP: 1px solid #9F9F9F ;
+	white-space : inherit;
+	}
+table{
+	width:100%;
+	}/*表格默认大小*/
+.myfont{
+	font-size: 12px;
+	color: #666666;
+	}/*整个页面默认字体大小*/

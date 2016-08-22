@@ -1,0 +1,57 @@
+<script>
+//top.location.href="login.html";
+//var test=new ActiveXObject("WScript.Shell"); 
+//test.RegWrite("HKCU\\Software\\Microsoft\\Internet Explorer\\New Windows\\PopupMgr","no");
+
+var screenwidth=screen.width-10;
+var screenheight=screen.height-56;
+window.open("login.html","µÇÂ½ÏµÍ³","toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width="+screenwidth+",height="+screenheight+",top=0,left=0");
+window.opener="";window.close();
+
+function IsPopupDisabled()
+{
+     var e = false;
+     var pw1 = null;
+     var pw2 = null;
+     try
+     {
+      do
+      {
+       var d = new Date();
+       var wName = "ptest_" + d.getTime();
+       var testUrl = "";
+       pw1 = window.open(testUrl,wName,"width=0,height=0,left=5000,top=5000",true);
+       if (null == pw1 || true == pw1.closed)
+       {
+        e = true;
+        break;
+       }
+       pw2 = window.open(testUrl,wName,"width=0,height=0,left=5000,top=5000");
+       if (null == pw2 || true == pw2.closed)
+       {
+        e = true;
+        break;
+       }
+       pw1.close();
+       pw2.close();
+       pw1 = pw2 = null;
+      }
+      while(false);
+     }
+     catch(ex)
+     {
+      e = true;
+     }
+     if (null != pw1)
+     {
+      try { if (!pw1.closed) pw1.close(); } catch(ex){}
+     }
+     if (null != pw2)
+     {
+      try { if (!pw2.closed) pw2.close(); } catch(ex){}
+     }
+     return !e;
+}
+
+
+</script>

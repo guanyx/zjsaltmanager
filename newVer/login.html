@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=gb2312"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>浙盐集团业务综合管理系统-登录</title>
+	<link href="css/index.css" rel="stylesheet">
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<body>
+<div class="container login">
+    <form class="login-form" method="post" name="frmLogin" action="logined.aspx">
+        <img class="login-logo" src="img/images/login-logo_03.png" />
+        <div class="login-form-input">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAWCAYAAADafVyIAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2RpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1MzczNzQ1MEFBNDNFNjExODc2Q0Y1RUU5MjExQkRCOCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpDMURCRkVEMDVCRUQxMUU2QkFGRkI4MUM1RkEyMTVFMyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpDMURCRkVDRjVCRUQxMUU2QkFGRkI4MUM1RkEyMTVFMyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IFdpbmRvd3MiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpBQ0REQkVCM0IyNjNFNjExQUFEMkRBQzRCMDMyM0MwRCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo1MzczNzQ1MEFBNDNFNjExODc2Q0Y1RUU5MjExQkRCOCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PlTItXUAAAPaSURBVHjapFVNcxtFEO2dnV1ZyhrH0YftRLaxAti+QQwhcsCVKipFQQ7kBAcO/AAO3PkRXCg4kCMX+ANQBQdE2SakbLngEhkXxSXm046kdayVtLOzQ/eMVliJZB+Y0tauZnb6Tb/3utd6+PB3GDVkpGzO+btCRBnGWKyUYvjfdhz+rZRyL47jofsmL0z1nzmcMjh3ru7t7b1z/35tAcBScSytfD4ny+VrLJPJ/BqGYQxnDG5Zwxdsm1+/d2/74/X1zeeP/GMLLPrRpaDp+x/evPma62XOfRpJ2T4VoNUKhi64rrOws/PTUhC0LTeVwmxcQFogjgVsV6vTi4vPXr1cunwHs3gCYPIkgN98NBTAcZxsFEkGwDA4B+KbMkDaoNvtQrPhzxweHo4JIY4e33vx0tP/AYwSCucZKAUoLph3EAuUvmgOL0HC0/OpFB0cHIwQmM+LSLqGdwJRqAvdJeJq4ZhSsYXOOh0gCIIRAPa4zZgOQMEJyMRCQNBzlL01ioF+nFwuN0IDvh9JFIEx21ADWmTEJAwEixkBnplBqVQa+pLruj+n0+k2ZujZttPj3niarD2ZvfBgamqqjS4a2KdgMBbHIFpE27YhSde4hbeLxdnjRqPhUWCzpECIEIqXisHF6Zl9z/NkFEX9PUQlkjcAwCgoZZBkQYKSLiIUleuvlD9Bu2IQoQMQQDfswNLyczvnz0/cabVabQJIqKJYj2vyhMcsM2wZyxued641Pz8fMMY1LUTHzPSMmp2bq+GR1jBo1mg0eljNxj8anSjCa0zK+KV6vf5GrVZ7dWurutoKAl1syTtS0oljwEr+q3zt5S8LhcJvnjf+GdpXYWF2iaKJifwgAJ4477hu4cj3sbHtrmxsbrxZrzcglcrooiIaBjUC3TJoLC0v/3Fjbe2LfCFfdWz+VVd0QwToe9/ymweLeLu1+8vu6vrGD6/vP9hH13BykRYtMcBJp5FOSkk9h60CkEpYefGFzZUrV7ayuezX6bGnvum/26j//cHduz++/V3l+1W0OQZO9YLFvQqOe0VmWkQClPynQRmKsAulZxYe3b791udzs6X3+yJ32m1eqVRWLeQ5lUrrU+tK6vFOl9Vr1cn/ZM64h1q7A2PpDOC3Y3y7ul0ecFGE3ymiltlJxzxpLIRltu49aCxdC7ROrqID0BqaQhegyciBKFTdwQ8OtpswCkHhhwSrH0xR0SbVa2pW/8SmXRiKjPjmudMJgdgSogMWG6xky/f/fO/4OJjUJaFPqmsBw0iuAXDHSQDzrO8M54SpJaU7K8mB5uD5XPGjPsBZzer/jn8FGAB45yCh+H1JJQAAAABJRU5ErkJggg==">
+            <input id="login_user" name="login_user" placeholder="用户名">
+        </div>
+
+        <div class="login-form-input login-form-input2">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAXCAYAAAARIY8tAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2RpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1MzczNzQ1MEFBNDNFNjExODc2Q0Y1RUU5MjExQkRCOCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoyN0RCNUVBMTVDMDUxMUU2QkFGRkI4MUM1RkEyMTVFMyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoyN0RCNUVBMDVDMDUxMUU2QkFGRkI4MUM1RkEyMTVFMyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IFdpbmRvd3MiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpBQ0REQkVCM0IyNjNFNjExQUFEMkRBQzRCMDMyM0MwRCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo1MzczNzQ1MEFBNDNFNjExODc2Q0Y1RUU5MjExQkRCOCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PvYdo0UAAAKQSURBVHja1FU7jxJRFD7A8M6ShZBNDLDhESINwT9gqLSw2MJiLSm2sNVSCwtbC1stTOQPWFhYk1BgKKCyECIQwpsAITyGN55vMjeZbBZ3KCg8yYR7D3PPd853vnvGsN/v6ZRmpBObdNuRzWZpu92SyWSi1WpFFosF7tR6vT4zm80TbHa7nWQ0Gr+wj9hHqo+SyeT9AFrj4KnZbHZZqVRS/X4/IssySZJEbrdbjsViEZfL9ZtfS2sS0QeA7JERH7woFovvm80mnZ+fk8FgoM1mQ/V63c6AbxgkG4lEEDx9qJf/quCmXC6/bLfbFAwGN4lE4q3Vau0BpNFoXOXz+eelUulxIBD4huwBrLvJyJ453nCmEQ5K8Xj8nc1m+8C9SYMSv9//PRwOtxaLBXU6nacILnpxlIqYf7Lb7eRwOFqCOtXSXq/3J2iZz+cP0BfdKlJQjUaluU6nk1DBcrl0828K9CAoPxLWAOSq7FzxDVSlFyDVarWesXKup9OpQlcul/sI6WoNQKiw1+s95ApfhEIhNCGtq4JCoXCNwMgQPGM9Ho/J4/Eoe2Gobjgc0mAweOLz+X7opggBEQiNQ+bQOUtSZqn+Yv8FN/8Slwz/gaqjbrLaA4UCcRi/0Wj0M1+w16Cw2+1+RRJaAN6bj1IRlKE2VFlzP8IILnwAEOBqTyTdANC15qASrFqtXrHfXqvVUqBPZC+qxXzSDXA7Q6zVOSQDBD0Rqrpv3B+cRTiozRI2Go0ecXC36JMWgM8sdAOIoKBK3N7JZEKZTOaVdhgKxamAa90U8XD7A40DQASAoSI8QkHqzCKeqL1DKrqrgjQPN+j+DGOAs5WFSriyDR7tnk35EPF7n+5k47//Jp8c4K8AAwCaNJHtlNZClQAAAABJRU5ErkJggg==">
+            <input id="login_password" name="login_password" type="password" placeholder="密码">
+        </div>
+
+        <div class="login-types">
+            <label class="label1"><input type="radio" name="logintype" value="1">CA认证</label>
+            <label class="label2"><input type="radio" name="logintype" value="2">静态密码</label>
+        </div>
+
+        <input id="login_Submit" name="login_Submit" class="login-submit" type="button" value="登录">
+    </form>
+
+    <div class="login-download"></div>
+</div>
+<script type="text/javascript" src="js/app.js"></script></body>
+<script>
+	var isLogin = false;
+	document.getElementById('login_user').focus();
+	$(function () {
+	    $('#login_user').keyup(function () {
+	        if ($(this).val() == '') {
+	            $(this).focus();
+	            return;
+	        }
+	        doKeyDown($('#login_password'));
+	    });
+	    $('#login_password').keyup(function () {
+	        if ($(this).val() == '') {
+	            $(this).focus();
+	            return;
+	        }
+	        doKeyDown($('#login_Submit'));
+	    });
+	    $('#login_Submit').keyup(function () {
+	        submitLoginForm();
+	    }).click(function () {
+	        submitLoginForm();
+	    });
+	    function doLoginCheck() {
+	        if (frmLogin.login_user.value == "") {
+	            frmLogin.login_user.focus();
+	            frmLogin.login_user.select();
+	            return false;
+	        }
+	        if (frmLogin.login_password.value == "") {
+	            frmLogin.login_password.focus();
+	            frmLogin.login_password.select();
+	            return false;
+	        }
+	        if (isLogin) {
+	            return false;
+	        }
+	        else
+	            isLogin = true;
+	        return true;
+	    }
+	    function submitLoginForm() {
+	        if (doLoginCheck()) {
+	            frmLogin.submit();
+
+	        }
+	    }
+	});
+</script>
+</html>

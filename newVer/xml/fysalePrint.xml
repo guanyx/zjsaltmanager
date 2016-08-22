@@ -1,0 +1,479 @@
+﻿<?xml version="1.0"?>
+<wFaceInputPrintStyle>
+  <TitleSize>15</TitleSize>
+  <MulPageSpace>0</MulPageSpace>
+  <DataSize>8</DataSize>
+  <TitleHeight>42</TitleHeight>
+  <Title>no</Title>
+  <LeftMargin>10</LeftMargin>
+  <TopMargin>56</TopMargin>
+  <wFaceInputPrintCell>
+    <PrintCell>wFaceInputPrintCell</PrintCell>
+    <Width>700</Width>
+    <MappingName>杭州市盐业有限公司富阳分公司销售单</MappingName>
+    <Alignment>center</Alignment>
+    <Top>-38</Top>
+    <Left>38</Left>
+    <Height>30</Height>
+    <Label>True</Label>
+    <DataSize>16</DataSize>
+    <Grid>False</Grid>
+    <ToChina />
+  </wFaceInputPrintCell>
+  <wFaceInputPrintCell>
+    <PrintCell>wFaceInputPrintCell</PrintCell>
+    <Width>200</Width>
+    <MappingName>白色：记账联      红色：收款联  
+绿色：提货联      蓝色：统计联 
+黄色：随货联      灰白：客户联</MappingName>
+    <Alignment>left</Alignment>
+    <Top>0</Top>
+    <Left>270</Left>
+    <Height>40</Height>
+    <Label>True</Label>
+    <DataSize>10</DataSize>
+    <Grid>False</Grid>
+    <ToChina />
+  </wFaceInputPrintCell>
+  <wFaceInputPrintCell>
+    <PrintCell>wFaceInputPrintCell</PrintCell>
+    <Width>91</Width>
+    <MappingName>开单日期：</MappingName>
+    <Alignment>left</Alignment>
+    <Top>0</Top>
+    <Left>0</Left>
+    <Height>20</Height>
+    <Label>True</Label>
+    <DataSize>12</DataSize>
+    <Grid>False</Grid>
+    <ToChina />
+  </wFaceInputPrintCell>
+  <wFaceInputPrintCell>
+    <PrintCell>wFaceInputPrintCell</PrintCell>
+    <Width>228</Width>
+    <MappingName>CreateDate</MappingName>
+    <Alignment>left</Alignment>
+    <Top>0</Top>
+    <Left>95</Left>
+    <Height>20</Height>
+    <Label>False</Label>
+    <DataSize>14</DataSize>
+    <Grid>False</Grid>
+    <ToChina />
+  </wFaceInputPrintCell>
+  <wFaceInputPrintCell>
+    <PrintCell>wFaceInputPrintCell</PrintCell>
+    <Width>91</Width>
+    <MappingName>电脑单号：</MappingName>
+    <Alignment>left</Alignment>
+    <Top>0</Top>
+    <Left>510</Left>
+    <Height>20</Height>
+    <Label>True</Label>
+    <DataSize>12</DataSize>
+    <Grid>False</Grid>
+    <ToChina />
+  </wFaceInputPrintCell>
+  <wFaceInputPrintCell>
+    <PrintCell>wFaceInputPrintCell</PrintCell>
+    <Width>270</Width>
+    <MappingName>OrderNumber</MappingName>
+    <Alignment>left</Alignment>
+    <Top>0</Top>
+    <Left>616</Left>
+    <Height>20</Height>
+    <Label>False</Label>
+    <DataSize>14</DataSize>
+    <Grid>False</Grid>
+    <ToChina />
+  </wFaceInputPrintCell>
+  <wFaceInputPrintCell>
+    <PrintCell>wFaceInputPrintCell</PrintCell>
+    <Width>91</Width>
+    <MappingName>收款方式：</MappingName>
+    <Alignment>left</Alignment>
+    <Top>20</Top>
+    <Left>0</Left>
+    <Height>20</Height>
+    <Label>True</Label>
+    <DataSize>12</DataSize>
+    <Grid>False</Grid>
+    <ToChina />
+  </wFaceInputPrintCell>
+  <wFaceInputPrintCell>
+    <PrintCell>wFaceInputPrintCell</PrintCell>
+    <Width>228</Width>
+    <MappingName>PayTypeName</MappingName>
+    <Alignment>left</Alignment>
+    <Top>20</Top>
+    <Left>95</Left>
+    <Height>25</Height>
+    <Label>False</Label>
+    <DataSize>13</DataSize>
+    <Grid>False</Grid>
+    <ToChina />
+  </wFaceInputPrintCell>
+  <wFaceInputPrintCell>
+    <PrintCell>wFaceInputPrintCell</PrintCell>
+    <Width>91</Width>
+    <MappingName>客户编号：</MappingName>
+    <Alignment>left</Alignment>
+    <Top>20</Top>
+    <Left>510</Left>
+    <Height>20</Height>
+    <Label>True</Label>
+    <DataSize>12</DataSize>
+    <Grid>False</Grid>
+    <ToChina />
+  </wFaceInputPrintCell>
+  <wFaceInputPrintCell>
+    <PrintCell>wFaceInputPrintCell</PrintCell>
+    <Width>270</Width>
+    <MappingName>CustomerNo</MappingName>
+    <Alignment>left</Alignment>
+    <Top>20</Top>
+    <Left>616</Left>
+    <Height>25</Height>
+    <Label>False</Label>
+    <DataSize>14</DataSize>
+    <Grid>False</Grid>
+    <ToChina />
+  </wFaceInputPrintCell>
+  <wFaceInputPrintCell>
+    <PrintCell>wFaceInputPrintCell</PrintCell>
+    <Width>91</Width>
+    <MappingName>购货单位</MappingName>
+    <Alignment>left</Alignment>
+    <Top>40</Top>
+    <Left>0</Left>
+    <Height>20</Height>
+    <Label>True</Label>
+    <DataSize>12</DataSize>
+    <Grid>False</Grid>
+    <ToChina />
+  </wFaceInputPrintCell>
+  <wFaceInputPrintCell>
+    <PrintCell>wFaceInputPrintCell</PrintCell>
+    <Width>420</Width>
+    <MappingName>ChineseName</MappingName>
+    <Alignment>left</Alignment>
+    <Top>40</Top>
+    <Left>85</Left>
+    <Height>25</Height>
+    <Label>False</Label>
+    <DataSize>14</DataSize>
+    <Grid>False</Grid>
+    <ToChina />
+  </wFaceInputPrintCell>
+  <wFaceInputPrintCell>
+    <PrintCell>wFaceInputPrintCell</PrintCell>
+    <Width>91</Width>
+    <MappingName>联 系 人</MappingName>
+    <Alignment>left</Alignment>
+    <Top>40</Top>
+    <Left>518</Left>
+    <Height>20</Height>
+    <Label>True</Label>
+    <DataSize>12</DataSize>
+    <Grid>False</Grid>
+    <ToChina />
+  </wFaceInputPrintCell>
+  <wFaceInputPrintCell>
+    <PrintCell>wFaceInputPrintCell</PrintCell>
+    <Width>270</Width>
+    <MappingName>LinkMan</MappingName>
+    <Alignment>left</Alignment>
+    <Top>40</Top>
+    <Left>620</Left>
+    <Height>25</Height>
+    <Label>False</Label>
+    <DataSize>12</DataSize>
+    <Grid>False</Grid>
+    <ToChina />
+  </wFaceInputPrintCell>
+  <wFaceInputPrintCell>
+    <PrintCell>wFaceInputPrintCell</PrintCell>
+    <Width>91</Width>
+    <MappingName>送货地址</MappingName>
+    <Alignment>left</Alignment>
+    <Top>60</Top>
+    <Left>0</Left>
+    <Height>20</Height>
+    <Label>True</Label>
+    <DataSize>12</DataSize>
+    <Grid>False</Grid>
+    <ToChina />
+  </wFaceInputPrintCell>
+  <wFaceInputPrintCell>
+    <PrintCell>wFaceInputPrintCell</PrintCell>
+    <Width>228</Width>
+    <MappingName>DlvAdd</MappingName>
+    <Alignment>left</Alignment>
+    <Top>60</Top>
+    <Left>95</Left>
+    <Height>25</Height>
+    <Label>False</Label>
+    <DataSize>14</DataSize>
+    <Grid>False</Grid>
+    <ToChina />
+  </wFaceInputPrintCell>
+  <wFaceInputPrintCell>
+    <PrintCell>wFaceInputPrintCell</PrintCell>
+    <Width>91</Width>
+    <MappingName>客户电话</MappingName>
+    <Alignment>left</Alignment>
+    <Top>60</Top>
+    <Left>430</Left>
+    <Height>20</Height>
+    <Label>True</Label>
+    <DataSize>12</DataSize>
+    <Grid>False</Grid>
+    <ToChina />
+  </wFaceInputPrintCell>
+  <wFaceInputPrintCell>
+    <PrintCell>wFaceInputPrintCell</PrintCell>
+    <Width>270</Width>
+    <MappingName>CustomerPhone</MappingName>
+    <Alignment>left</Alignment>
+    <Top>60</Top>
+    <Left>518</Left>
+    <Height>25</Height>
+    <Label>False</Label>
+    <DataSize>14</DataSize>
+    <Grid>False</Grid>
+    <ToChina />
+  </wFaceInputPrintCell>
+<wFaceInputPrintCell>
+    <PrintCell>wFaceInputPrintCell</PrintCell>
+    <Width>84</Width>
+    <MappingName>仓库</MappingName>
+    <Alignment>center</Alignment>
+    <Top>170</Top>
+    <Left>421</Left>
+    <Height>30</Height>
+    <Label>True</Label>
+    <DataSize>12</DataSize>
+    <Grid>False</Grid>
+    <ToChina />
+  </wFaceInputPrintCell>
+<wFaceInputPrintCell>
+    <PrintCell>wFaceInputPrintCell</PrintCell>
+    <Width>200</Width>
+    <MappingName>OutStorName</MappingName>
+    <Alignment>left</Alignment>
+    <Top>170</Top>
+    <Left>510</Left>
+    <Height>30</Height>
+    <Label>False</Label>
+    <DataSize>14</DataSize>
+    <Grid>False</Grid>
+    <ToChina />
+  </wFaceInputPrintCell>
+  <wFaceInputPrintCell>
+    <PrintCell>wFaceInputPrintCell</PrintCell>
+    <Width>91</Width>
+    <MappingName>摘  要：</MappingName>
+    <Alignment>left</Alignment>
+    <Top>215</Top>
+    <Left>0</Left>
+    <Height>20</Height>
+    <Label>True</Label>
+    <DataSize>12</DataSize>
+    <Grid>False</Grid>
+    <ToChina />
+  </wFaceInputPrintCell>
+<wFaceInputPrintCell>
+    <PrintCell>wFaceInputPrintCell</PrintCell>
+    <Width>200</Width>
+    <MappingName>BillModeName</MappingName>
+    <Alignment>left</Alignment>
+    <Top>215</Top>
+    <Left>80</Left>
+    <Height>20</Height>
+    <Label>False</Label>
+    <DataSize>12</DataSize>
+    <Grid>False</Grid>
+    <ToChina />
+  </wFaceInputPrintCell>
+<wFaceInputPrintCell>
+    <PrintCell>wFaceInputPrintCell</PrintCell>
+    <Width>500</Width>
+    <MappingName>Remark</MappingName>
+    <Alignment>left</Alignment>
+    <Top>215</Top>
+    <Left>180</Left>
+    <Height>20</Height>
+    <Label>False</Label>
+    <DataSize>12</DataSize>
+    <Grid>False</Grid>
+    <ToChina />
+  </wFaceInputPrintCell>
+  <wFaceInputPrintCell>
+    <PrintCell>wFaceInputPrintCell</PrintCell>
+    <Width>91</Width>
+    <MappingName>客户签名：</MappingName>
+    <Alignment>left</Alignment>
+    <Top>235</Top>
+    <Left>0</Left>
+    <Height>20</Height>
+    <Label>True</Label>
+    <DataSize>12</DataSize>
+    <Grid>False</Grid>
+    <ToChina />
+  </wFaceInputPrintCell>
+  <wFaceInputPrintCell>
+    <PrintCell>wFaceInputPrintCell</PrintCell>
+    <Width>91</Width>
+    <MappingName>仓管员：</MappingName>
+    <Alignment>left</Alignment>
+    <Top>235</Top>
+    <Left>171</Left>
+    <Height>20</Height>
+    <Label>True</Label>
+    <DataSize>12</DataSize>
+    <Grid>False</Grid>
+    <ToChina />
+  </wFaceInputPrintCell>
+  <wFaceInputPrintCell>
+    <PrintCell>wFaceInputPrintCell</PrintCell>
+    <Width>91</Width>
+    <MappingName>收款人：</MappingName>
+    <Alignment>left</Alignment>
+    <Top>235</Top>
+    <Left>342</Left>
+    <Height>20</Height>
+    <Label>True</Label>
+    <DataSize>12</DataSize>
+    <Grid>False</Grid>
+    <ToChina />
+  </wFaceInputPrintCell>
+  <wFaceInputPrintCell>
+    <PrintCell>wFaceInputPrintCell</PrintCell>
+    <Width>91</Width>
+    <MappingName>开单人：</MappingName>
+    <Alignment>left</Alignment>
+    <Top>235</Top>
+    <Left>551</Left>
+    <Height>20</Height>
+    <Label>True</Label>
+    <DataSize>12</DataSize>
+    <Grid>False</Grid>
+    <ToChina />
+  </wFaceInputPrintCell>
+  <wFaceInputPrintCell>
+    <PrintCell>wFaceInputPrintCell</PrintCell>
+    <Width>91</Width>
+    <MappingName>OperName</MappingName>
+    <Alignment>left</Alignment>
+    <Top>230</Top>
+    <Left>627</Left>
+    <Height>25</Height>
+    <Label>False</Label>
+    <DataSize>14</DataSize>
+    <Grid>False</Grid>
+    <ToChina />
+  </wFaceInputPrintCell>
+<!--
+<wFaceInputPrintCell>
+    <PrintCell>wFaceInputPrintCell</PrintCell>
+    <Width>100</Width>
+    <MappingName>白色：记账联
+红色：提货联
+绿色：收款联
+蓝色：统计联
+黄色：随货联
+灰白：客户联</MappingName>
+    <Alignment>left</Alignment>
+    <Top>65</Top>
+    <Left>750</Left>
+    <Height>80</Height>
+    <Label>True</Label>
+    <DataSize>10</DataSize>
+    <Grid>False</Grid>
+    <ToChina />
+  </wFaceInputPrintCell>
+-->
+<wFaceInputPrintLine>
+    <PrintLine>wFaceInputPrintLine</PrintLine>
+    <StartX>0</StartX>
+    <StartY>38</StartY>
+    <EndX>751</EndX>
+    <EndY>38</EndY>
+  </wFaceInputPrintLine>
+<wFaceInputPrintLine>
+    <PrintLine>wFaceInputPrintLine</PrintLine>
+    <StartX>0</StartX>
+    <StartY>58</StartY>
+    <EndX>751</EndX>
+    <EndY>58</EndY>
+  </wFaceInputPrintLine>
+<wFaceInputPrintLine>
+    <PrintLine>wFaceInputPrintLine</PrintLine>
+    <StartX>0</StartX>
+    <StartY>38</StartY>
+    <EndX>0</EndX>
+    <EndY>80</EndY>
+  </wFaceInputPrintLine>
+<wFaceInputPrintLine>
+    <PrintLine>wFaceInputPrintLine</PrintLine>
+    <StartX>751</StartX>
+    <StartY>38</StartY>
+    <EndX>751</EndX>
+    <EndY>80</EndY>
+  </wFaceInputPrintLine>
+<wFaceInputPrintLine>
+    <PrintLine>wFaceInputPrintLine</PrintLine>
+    <StartX>80</StartX>
+    <StartY>38</StartY>
+    <EndX>80</EndX>
+    <EndY>80</EndY>
+  </wFaceInputPrintLine>
+<wFaceInputPrintLine>
+    <PrintLine>wFaceInputPrintLine</PrintLine>
+    <StartX>421</StartX>
+    <StartY>58</StartY>
+    <EndX>421</EndX>
+    <EndY>80</EndY>
+  </wFaceInputPrintLine>
+<wFaceInputPrintLine>
+    <PrintLine>wFaceInputPrintLine</PrintLine>
+    <StartX>421</StartX>
+    <StartY>162</StartY>
+    <EndX>421</EndX>
+    <EndY>203</EndY>
+  </wFaceInputPrintLine>
+<wFaceInputPrintLine>
+    <PrintLine>wFaceInputPrintLine</PrintLine>
+    <StartX>506</StartX>
+    <StartY>162</StartY>
+    <EndX>506</EndX>
+    <EndY>203</EndY>
+  </wFaceInputPrintLine>
+<wFaceInputPrintLine>
+    <PrintLine>wFaceInputPrintLine</PrintLine>
+    <StartX>506</StartX>
+    <StartY>38</StartY>
+    <EndX>506</EndX>
+    <EndY>80</EndY>
+  </wFaceInputPrintLine>
+<wFaceInputPrintLine>
+    <PrintLine>wFaceInputPrintLine</PrintLine>
+    <StartX>609</StartX>
+    <StartY>38</StartY>
+    <EndX>609</EndX>
+    <EndY>58</EndY>
+  </wFaceInputPrintLine>
+  <wFaceInputPrintCell>
+    <PrintCell>wFaceInputPrintCell</PrintCell>
+    <Width>100</Width>
+    <MappingName>http://122.224.134.21/xml/fysalegrid.xml</MappingName>
+    <Alignment>left</Alignment>
+    <Top>80</Top>
+    <Left>0</Left>
+    <Height>172</Height>
+    <Label>False</Label>
+    <DataSize>12</DataSize>
+    <Grid>True</Grid>
+    <ToChina />
+  </wFaceInputPrintCell>
+</wFaceInputPrintStyle>

@@ -1,0 +1,602 @@
+Log created at: 26-07-2012 07:52:48
+date:2012-07-26 19:52:48    发生异常页: http://localhost:4673/ZJSIGSite/ZJ/frmQtReportSetting.aspx﹤br﹥异常信息: c:\zjsalt\WebSite\ZJSIGSite\ZJ\frmQtReportSetting.aspx(22): error CS0103: 当前上下文中不存在名称“getComboBoxStore”   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)﹤br﹥
+date:2012-07-26 19:53:51    发生异常页: http://localhost:4673/ZJSIGSite/ZJ/frmQtReportSetting.aspx?method=getlist﹤br﹥异常信息: select * from (select PAGE_SRCRESULTSET_1.*, row_number() over(order by   qt_report_quota_no) as SORT_INDEXFIELDALIAS from (select *  FROM Qt_Report_Quota ) PAGE_SRCRESULTSET_1 ) PAGE_SRCRESULTSET_2 where PAGE_SRCRESULTSET_2.SORT_INDEXFIELDALIAS <= 10 and PAGE_SRCRESULTSET_2.SORT_INDEXFIELDALIAS > 0   在 ZJSIG.Core.UtlDB.SystemStaticDataAccess.getRecords(String sql, Object[] obj)
+   在 ZJSIG.ADM.DALOracle.GetListCommon.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, String primaryKey, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\GetListCommon.cs:行号 99   在 ZJSIG.ADM.DALOracle.GetListCommon.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, String primaryKey, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\GetListCommon.cs:行号 114
+   在 ZJSIG.ADM.BLL.BLGetListCommon.getJsonListByQuery(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sort) 位置 C:\zjsalt\ZJSIG.ADM\Source\Business.Logic\ZJSIG.ADM.BusinessLogic\BLGetListCommon.cs:行号 37
+   在 ZJSIG.UIProcess.QT.UIQtReport.getPageList(Page p) 位置 C:\zjsalt\WebSite\UIProcess\ZJSIG.UIProcess\QT\UIQtReport.cs:行号 36
+   在 ZJ_frmQtReportSetting.Page_Load(Object sender, EventArgs e) 位置 c:\zjsalt\WebSite\ZJSIGSite\ZJ\frmQtReportSetting.aspx.cs:行号 22
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)﹤br﹥
+date:2012-07-26 19:53:51    发生异常页: http://localhost:4673/ZJSIGSite/ZJ/errorPage.aspx﹤br﹥异常信息: 文件“/ZJSIGSite/ZJ/errorPage.aspx”不存在。   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)﹤br﹥
+date:2012-07-26 19:53:53    发生异常页: http://localhost:4673/ZJSIGSite/ZJ/frmQtReportSetting.aspx?method=getlist﹤br﹥异常信息: select * from (select PAGE_SRCRESULTSET_1.*, row_number() over(order by   qt_report_quota_no) as SORT_INDEXFIELDALIAS from (select *  FROM Qt_Report_Quota ) PAGE_SRCRESULTSET_1 ) PAGE_SRCRESULTSET_2 where PAGE_SRCRESULTSET_2.SORT_INDEXFIELDALIAS <= 10 and PAGE_SRCRESULTSET_2.SORT_INDEXFIELDALIAS > 0   在 ZJSIG.Core.UtlDB.SystemStaticDataAccess.getRecords(String sql, Object[] obj)
+   在 ZJSIG.ADM.DALOracle.GetListCommon.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, String primaryKey, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\GetListCommon.cs:行号 99   在 ZJSIG.ADM.DALOracle.GetListCommon.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, String primaryKey, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\GetListCommon.cs:行号 114
+   在 ZJSIG.ADM.BLL.BLGetListCommon.getJsonListByQuery(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sort) 位置 C:\zjsalt\ZJSIG.ADM\Source\Business.Logic\ZJSIG.ADM.BusinessLogic\BLGetListCommon.cs:行号 37
+   在 ZJSIG.UIProcess.QT.UIQtReport.getPageList(Page p) 位置 C:\zjsalt\WebSite\UIProcess\ZJSIG.UIProcess\QT\UIQtReport.cs:行号 36
+   在 ZJ_frmQtReportSetting.Page_Load(Object sender, EventArgs e) 位置 c:\zjsalt\WebSite\ZJSIGSite\ZJ\frmQtReportSetting.aspx.cs:行号 22
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)﹤br﹥
+date:2012-07-26 19:53:53    发生异常页: http://localhost:4673/ZJSIGSite/ZJ/errorPage.aspx﹤br﹥异常信息: 文件“/ZJSIGSite/ZJ/errorPage.aspx”不存在。   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)﹤br﹥
+date:2012-07-26 19:55:37    发生异常页: http://localhost:4673/ZJSIGSite/ZJ/frmQtReportSetting.aspx?method=getlist﹤br﹥异常信息: select * from (select PAGE_SRCRESULTSET_1.*, row_number() over(order by   qt_report_quota_no) as SORT_INDEXFIELDALIAS from (select *  FROM Qt_Report_Quota ) PAGE_SRCRESULTSET_1 ) PAGE_SRCRESULTSET_2 where PAGE_SRCRESULTSET_2.SORT_INDEXFIELDALIAS <= 10 and PAGE_SRCRESULTSET_2.SORT_INDEXFIELDALIAS > 0   在 ZJSIG.Core.UtlDB.SystemStaticDataAccess.getRecords(String sql, Object[] obj)
+   在 ZJSIG.ADM.DALOracle.GetListCommon.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, String primaryKey, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\GetListCommon.cs:行号 99   在 ZJSIG.ADM.DALOracle.GetListCommon.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, String primaryKey, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\GetListCommon.cs:行号 114
+   在 ZJSIG.ADM.BLL.BLGetListCommon.getJsonListByQuery(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sort) 位置 C:\zjsalt\ZJSIG.ADM\Source\Business.Logic\ZJSIG.ADM.BusinessLogic\BLGetListCommon.cs:行号 37
+   在 ZJSIG.UIProcess.QT.UIQtReport.getPageList(Page p) 位置 C:\zjsalt\WebSite\UIProcess\ZJSIG.UIProcess\QT\UIQtReport.cs:行号 36
+   在 ZJ_frmQtReportSetting.Page_Load(Object sender, EventArgs e) 位置 c:\zjsalt\WebSite\ZJSIGSite\ZJ\frmQtReportSetting.aspx.cs:行号 22
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)﹤br﹥
+date:2012-07-26 19:55:37    发生异常页: http://localhost:4673/ZJSIGSite/ZJ/errorPage.aspx﹤br﹥异常信息: 文件“/ZJSIGSite/ZJ/errorPage.aspx”不存在。   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)﹤br﹥
+date:2012-07-26 19:55:37    发生异常页: http://localhost:4673/ZJSIGSite/ZJ/frmQtReportSetting.aspx?method=getlist﹤br﹥异常信息: select * from (select PAGE_SRCRESULTSET_1.*, row_number() over(order by   qt_report_quota_no) as SORT_INDEXFIELDALIAS from (select *  FROM Qt_Report_Quota ) PAGE_SRCRESULTSET_1 ) PAGE_SRCRESULTSET_2 where PAGE_SRCRESULTSET_2.SORT_INDEXFIELDALIAS <= 10 and PAGE_SRCRESULTSET_2.SORT_INDEXFIELDALIAS > 0   在 ZJSIG.Core.UtlDB.SystemStaticDataAccess.getRecords(String sql, Object[] obj)
+   在 ZJSIG.ADM.DALOracle.GetListCommon.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, String primaryKey, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\GetListCommon.cs:行号 99   在 ZJSIG.ADM.DALOracle.GetListCommon.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, String primaryKey, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\GetListCommon.cs:行号 114
+   在 ZJSIG.ADM.BLL.BLGetListCommon.getJsonListByQuery(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sort) 位置 C:\zjsalt\ZJSIG.ADM\Source\Business.Logic\ZJSIG.ADM.BusinessLogic\BLGetListCommon.cs:行号 37
+   在 ZJSIG.UIProcess.QT.UIQtReport.getPageList(Page p) 位置 C:\zjsalt\WebSite\UIProcess\ZJSIG.UIProcess\QT\UIQtReport.cs:行号 36
+   在 ZJ_frmQtReportSetting.Page_Load(Object sender, EventArgs e) 位置 c:\zjsalt\WebSite\ZJSIGSite\ZJ\frmQtReportSetting.aspx.cs:行号 22
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)﹤br﹥
+date:2012-07-26 19:55:37    发生异常页: http://localhost:4673/ZJSIGSite/ZJ/errorPage.aspx﹤br﹥异常信息: 文件“/ZJSIGSite/ZJ/errorPage.aspx”不存在。   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)﹤br﹥
+date:2012-07-26 19:55:38    发生异常页: http://localhost:4673/ZJSIGSite/ZJ/frmQtReportSetting.aspx?method=getlist﹤br﹥异常信息: select * from (select PAGE_SRCRESULTSET_1.*, row_number() over(order by   qt_report_quota_no) as SORT_INDEXFIELDALIAS from (select *  FROM Qt_Report_Quota ) PAGE_SRCRESULTSET_1 ) PAGE_SRCRESULTSET_2 where PAGE_SRCRESULTSET_2.SORT_INDEXFIELDALIAS <= 10 and PAGE_SRCRESULTSET_2.SORT_INDEXFIELDALIAS > 0   在 ZJSIG.Core.UtlDB.SystemStaticDataAccess.getRecords(String sql, Object[] obj)
+   在 ZJSIG.ADM.DALOracle.GetListCommon.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, String primaryKey, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\GetListCommon.cs:行号 99   在 ZJSIG.ADM.DALOracle.GetListCommon.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, String primaryKey, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\GetListCommon.cs:行号 114
+   在 ZJSIG.ADM.BLL.BLGetListCommon.getJsonListByQuery(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sort) 位置 C:\zjsalt\ZJSIG.ADM\Source\Business.Logic\ZJSIG.ADM.BusinessLogic\BLGetListCommon.cs:行号 37
+   在 ZJSIG.UIProcess.QT.UIQtReport.getPageList(Page p) 位置 C:\zjsalt\WebSite\UIProcess\ZJSIG.UIProcess\QT\UIQtReport.cs:行号 36
+   在 ZJ_frmQtReportSetting.Page_Load(Object sender, EventArgs e) 位置 c:\zjsalt\WebSite\ZJSIGSite\ZJ\frmQtReportSetting.aspx.cs:行号 22
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)﹤br﹥
+date:2012-07-26 19:55:38    发生异常页: http://localhost:4673/ZJSIGSite/ZJ/errorPage.aspx﹤br﹥异常信息: 文件“/ZJSIGSite/ZJ/errorPage.aspx”不存在。   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)﹤br﹥
+date:2012-07-26 19:56:02    发生异常页: http://localhost:4673/ZJSIGSite/ZJ/frmQtReportSetting.aspx?method=getlist﹤br﹥异常信息: select * from (select PAGE_SRCRESULTSET_1.*, row_number() over(order by   qt_report_quota_no) as SORT_INDEXFIELDALIAS from (select *  FROM Qt_Report_Quota ) PAGE_SRCRESULTSET_1 ) PAGE_SRCRESULTSET_2 where PAGE_SRCRESULTSET_2.SORT_INDEXFIELDALIAS <= 10 and PAGE_SRCRESULTSET_2.SORT_INDEXFIELDALIAS > 0   在 ZJSIG.Core.UtlDB.SystemStaticDataAccess.getRecords(String sql, Object[] obj)
+   在 ZJSIG.ADM.DALOracle.GetListCommon.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, String primaryKey, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\GetListCommon.cs:行号 99   在 ZJSIG.ADM.DALOracle.GetListCommon.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, String primaryKey, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\GetListCommon.cs:行号 114
+   在 ZJSIG.ADM.BLL.BLGetListCommon.getJsonListByQuery(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sort) 位置 C:\zjsalt\ZJSIG.ADM\Source\Business.Logic\ZJSIG.ADM.BusinessLogic\BLGetListCommon.cs:行号 37
+   在 ZJSIG.UIProcess.QT.UIQtReport.getPageList(Page p) 位置 C:\zjsalt\WebSite\UIProcess\ZJSIG.UIProcess\QT\UIQtReport.cs:行号 36
+   在 ZJ_frmQtReportSetting.Page_Load(Object sender, EventArgs e) 位置 c:\zjsalt\WebSite\ZJSIGSite\ZJ\frmQtReportSetting.aspx.cs:行号 22
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)﹤br﹥
+date:2012-07-26 19:56:02    发生异常页: http://localhost:4673/ZJSIGSite/ZJ/errorPage.aspx﹤br﹥异常信息: 文件“/ZJSIGSite/ZJ/errorPage.aspx”不存在。   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)﹤br﹥
+date:2012-07-26 19:56:03    发生异常页: http://localhost:4673/ZJSIGSite/ZJ/frmQtReportSetting.aspx?method=getlist﹤br﹥异常信息: select * from (select PAGE_SRCRESULTSET_1.*, row_number() over(order by   qt_report_quota_no) as SORT_INDEXFIELDALIAS from (select *  FROM Qt_Report_Quota ) PAGE_SRCRESULTSET_1 ) PAGE_SRCRESULTSET_2 where PAGE_SRCRESULTSET_2.SORT_INDEXFIELDALIAS <= 10 and PAGE_SRCRESULTSET_2.SORT_INDEXFIELDALIAS > 0   在 ZJSIG.Core.UtlDB.SystemStaticDataAccess.getRecords(String sql, Object[] obj)
+   在 ZJSIG.ADM.DALOracle.GetListCommon.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, String primaryKey, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\GetListCommon.cs:行号 99   在 ZJSIG.ADM.DALOracle.GetListCommon.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, String primaryKey, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\GetListCommon.cs:行号 114
+   在 ZJSIG.ADM.BLL.BLGetListCommon.getJsonListByQuery(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sort) 位置 C:\zjsalt\ZJSIG.ADM\Source\Business.Logic\ZJSIG.ADM.BusinessLogic\BLGetListCommon.cs:行号 37
+   在 ZJSIG.UIProcess.QT.UIQtReport.getPageList(Page p) 位置 C:\zjsalt\WebSite\UIProcess\ZJSIG.UIProcess\QT\UIQtReport.cs:行号 36
+   在 ZJ_frmQtReportSetting.Page_Load(Object sender, EventArgs e) 位置 c:\zjsalt\WebSite\ZJSIGSite\ZJ\frmQtReportSetting.aspx.cs:行号 22
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)﹤br﹥
+date:2012-07-26 19:56:03    发生异常页: http://localhost:4673/ZJSIGSite/ZJ/errorPage.aspx﹤br﹥异常信息: 文件“/ZJSIGSite/ZJ/errorPage.aspx”不存在。   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)﹤br﹥
+date:2012-07-26 19:56:13    发生异常页: http://localhost:4673/ZJSIGSite/ZJ/frmQtReportSetting.aspx?method=getlist﹤br﹥异常信息: select * from (select PAGE_SRCRESULTSET_1.*, row_number() over(order by   qt_report_quota_no) as SORT_INDEXFIELDALIAS from (select *  FROM Qt_Report_Quota ) PAGE_SRCRESULTSET_1 ) PAGE_SRCRESULTSET_2 where PAGE_SRCRESULTSET_2.SORT_INDEXFIELDALIAS <= 10 and PAGE_SRCRESULTSET_2.SORT_INDEXFIELDALIAS > 0   在 ZJSIG.Core.UtlDB.SystemStaticDataAccess.getRecords(String sql, Object[] obj)
+   在 ZJSIG.ADM.DALOracle.GetListCommon.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, String primaryKey, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\GetListCommon.cs:行号 99   在 ZJSIG.ADM.DALOracle.GetListCommon.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, String primaryKey, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\GetListCommon.cs:行号 114
+   在 ZJSIG.ADM.BLL.BLGetListCommon.getJsonListByQuery(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sort) 位置 C:\zjsalt\ZJSIG.ADM\Source\Business.Logic\ZJSIG.ADM.BusinessLogic\BLGetListCommon.cs:行号 37
+   在 ZJSIG.UIProcess.QT.UIQtReport.getPageList(Page p) 位置 C:\zjsalt\WebSite\UIProcess\ZJSIG.UIProcess\QT\UIQtReport.cs:行号 36
+   在 ZJ_frmQtReportSetting.Page_Load(Object sender, EventArgs e) 位置 c:\zjsalt\WebSite\ZJSIGSite\ZJ\frmQtReportSetting.aspx.cs:行号 22
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)﹤br﹥
+date:2012-07-26 19:56:13    发生异常页: http://localhost:4673/ZJSIGSite/ZJ/errorPage.aspx﹤br﹥异常信息: 文件“/ZJSIGSite/ZJ/errorPage.aspx”不存在。   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)﹤br﹥
+date:2012-07-26 19:56:20    发生异常页: http://localhost:4673/ZJSIGSite/ZJ/frmQtReportSetting.aspx?method=getlist﹤br﹥异常信息: select * from (select PAGE_SRCRESULTSET_1.*, row_number() over(order by   qt_report_quota_no) as SORT_INDEXFIELDALIAS from (select *  FROM Qt_Report_Quota ) PAGE_SRCRESULTSET_1 ) PAGE_SRCRESULTSET_2 where PAGE_SRCRESULTSET_2.SORT_INDEXFIELDALIAS <= 10 and PAGE_SRCRESULTSET_2.SORT_INDEXFIELDALIAS > 0   在 ZJSIG.Core.UtlDB.SystemStaticDataAccess.getRecords(String sql, Object[] obj)
+   在 ZJSIG.ADM.DALOracle.GetListCommon.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, String primaryKey, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\GetListCommon.cs:行号 99   在 ZJSIG.ADM.DALOracle.GetListCommon.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, String primaryKey, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\GetListCommon.cs:行号 114
+   在 ZJSIG.ADM.BLL.BLGetListCommon.getJsonListByQuery(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sort) 位置 C:\zjsalt\ZJSIG.ADM\Source\Business.Logic\ZJSIG.ADM.BusinessLogic\BLGetListCommon.cs:行号 37
+   在 ZJSIG.UIProcess.QT.UIQtReport.getPageList(Page p) 位置 C:\zjsalt\WebSite\UIProcess\ZJSIG.UIProcess\QT\UIQtReport.cs:行号 36
+   在 ZJ_frmQtReportSetting.Page_Load(Object sender, EventArgs e) 位置 c:\zjsalt\WebSite\ZJSIGSite\ZJ\frmQtReportSetting.aspx.cs:行号 22
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)﹤br﹥
+date:2012-07-26 19:56:20    发生异常页: http://localhost:4673/ZJSIGSite/ZJ/errorPage.aspx﹤br﹥异常信息: 文件“/ZJSIGSite/ZJ/errorPage.aspx”不存在。   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)﹤br﹥
+date:2012-07-26 19:57:17    发生异常页: http://localhost:4673/ZJSIGSite/ZJ/frmQtReportSetting.aspx?method=getlist﹤br﹥异常信息: select * from (select PAGE_SRCRESULTSET_1.*, row_number() over(order by   qt_report_quota_no) as SORT_INDEXFIELDALIAS from (select *  FROM Qt_Report_Quota ) PAGE_SRCRESULTSET_1 ) PAGE_SRCRESULTSET_2 where PAGE_SRCRESULTSET_2.SORT_INDEXFIELDALIAS <= 10 and PAGE_SRCRESULTSET_2.SORT_INDEXFIELDALIAS > 0   在 ZJSIG.Core.UtlDB.SystemStaticDataAccess.getRecords(String sql, Object[] obj)
+   在 ZJSIG.ADM.DALOracle.GetListCommon.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, String primaryKey, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\GetListCommon.cs:行号 99   在 ZJSIG.ADM.DALOracle.GetListCommon.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, String primaryKey, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\GetListCommon.cs:行号 114
+   在 ZJSIG.ADM.BLL.BLGetListCommon.getJsonListByQuery(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sort) 位置 C:\zjsalt\ZJSIG.ADM\Source\Business.Logic\ZJSIG.ADM.BusinessLogic\BLGetListCommon.cs:行号 37
+   在 ZJSIG.UIProcess.QT.UIQtReport.getPageList(Page p) 位置 C:\zjsalt\WebSite\UIProcess\ZJSIG.UIProcess\QT\UIQtReport.cs:行号 36
+   在 ZJ_frmQtReportSetting.Page_Load(Object sender, EventArgs e) 位置 c:\zjsalt\WebSite\ZJSIGSite\ZJ\frmQtReportSetting.aspx.cs:行号 22
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)﹤br﹥
+date:2012-07-26 19:57:17    发生异常页: http://localhost:4673/ZJSIGSite/ZJ/errorPage.aspx﹤br﹥异常信息: 文件“/ZJSIGSite/ZJ/errorPage.aspx”不存在。   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)﹤br﹥
+date:2012-07-26 19:57:54    发生异常页: http://localhost:4673/ZJSIGSite/ZJ/frmQtReportSetting.aspx?method=getlist﹤br﹥异常信息: select * from (select PAGE_SRCRESULTSET_1.*, row_number() over(order by   qt_report_quota_no) as SORT_INDEXFIELDALIAS from (select *  FROM Qt_Report_Quota ) PAGE_SRCRESULTSET_1 ) PAGE_SRCRESULTSET_2 where PAGE_SRCRESULTSET_2.SORT_INDEXFIELDALIAS <= 10 and PAGE_SRCRESULTSET_2.SORT_INDEXFIELDALIAS > 0   在 ZJSIG.Core.UtlDB.SystemStaticDataAccess.getRecords(String sql, Object[] obj)
+   在 ZJSIG.ADM.DALOracle.GetListCommon.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, String primaryKey, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\GetListCommon.cs:行号 99   在 ZJSIG.ADM.DALOracle.GetListCommon.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, String primaryKey, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\GetListCommon.cs:行号 114
+   在 ZJSIG.ADM.BLL.BLGetListCommon.getJsonListByQuery(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sort) 位置 C:\zjsalt\ZJSIG.ADM\Source\Business.Logic\ZJSIG.ADM.BusinessLogic\BLGetListCommon.cs:行号 37
+   在 ZJSIG.UIProcess.QT.UIQtReport.getPageList(Page p) 位置 C:\zjsalt\WebSite\UIProcess\ZJSIG.UIProcess\QT\UIQtReport.cs:行号 36
+   在 ZJ_frmQtReportSetting.Page_Load(Object sender, EventArgs e) 位置 c:\zjsalt\WebSite\ZJSIGSite\ZJ\frmQtReportSetting.aspx.cs:行号 22
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)﹤br﹥
+date:2012-07-26 19:57:54    发生异常页: http://localhost:4673/ZJSIGSite/ZJ/errorPage.aspx﹤br﹥异常信息: 文件“/ZJSIGSite/ZJ/errorPage.aspx”不存在。   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)﹤br﹥
+date:2012-07-26 19:57:55    发生异常页: http://localhost:4673/ZJSIGSite/ZJ/frmQtReportSetting.aspx?method=getlist﹤br﹥异常信息: select * from (select PAGE_SRCRESULTSET_1.*, row_number() over(order by   qt_report_quota_no) as SORT_INDEXFIELDALIAS from (select *  FROM Qt_Report_Quota ) PAGE_SRCRESULTSET_1 ) PAGE_SRCRESULTSET_2 where PAGE_SRCRESULTSET_2.SORT_INDEXFIELDALIAS <= 10 and PAGE_SRCRESULTSET_2.SORT_INDEXFIELDALIAS > 0   在 ZJSIG.Core.UtlDB.SystemStaticDataAccess.getRecords(String sql, Object[] obj)
+   在 ZJSIG.ADM.DALOracle.GetListCommon.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, String primaryKey, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\GetListCommon.cs:行号 99   在 ZJSIG.ADM.DALOracle.GetListCommon.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, String primaryKey, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\GetListCommon.cs:行号 114
+   在 ZJSIG.ADM.BLL.BLGetListCommon.getJsonListByQuery(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sort) 位置 C:\zjsalt\ZJSIG.ADM\Source\Business.Logic\ZJSIG.ADM.BusinessLogic\BLGetListCommon.cs:行号 37
+   在 ZJSIG.UIProcess.QT.UIQtReport.getPageList(Page p) 位置 C:\zjsalt\WebSite\UIProcess\ZJSIG.UIProcess\QT\UIQtReport.cs:行号 36
+   在 ZJ_frmQtReportSetting.Page_Load(Object sender, EventArgs e) 位置 c:\zjsalt\WebSite\ZJSIGSite\ZJ\frmQtReportSetting.aspx.cs:行号 22
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)﹤br﹥
+date:2012-07-26 19:57:55    发生异常页: http://localhost:4673/ZJSIGSite/ZJ/errorPage.aspx﹤br﹥异常信息: 文件“/ZJSIGSite/ZJ/errorPage.aspx”不存在。   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)﹤br﹥
+date:2012-07-26 19:57:56    发生异常页: http://localhost:4673/ZJSIGSite/ZJ/frmQtReportSetting.aspx?method=getlist﹤br﹥异常信息: select * from (select PAGE_SRCRESULTSET_1.*, row_number() over(order by   qt_report_quota_no) as SORT_INDEXFIELDALIAS from (select *  FROM Qt_Report_Quota ) PAGE_SRCRESULTSET_1 ) PAGE_SRCRESULTSET_2 where PAGE_SRCRESULTSET_2.SORT_INDEXFIELDALIAS <= 10 and PAGE_SRCRESULTSET_2.SORT_INDEXFIELDALIAS > 0   在 ZJSIG.Core.UtlDB.SystemStaticDataAccess.getRecords(String sql, Object[] obj)
+   在 ZJSIG.ADM.DALOracle.GetListCommon.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, String primaryKey, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\GetListCommon.cs:行号 99   在 ZJSIG.ADM.DALOracle.GetListCommon.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, String primaryKey, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\GetListCommon.cs:行号 114
+   在 ZJSIG.ADM.BLL.BLGetListCommon.getJsonListByQuery(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sort) 位置 C:\zjsalt\ZJSIG.ADM\Source\Business.Logic\ZJSIG.ADM.BusinessLogic\BLGetListCommon.cs:行号 37
+   在 ZJSIG.UIProcess.QT.UIQtReport.getPageList(Page p) 位置 C:\zjsalt\WebSite\UIProcess\ZJSIG.UIProcess\QT\UIQtReport.cs:行号 36
+   在 ZJ_frmQtReportSetting.Page_Load(Object sender, EventArgs e) 位置 c:\zjsalt\WebSite\ZJSIGSite\ZJ\frmQtReportSetting.aspx.cs:行号 22
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)﹤br﹥
+date:2012-07-26 19:57:56    发生异常页: http://localhost:4673/ZJSIGSite/ZJ/errorPage.aspx﹤br﹥异常信息: 文件“/ZJSIGSite/ZJ/errorPage.aspx”不存在。   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)﹤br﹥
+date:2012-07-26 19:59:00    发生异常页: http://localhost:4673/ZJSIGSite/ZJ/frmQtReportSetting.aspx?method=getlist﹤br﹥异常信息: select * from (select PAGE_SRCRESULTSET_1.*, row_number() over(order by   qt_report_quota_no) as SORT_INDEXFIELDALIAS from (select *  FROM Qt_Report_Quota ) PAGE_SRCRESULTSET_1 ) PAGE_SRCRESULTSET_2 where PAGE_SRCRESULTSET_2.SORT_INDEXFIELDALIAS <= 10 and PAGE_SRCRESULTSET_2.SORT_INDEXFIELDALIAS > 0   在 ZJSIG.Core.UtlDB.SystemStaticDataAccess.getRecords(String sql, Object[] obj)
+   在 ZJSIG.ADM.DALOracle.GetListCommon.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, String primaryKey, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\GetListCommon.cs:行号 99   在 ZJSIG.ADM.DALOracle.GetListCommon.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, String primaryKey, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\GetListCommon.cs:行号 114
+   在 ZJSIG.ADM.BLL.BLGetListCommon.getJsonListByQuery(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sort) 位置 C:\zjsalt\ZJSIG.ADM\Source\Business.Logic\ZJSIG.ADM.BusinessLogic\BLGetListCommon.cs:行号 37
+   在 ZJSIG.UIProcess.QT.UIQtReport.getPageList(Page p) 位置 C:\zjsalt\WebSite\UIProcess\ZJSIG.UIProcess\QT\UIQtReport.cs:行号 36
+   在 ZJ_frmQtReportSetting.Page_Load(Object sender, EventArgs e) 位置 c:\zjsalt\WebSite\ZJSIGSite\ZJ\frmQtReportSetting.aspx.cs:行号 22
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)﹤br﹥
+date:2012-07-26 19:59:00    发生异常页: http://localhost:4673/ZJSIGSite/ZJ/errorPage.aspx﹤br﹥异常信息: 文件“/ZJSIGSite/ZJ/errorPage.aspx”不存在。   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)﹤br﹥
+date:2012-07-26 19:59:03    发生异常页: http://localhost:4673/ZJSIGSite/ZJ/frmQtReportSetting.aspx?method=getlist﹤br﹥异常信息: select * from (select PAGE_SRCRESULTSET_1.*, row_number() over(order by   qt_report_quota_no) as SORT_INDEXFIELDALIAS from (select *  FROM Qt_Report_Quota ) PAGE_SRCRESULTSET_1 ) PAGE_SRCRESULTSET_2 where PAGE_SRCRESULTSET_2.SORT_INDEXFIELDALIAS <= 10 and PAGE_SRCRESULTSET_2.SORT_INDEXFIELDALIAS > 0   在 ZJSIG.Core.UtlDB.SystemStaticDataAccess.getRecords(String sql, Object[] obj)
+   在 ZJSIG.ADM.DALOracle.GetListCommon.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, String primaryKey, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\GetListCommon.cs:行号 99   在 ZJSIG.ADM.DALOracle.GetListCommon.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, String primaryKey, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\GetListCommon.cs:行号 114
+   在 ZJSIG.ADM.BLL.BLGetListCommon.getJsonListByQuery(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sort) 位置 C:\zjsalt\ZJSIG.ADM\Source\Business.Logic\ZJSIG.ADM.BusinessLogic\BLGetListCommon.cs:行号 37
+   在 ZJSIG.UIProcess.QT.UIQtReport.getPageList(Page p) 位置 C:\zjsalt\WebSite\UIProcess\ZJSIG.UIProcess\QT\UIQtReport.cs:行号 36
+   在 ZJ_frmQtReportSetting.Page_Load(Object sender, EventArgs e) 位置 c:\zjsalt\WebSite\ZJSIGSite\ZJ\frmQtReportSetting.aspx.cs:行号 22
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)﹤br﹥
+date:2012-07-26 19:59:03    发生异常页: http://localhost:4673/ZJSIGSite/ZJ/errorPage.aspx﹤br﹥异常信息: 文件“/ZJSIGSite/ZJ/errorPage.aspx”不存在。   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)﹤br﹥
+date:2012-07-26 19:59:27    发生异常页: http://localhost:4673/ZJSIGSite/ZJ/frmQtReportSetting.aspx?method=getlist﹤br﹥异常信息: select * from (select PAGE_SRCRESULTSET_1.*, row_number() over(order by   qt_report_quota_no) as SORT_INDEXFIELDALIAS from (select *  FROM Qt_Report_Quota ) PAGE_SRCRESULTSET_1 ) PAGE_SRCRESULTSET_2 where PAGE_SRCRESULTSET_2.SORT_INDEXFIELDALIAS <= 10 and PAGE_SRCRESULTSET_2.SORT_INDEXFIELDALIAS > 0   在 ZJSIG.Core.UtlDB.SystemStaticDataAccess.getRecords(String sql, Object[] obj)
+   在 ZJSIG.ADM.DALOracle.GetListCommon.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, String primaryKey, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\GetListCommon.cs:行号 99   在 ZJSIG.ADM.DALOracle.GetListCommon.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, String primaryKey, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\GetListCommon.cs:行号 114
+   在 ZJSIG.ADM.BLL.BLGetListCommon.getJsonListByQuery(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sort) 位置 C:\zjsalt\ZJSIG.ADM\Source\Business.Logic\ZJSIG.ADM.BusinessLogic\BLGetListCommon.cs:行号 37
+   在 ZJSIG.UIProcess.QT.UIQtReport.getPageList(Page p) 位置 C:\zjsalt\WebSite\UIProcess\ZJSIG.UIProcess\QT\UIQtReport.cs:行号 36
+   在 ZJ_frmQtReportSetting.Page_Load(Object sender, EventArgs e) 位置 c:\zjsalt\WebSite\ZJSIGSite\ZJ\frmQtReportSetting.aspx.cs:行号 22
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)﹤br﹥
+date:2012-07-26 19:59:27    发生异常页: http://localhost:4673/ZJSIGSite/ZJ/errorPage.aspx﹤br﹥异常信息: 文件“/ZJSIGSite/ZJ/errorPage.aspx”不存在。   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)﹤br﹥
+date:2012-07-26 20:05:35    发生异常页: http://localhost:4673/ZJSIGSite/ZJ/frmQtReportSetting.aspx?method=getlist﹤br﹥异常信息: select * from (select PAGE_SRCRESULTSET_1.*, row_number() over(order by   qt_report_quota_no) as SORT_INDEXFIELDALIAS from (select *  FROM Qt_Report_Quota ) PAGE_SRCRESULTSET_1 ) PAGE_SRCRESULTSET_2 where PAGE_SRCRESULTSET_2.SORT_INDEXFIELDALIAS <= 10 and PAGE_SRCRESULTSET_2.SORT_INDEXFIELDALIAS > 0   在 ZJSIG.Core.UtlDB.SystemStaticDataAccess.getRecords(String sql, Object[] obj)
+   在 ZJSIG.ADM.DALOracle.GetListCommon.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, String primaryKey, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\GetListCommon.cs:行号 99   在 ZJSIG.ADM.DALOracle.GetListCommon.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, String primaryKey, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\GetListCommon.cs:行号 114
+   在 ZJSIG.ADM.BLL.BLGetListCommon.getJsonListByQuery(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sort) 位置 C:\zjsalt\ZJSIG.ADM\Source\Business.Logic\ZJSIG.ADM.BusinessLogic\BLGetListCommon.cs:行号 37
+   在 ZJSIG.UIProcess.QT.UIQtReport.getPageList(Page p) 位置 C:\zjsalt\WebSite\UIProcess\ZJSIG.UIProcess\QT\UIQtReport.cs:行号 36
+   在 ZJ_frmQtReportSetting.Page_Load(Object sender, EventArgs e) 位置 c:\zjsalt\WebSite\ZJSIGSite\ZJ\frmQtReportSetting.aspx.cs:行号 22
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)﹤br﹥
+date:2012-07-26 20:05:35    发生异常页: http://localhost:4673/ZJSIGSite/ZJ/errorPage.aspx﹤br﹥异常信息: 文件“/ZJSIGSite/ZJ/errorPage.aspx”不存在。   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)﹤br﹥
+date:2012-07-26 20:06:00    发生异常页: http://localhost:4673/ZJSIGSite/ZJ/frmQtReportSetting.aspx?method=getlist﹤br﹥异常信息: select * from (select PAGE_SRCRESULTSET_1.*, row_number() over(order by   qt_report_quota_no) as SORT_INDEXFIELDALIAS from (select *  FROM Qt_Report_Quota ) PAGE_SRCRESULTSET_1 ) PAGE_SRCRESULTSET_2 where PAGE_SRCRESULTSET_2.SORT_INDEXFIELDALIAS <= 10 and PAGE_SRCRESULTSET_2.SORT_INDEXFIELDALIAS > 0   在 ZJSIG.Core.UtlDB.SystemStaticDataAccess.getRecords(String sql, Object[] obj)
+   在 ZJSIG.ADM.DALOracle.GetListCommon.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, String primaryKey, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\GetListCommon.cs:行号 99   在 ZJSIG.ADM.DALOracle.GetListCommon.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, String primaryKey, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\GetListCommon.cs:行号 114
+   在 ZJSIG.ADM.BLL.BLGetListCommon.getJsonListByQuery(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sort) 位置 C:\zjsalt\ZJSIG.ADM\Source\Business.Logic\ZJSIG.ADM.BusinessLogic\BLGetListCommon.cs:行号 37
+   在 ZJSIG.UIProcess.QT.UIQtReport.getPageList(Page p) 位置 C:\zjsalt\WebSite\UIProcess\ZJSIG.UIProcess\QT\UIQtReport.cs:行号 36
+   在 ZJ_frmQtReportSetting.Page_Load(Object sender, EventArgs e) 位置 c:\zjsalt\WebSite\ZJSIGSite\ZJ\frmQtReportSetting.aspx.cs:行号 22
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)﹤br﹥
+date:2012-07-26 20:06:00    发生异常页: http://localhost:4673/ZJSIGSite/ZJ/errorPage.aspx﹤br﹥异常信息: 文件“/ZJSIGSite/ZJ/errorPage.aspx”不存在。   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)﹤br﹥
+date:2012-07-26 20:06:01    发生异常页: http://localhost:4673/ZJSIGSite/ZJ/frmQtReportSetting.aspx?method=getlist﹤br﹥异常信息: select * from (select PAGE_SRCRESULTSET_1.*, row_number() over(order by   qt_report_quota_no) as SORT_INDEXFIELDALIAS from (select *  FROM Qt_Report_Quota ) PAGE_SRCRESULTSET_1 ) PAGE_SRCRESULTSET_2 where PAGE_SRCRESULTSET_2.SORT_INDEXFIELDALIAS <= 10 and PAGE_SRCRESULTSET_2.SORT_INDEXFIELDALIAS > 0   在 ZJSIG.Core.UtlDB.SystemStaticDataAccess.getRecords(String sql, Object[] obj)
+   在 ZJSIG.ADM.DALOracle.GetListCommon.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, String primaryKey, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\GetListCommon.cs:行号 99   在 ZJSIG.ADM.DALOracle.GetListCommon.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, String primaryKey, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\GetListCommon.cs:行号 114
+   在 ZJSIG.ADM.BLL.BLGetListCommon.getJsonListByQuery(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sort) 位置 C:\zjsalt\ZJSIG.ADM\Source\Business.Logic\ZJSIG.ADM.BusinessLogic\BLGetListCommon.cs:行号 37
+   在 ZJSIG.UIProcess.QT.UIQtReport.getPageList(Page p) 位置 C:\zjsalt\WebSite\UIProcess\ZJSIG.UIProcess\QT\UIQtReport.cs:行号 36
+   在 ZJ_frmQtReportSetting.Page_Load(Object sender, EventArgs e) 位置 c:\zjsalt\WebSite\ZJSIGSite\ZJ\frmQtReportSetting.aspx.cs:行号 22
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)﹤br﹥
+date:2012-07-26 20:06:01    发生异常页: http://localhost:4673/ZJSIGSite/ZJ/errorPage.aspx﹤br﹥异常信息: 文件“/ZJSIGSite/ZJ/errorPage.aspx”不存在。   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)﹤br﹥
+date:2012-07-26 20:07:33    发生异常页: http://localhost:4673/ZJSIGSite/ZJ/frmQtReportSetting.aspx?method=getlist﹤br﹥异常信息: select * from (select PAGE_SRCRESULTSET_1.*, row_number() over(order by   qt_report_quota_no) as SORT_INDEXFIELDALIAS from (select *  FROM Qt_Report_Quota ) PAGE_SRCRESULTSET_1 ) PAGE_SRCRESULTSET_2 where PAGE_SRCRESULTSET_2.SORT_INDEXFIELDALIAS <= 10 and PAGE_SRCRESULTSET_2.SORT_INDEXFIELDALIAS > 0   在 ZJSIG.Core.UtlDB.SystemStaticDataAccess.getRecords(String sql, Object[] obj)
+   在 ZJSIG.ADM.DALOracle.GetListCommon.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, String primaryKey, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\GetListCommon.cs:行号 99   在 ZJSIG.ADM.DALOracle.GetListCommon.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, String primaryKey, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\GetListCommon.cs:行号 114
+   在 ZJSIG.ADM.BLL.BLGetListCommon.getJsonListByQuery(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sort) 位置 C:\zjsalt\ZJSIG.ADM\Source\Business.Logic\ZJSIG.ADM.BusinessLogic\BLGetListCommon.cs:行号 37
+   在 ZJSIG.UIProcess.QT.UIQtReport.getPageList(Page p) 位置 C:\zjsalt\WebSite\UIProcess\ZJSIG.UIProcess\QT\UIQtReport.cs:行号 36
+   在 ZJ_frmQtReportSetting.Page_Load(Object sender, EventArgs e) 位置 c:\zjsalt\WebSite\ZJSIGSite\ZJ\frmQtReportSetting.aspx.cs:行号 22
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)﹤br﹥
+date:2012-07-26 20:07:33    发生异常页: http://localhost:4673/ZJSIGSite/ZJ/errorPage.aspx﹤br﹥异常信息: 文件“/ZJSIGSite/ZJ/errorPage.aspx”不存在。   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)﹤br﹥
+date:2012-07-26 20:07:35    发生异常页: http://localhost:4673/ZJSIGSite/ZJ/frmQtReportSetting.aspx?method=getlist﹤br﹥异常信息: select * from (select PAGE_SRCRESULTSET_1.*, row_number() over(order by   qt_report_quota_no) as SORT_INDEXFIELDALIAS from (select *  FROM Qt_Report_Quota ) PAGE_SRCRESULTSET_1 ) PAGE_SRCRESULTSET_2 where PAGE_SRCRESULTSET_2.SORT_INDEXFIELDALIAS <= 10 and PAGE_SRCRESULTSET_2.SORT_INDEXFIELDALIAS > 0   在 ZJSIG.Core.UtlDB.SystemStaticDataAccess.getRecords(String sql, Object[] obj)
+   在 ZJSIG.ADM.DALOracle.GetListCommon.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, String primaryKey, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\GetListCommon.cs:行号 99   在 ZJSIG.ADM.DALOracle.GetListCommon.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, String primaryKey, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\GetListCommon.cs:行号 114
+   在 ZJSIG.ADM.BLL.BLGetListCommon.getJsonListByQuery(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sort) 位置 C:\zjsalt\ZJSIG.ADM\Source\Business.Logic\ZJSIG.ADM.BusinessLogic\BLGetListCommon.cs:行号 37
+   在 ZJSIG.UIProcess.QT.UIQtReport.getPageList(Page p) 位置 C:\zjsalt\WebSite\UIProcess\ZJSIG.UIProcess\QT\UIQtReport.cs:行号 36
+   在 ZJ_frmQtReportSetting.Page_Load(Object sender, EventArgs e) 位置 c:\zjsalt\WebSite\ZJSIGSite\ZJ\frmQtReportSetting.aspx.cs:行号 22
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)﹤br﹥
+date:2012-07-26 20:07:35    发生异常页: http://localhost:4673/ZJSIGSite/ZJ/errorPage.aspx﹤br﹥异常信息: 文件“/ZJSIGSite/ZJ/errorPage.aspx”不存在。   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)﹤br﹥
+date:2012-08-24 14:59:15    发生异常页: http://localhost:3388/ZJSIGSite/ZJ/frmSampleAuthorizeList.aspx﹤br﹥异常信息: c:\zjsalt\WebSite\ZJSIGSite\ZJ\frmSampleAuthorizeList.aspx.cs(22): error CS1002: 应输入 ;   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)﹤br﹥
+date:2012-08-24 15:00:17    发生异常页: http://localhost:3388/ZJSIGSite/ZJ/frmSampleAuthorizeList.aspx﹤br﹥异常信息: c:\zjsalt\WebSite\ZJSIGSite\ZJ\frmSampleAuthorizeList.aspx.cs(22): error CS1002: 应输入 ;   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)﹤br﹥
+date:2012-08-24 15:02:23    发生异常页: http://localhost:3388/ZJSIGSite/ZJ/frmSampleAuthorizeList.aspx?method=getlist﹤br﹥异常信息: 试图除以零。   在 ZJSIG.UIProcess.QT.UIQtAuthorize.getQtAuthorizeList(Page p) 位置 C:\zjsalt\WebSite\UIProcess\ZJSIG.UIProcess\QT\UIQtAuthorize.cs:行号 25
+   在 ZJ_frmSampleAuthorizeList.Page_Load(Object sender, EventArgs e) 位置 c:\zjsalt\WebSite\ZJSIGSite\ZJ\frmSampleAuthorizeList.aspx.cs:行号 22
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)﹤br﹥
+date:2012-08-24 15:02:23    发生异常页: http://localhost:3388/ZJSIGSite/ZJ/errorPage.aspx﹤br﹥异常信息: 文件“/ZJSIGSite/ZJ/errorPage.aspx”不存在。   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)﹤br﹥
+date:2012-08-24 15:11:49    发生异常页: http://localhost:3388/ZJSIGSite/ZJ/frmSampleAuthorizeInput.aspx﹤br﹥异常信息: c:\zjsalt\WebSite\ZJSIGSite\ZJ\frmSampleAuthorizeInput.aspx(19): error CS0103: 当前上下文中不存在名称“getComboBoxStore”   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)﹤br﹥
+date:2012-08-24 15:42:07    发生异常页: http://localhost:3388/ZJSIGSite/ZJ/frmSampleAuthorizeInput.aspx﹤br﹥异常信息: ORA-12154: TNS: 无法解析指定的连接标识符
+   在 ZJSIG.Core.UtlDB.SystemStaticDataAccess.getRecords(String sql, Object[] obj)
+   在 ZJSIG.ADM.DALOracle.DASYS_DICS_INFO.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\DASYS_DICS_INFO.cs:行号 207
+   在 ZJSIG.ADM.BLL.BLSysDicsInfo.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Business.Logic\ZJSIG.ADM.BusinessLogic\BLSysDicsInfo.cs:行号 192
+   在 ZJSIG.UIProcess.ADM.UISysDicsInfo.getDicsInfoStore(String parentCode) 位置 C:\zjsalt\WebSite\UIProcess\ZJSIG.UIProcess\BA\system\UISysDicsInfo.cs:行号 271
+   在 ZJ_frmSampleAuthorizeInput.getComboBoxStore() 位置 c:\zjsalt\WebSite\ZJSIGSite\ZJ\frmSampleAuthorizeInput.aspx.cs:行号 20
+   在 ASP.zj_frmsampleauthorizeinput_aspx.__Render__control2(HtmlTextWriter __w, Control parameterContainer) 位置 c:\zjsalt\WebSite\ZJSIGSite\ZJ\frmSampleAuthorizeInput.aspx:行号 19
+   在 System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   在 System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   在 System.Web.UI.HtmlControls.HtmlHead.RenderChildren(HtmlTextWriter writer)
+   在 System.Web.UI.HtmlControls.HtmlContainerControl.Render(HtmlTextWriter writer)
+   在 System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   在 System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   在 System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   在 System.Web.UI.Page.Render(HtmlTextWriter writer)
+   在 System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)﹤br﹥
+date:2012-08-24 15:42:07    发生异常页: http://localhost:3388/ZJSIGSite/ZJ/errorPage.aspx﹤br﹥异常信息: 文件“/ZJSIGSite/ZJ/errorPage.aspx”不存在。   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)﹤br﹥
+date:2012-08-24 15:43:14    发生异常页: http://localhost:3388/ZJSIGSite/ZJ/frmSampleAuthorizeInput.aspx﹤br﹥异常信息: ORA-12154: TNS: 无法解析指定的连接标识符
+   在 ZJSIG.Core.UtlDB.SystemStaticDataAccess.getRecords(String sql, Object[] obj)
+   在 ZJSIG.ADM.DALOracle.DASYS_DICS_INFO.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\DASYS_DICS_INFO.cs:行号 207
+   在 ZJSIG.ADM.BLL.BLSysDicsInfo.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Business.Logic\ZJSIG.ADM.BusinessLogic\BLSysDicsInfo.cs:行号 192
+   在 ZJSIG.UIProcess.ADM.UISysDicsInfo.getDicsInfoStore(String parentCode) 位置 C:\zjsalt\WebSite\UIProcess\ZJSIG.UIProcess\BA\system\UISysDicsInfo.cs:行号 271
+   在 ZJ_frmSampleAuthorizeInput.getComboBoxStore() 位置 c:\zjsalt\WebSite\ZJSIGSite\ZJ\frmSampleAuthorizeInput.aspx.cs:行号 20
+   在 ASP.zj_frmsampleauthorizeinput_aspx.__Render__control2(HtmlTextWriter __w, Control parameterContainer) 位置 c:\zjsalt\WebSite\ZJSIGSite\ZJ\frmSampleAuthorizeInput.aspx:行号 19
+   在 System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   在 System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   在 System.Web.UI.HtmlControls.HtmlHead.RenderChildren(HtmlTextWriter writer)
+   在 System.Web.UI.HtmlControls.HtmlContainerControl.Render(HtmlTextWriter writer)
+   在 System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   在 System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   在 System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   在 System.Web.UI.Page.Render(HtmlTextWriter writer)
+   在 System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)﹤br﹥
+date:2012-08-24 15:43:14    发生异常页: http://localhost:3388/ZJSIGSite/ZJ/errorPage.aspx﹤br﹥异常信息: 文件“/ZJSIGSite/ZJ/errorPage.aspx”不存在。   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)﹤br﹥
+date:2012-08-24 15:43:33    发生异常页: http://localhost:3388/ZJSIGSite/ZJ/frmSampleAuthorizeInput.aspx﹤br﹥异常信息: ORA-12154: TNS: 无法解析指定的连接标识符
+   在 ZJSIG.Core.UtlDB.SystemStaticDataAccess.getRecords(String sql, Object[] obj)
+   在 ZJSIG.ADM.DALOracle.DASYS_DICS_INFO.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\DASYS_DICS_INFO.cs:行号 207
+   在 ZJSIG.ADM.BLL.BLSysDicsInfo.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Business.Logic\ZJSIG.ADM.BusinessLogic\BLSysDicsInfo.cs:行号 192
+   在 ZJSIG.UIProcess.ADM.UISysDicsInfo.getDicsInfoStore(String parentCode) 位置 C:\zjsalt\WebSite\UIProcess\ZJSIG.UIProcess\BA\system\UISysDicsInfo.cs:行号 271
+   在 ZJ_frmSampleAuthorizeInput.getComboBoxStore() 位置 c:\zjsalt\WebSite\ZJSIGSite\ZJ\frmSampleAuthorizeInput.aspx.cs:行号 20
+   在 ASP.zj_frmsampleauthorizeinput_aspx.__Render__control2(HtmlTextWriter __w, Control parameterContainer) 位置 c:\zjsalt\WebSite\ZJSIGSite\ZJ\frmSampleAuthorizeInput.aspx:行号 19
+   在 System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   在 System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   在 System.Web.UI.HtmlControls.HtmlHead.RenderChildren(HtmlTextWriter writer)
+   在 System.Web.UI.HtmlControls.HtmlContainerControl.Render(HtmlTextWriter writer)
+   在 System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   在 System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   在 System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   在 System.Web.UI.Page.Render(HtmlTextWriter writer)
+   在 System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)﹤br﹥
+date:2012-08-24 15:43:33    发生异常页: http://localhost:3388/ZJSIGSite/ZJ/errorPage.aspx﹤br﹥异常信息: 文件“/ZJSIGSite/ZJ/errorPage.aspx”不存在。   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)﹤br﹥
+date:2012-08-24 15:43:42    发生异常页: http://localhost:3388/ZJSIGSite/ZJ/frmSampleAuthorizeInput.aspx﹤br﹥异常信息: ORA-12154: TNS: 无法解析指定的连接标识符
+   在 ZJSIG.Core.UtlDB.SystemStaticDataAccess.getRecords(String sql, Object[] obj)
+   在 ZJSIG.ADM.DALOracle.DASYS_DICS_INFO.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Resource Access\ZJSIG.ADM.DALOracle\DASYS_DICS_INFO.cs:行号 207
+   在 ZJSIG.ADM.BLL.BLSysDicsInfo.GetPageList(Int32 pageSize, Int32 pageIndex, QueryConditions query, String sortStr, Int32& recourdCount) 位置 C:\zjsalt\ZJSIG.ADM\Source\Business.Logic\ZJSIG.ADM.BusinessLogic\BLSysDicsInfo.cs:行号 192
+   在 ZJSIG.UIProcess.ADM.UISysDicsInfo.getDicsInfoStore(String parentCode) 位置 C:\zjsalt\WebSite\UIProcess\ZJSIG.UIProcess\BA\system\UISysDicsInfo.cs:行号 271
+   在 ZJ_frmSampleAuthorizeInput.getComboBoxStore() 位置 c:\zjsalt\WebSite\ZJSIGSite\ZJ\frmSampleAuthorizeInput.aspx.cs:行号 20
+   在 ASP.zj_frmsampleauthorizeinput_aspx.__Render__control2(HtmlTextWriter __w, Control parameterContainer) 位置 c:\zjsalt\WebSite\ZJSIGSite\ZJ\frmSampleAuthorizeInput.aspx:行号 19
+   在 System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   在 System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   在 System.Web.UI.HtmlControls.HtmlHead.RenderChildren(HtmlTextWriter writer)
+   在 System.Web.UI.HtmlControls.HtmlContainerControl.Render(HtmlTextWriter writer)
+   在 System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   在 System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   在 System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   在 System.Web.UI.Page.Render(HtmlTextWriter writer)
+   在 System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)﹤br﹥
+date:2012-08-24 15:43:42    发生异常页: http://localhost:3388/ZJSIGSite/ZJ/errorPage.aspx﹤br﹥异常信息: 文件“/ZJSIGSite/ZJ/errorPage.aspx”不存在。   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)﹤br﹥

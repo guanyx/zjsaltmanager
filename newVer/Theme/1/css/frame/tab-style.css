@@ -1,0 +1,134 @@
+body {
+	margin: 0px;
+	overflow:hidden;
+	}/*body和滚动条样式*/
+td{
+	font-size: 12px;
+	}/*整个页面默认字体大小*/
+table{
+	width:100%;
+	}/*表格默认大小*/
+.td_b{
+	width:5px;
+}
+.tab_black{
+	height:100%;
+	padding:5 10 5 10;
+	background-color:#F5F9FB;
+	color: #2D477F;
+	font-weight:bold;
+	cursor:hand;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #BED6E0;
+	border-left-color: #BED6E0;
+	}/*tad背景样式*/
+.tab_bule{
+	font-size: 12px;
+	height:100%;
+	color: #0B2762;
+	text-decoration: none;
+	padding:5 10 5 10;
+	font-weight:bold;
+	
+	}/*蓝色tad样式*/
+.tab_yellow{
+	width:80;
+	height:27;
+	padding:5 5 0 27;
+	text-decoration:none;
+	font-style: normal;
+	color:#646464;
+	font-weight: 600;
+	word-break :keep-all;
+	border:#7C95CD solid;
+	border-width:0 1 0 1;
+	background-image:url(/images/tab_yellow_m.jpg);
+	background-position:left;
+	background-repeat:no-repeat;
+
+	}/*黄色tad样式*/
+
+.tab2_black{
+	height:26;
+	color:#999999;
+	vertical-align:top;
+	background:FFF8E5;
+	border:#7C95CD solid;
+	border-width:0 0 1 0;
+	}/*2级tad背景样式*/
+.tab2_close{
+	height:25;
+	color:#999999;
+	padding:3 0 0 0;
+	vertical-align:top;
+	background:FFF8E5;
+	}/*2级tad背景样式*/
+
+.tab2_a{
+	width:100;
+	height:25;
+	padding:6 5 0 5;
+	text-align:center;
+	text-decoration:none;
+	font-style: normal;
+	color:#666666;
+	font-weight: 600;
+	word-break :keep-all;
+	background:#FFF8E5;
+	border:#FFF8E5 solid;
+	border-width:1 1 1 1;
+	cursor:hand;
+	}/*2级tad2激活状态样式*/
+.tab2_v{
+	width:100;
+	height:23;
+	padding:5 5 0 5;
+	text-align:center;
+	text-decoration:none;
+	font-style: normal;
+	color:#444444;
+	font-weight: 600;
+	word-break :keep-all;
+	background:#FFE1AF;
+	border:#FFF8E5 solid;
+	border-width:1 2 2 2;
+
+	}/*2级tad2激活状态样式*/
+.table_b{
+	border:#cccccc solid;
+	border-width:1 0 0 1
+	height:20 px;
+	}/*表格上下边线*/
+.td_wihte{
+	color:#666666;
+	font-size: 12px;
+	padding:3 0 0 5;
+	border:#cccccc solid;
+	border-width:0 1 1 0;
+	background:#ffffff;
+	word-break :keep-all;
+	}/*白色表格数据td样式*/
+.td_t{
+	height:20 px;
+	color:#888888;
+	text-align:center;
+	font-size: 12px;
+	font-weight: 600;
+	padding:3 0 0 5;
+	border:#cccccc solid;
+	border-width:0 1 1 0;
+	background:#CBDFF3
+	}/*蓝色表头td样式*/
+.td_t2{
+	color:#888888;
+	font-weight: 600;
+	font-size: 12px;
+	width:100px;
+	padding:3 0 0 5;
+	border:#cccccc solid;
+	border-width:0 1 1 0;
+	background:#EDF6FF
+	}/*浅蓝色表头td样式*/

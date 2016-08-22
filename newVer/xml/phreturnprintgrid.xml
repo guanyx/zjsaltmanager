@@ -1,0 +1,62 @@
+﻿<?xml version="1.0"?>
+<wFaceGridPrintStyle>
+  <TitleSize>10</TitleSize>
+  <MulPageSpace>0</MulPageSpace>
+  <DataSize>12</DataSize>
+  <TitleHeight>40</TitleHeight>
+  <DataHeight>25</DataHeight>
+  <Rows>3</Rows>
+  <VerticalLine>False</VerticalLine>
+  <HorizontalLine>True</HorizontalLine>
+  <OnlyData>False</OnlyData>
+  <Title>no</Title>
+  <SumRow>True</SumRow>
+  <SumTitle>合计：</SumTitle>
+  <wFaceGridPrintCell>
+    <PrintCell>wFaceGridPrintCell</PrintCell>
+    <Width>126</Width>
+    <HeaderText>仓 位</HeaderText>
+    <MappingName>WhpName</MappingName>
+    <Money>False</Money>
+    <Alignment>center</Alignment>
+  </wFaceGridPrintCell>
+  <wFaceGridPrintCell>
+    <PrintCell>wFaceGridPrintCell</PrintCell>
+    <Width>265</Width>
+    <HeaderText>品        名</HeaderText>
+    <MappingName>ProductName</MappingName>
+    <Money>False</Money>
+    <Alignment>center</Alignment>
+  </wFaceGridPrintCell>
+  <wFaceGridPrintCell>
+    <PrintCell>wFaceGridPrintCell</PrintCell>
+    <Width>79</Width>
+    <HeaderText>规格</HeaderText>
+    <MappingName>SpecificationsName</MappingName>
+    <Money>False</Money>
+    <Alignment>center</Alignment>
+  </wFaceGridPrintCell>
+  <wFaceGridPrintCell>
+    <PrintCell>wFaceGridPrintCell</PrintCell>
+    <Width>89</Width>
+    <HeaderText>单位</HeaderText>
+    <MappingName>UnitName</MappingName>
+    <Money>False</Money>
+    <Alignment>center</Alignment>
+  </wFaceGridPrintCell>
+  <wFaceGridPrintCell>
+    <PrintCell>wFaceGridPrintCell</PrintCell>
+    <Width>110</Width>
+    <HeaderText>数  量</HeaderText>
+    <MappingName>RealQty</MappingName>
+    <Money>False</Money>
+    <Alignment>center</Alignment>
+  </wFaceGridPrintCell>
+  <wFaceGridSumRow>
+    <SumRowCell>SumRowCell</SumRowCell>
+    <Left>542</Left>
+    <Width>119</Width>
+    <China>False</China>
+    <MappingName>RealQty</MappingName>
+  </wFaceGridSumRow>
+</wFaceGridPrintStyle>

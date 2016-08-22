@@ -1,0 +1,41 @@
+body{
+	margin:0;
+	overflow:hidden;
+	}
+td{
+	font-size:12px;
+	color:005476;
+	}
+.bc{
+	background-image:url(../images/ts-bc.gif);
+	background-position:top;
+	background-repeat:repeat-x}
+.btn-2word {
+	font-size: 12px;
+	color:026A95;
+	text-decoration: none;
+	background-image: url(../images/btn-2.gif);
+	height: 18px;
+	width: 48px;
+	border: none;
+	cursor:hand;
+	letter-spacing: 2px;
+	margin: 0px;
+	padding: 2 0 0 0;
+}
+.btn-2word-gray{
+	font-size: 12px;
+	color:026A95;
+	text-decoration: none;
+	background-image: url(../images/btn-2gray.gif);
+	height: 18px;
+	width: 48px;
+	border: none;
+	cursor:hand;
+	letter-spacing: 2px;
+	margin: 0px;
+	padding: 2 0 0 0;
+}/*2¸ö×ÖµÄ°´Å¥*/
+.ts-td{
+	padding:10 10 10 10;
+}

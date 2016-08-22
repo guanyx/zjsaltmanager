@@ -1,0 +1,85 @@
+﻿<?xml version="1.0"?>
+<wFaceGridPrintStyle>
+  <TitleSize>10</TitleSize>
+  <MulPageSpace>0</MulPageSpace>
+  <DataSize>10</DataSize>
+  <TitleHeight>40</TitleHeight>
+  <DataHeight>21</DataHeight>
+  <Rows>4</Rows>
+  <VerticalLine>False</VerticalLine>
+  <HorizontalLine>True</HorizontalLine>
+  <OnlyData>False</OnlyData>
+  <Title>no</Title>
+  <SumRow>True</SumRow>
+  <SumTitle>合计金额(大写)：</SumTitle>
+  <wFaceGridPrintCell>
+    <PrintCell>wFaceGridPrintCell</PrintCell>
+    <Width>70</Width>
+    <HeaderText>仓 库</HeaderText>
+    <MappingName>OutStorname</MappingName>
+    <Money>False</Money>
+    <Alignment>center</Alignment>
+  </wFaceGridPrintCell>
+  <wFaceGridPrintCell>
+    <PrintCell>wFaceGridPrintCell</PrintCell>
+    <Width>236</Width>
+    <HeaderText>品        名</HeaderText>
+    <MappingName>ProductName</MappingName>
+    <Money>False</Money>
+    <Alignment>center</Alignment>
+  </wFaceGridPrintCell>
+  <wFaceGridPrintCell>
+    <PrintCell>wFaceGridPrintCell</PrintCell>
+    <Width>75</Width>
+    <HeaderText>规格</HeaderText>
+    <MappingName>SpecificationsName</MappingName>
+    <Money>False</Money>
+    <Alignment>center</Alignment>
+  </wFaceGridPrintCell>
+  <wFaceGridPrintCell>
+    <PrintCell>wFaceGridPrintCell</PrintCell>
+    <Width>49</Width>
+    <HeaderText>单位</HeaderText>
+    <MappingName>UnitName</MappingName>
+    <Money>False</Money>
+    <Alignment>center</Alignment>
+  </wFaceGridPrintCell>
+  <wFaceGridPrintCell>
+    <PrintCell>wFaceGridPrintCell</PrintCell>
+    <Width>76</Width>
+    <HeaderText>数  量</HeaderText>
+    <MappingName>SaleQty</MappingName>
+    <Money>False</Money>
+    <Alignment>center</Alignment>
+  </wFaceGridPrintCell>
+  <wFaceGridPrintCell>
+    <PrintCell>wFaceGridPrintCell</PrintCell>
+    <Width>81</Width>
+    <HeaderText>单  价</HeaderText>
+    <MappingName>SalePrice</MappingName>
+    <Money>False</Money>
+    <Alignment>center</Alignment>
+  </wFaceGridPrintCell>
+  <wFaceGridPrintCell>
+    <PrintCell>wFaceGridPrintCell</PrintCell>
+    <Width>124</Width>
+    <HeaderText>金   额</HeaderText>
+    <MappingName>SaleAmt</MappingName>
+    <Money>False</Money>
+    <Alignment>center</Alignment>
+  </wFaceGridPrintCell>
+  <wFaceGridSumRow>
+    <SumRowCell>SumRowCell</SumRowCell>
+    <Left>120</Left>
+    <Width>400</Width>
+    <China>True</China>
+    <MappingName>SaleAmt</MappingName>
+  </wFaceGridSumRow>
+  <wFaceGridSumRow>
+    <SumRowCell>SumRowCell</SumRowCell>
+    <Left>593</Left>
+    <Width>110</Width>
+    <China>False</China>
+    <MappingName>SaleAmt</MappingName>
+  </wFaceGridSumRow>
+</wFaceGridPrintStyle>

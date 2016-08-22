@@ -1,0 +1,236 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>盐业业务综合管理系统</title>
+<style type="text/css">
+body{
+	margin:0px;
+	overflow:hidden;
+	background-color:#F6F9FB;
+	}
+td{
+	font-size:12px;
+	color:#323E51;
+	}
+.tab_bc{
+	background-image:url(Theme/1/images/login_bg.jpg);
+	background-repeat:repeat-x;
+	}
+.tb_bc{
+	background-image:url(Theme/1/images/login_bc.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+	vertical-align:top;
+	text-align:center;
+	}
+.tstd {	padding:2 0 0 15;
+	color:#336699;
+	line-height:20px
+}
+.input {
+	border:#6787E3 solid;
+	width:150px;
+	height:20px;
+	border-width:1 1 1 1;}
+.titl{
+	font-weight:bold;
+	color:#336699;}
+a {
+	font-size: 12px;
+	color: #336699;
+	text-decoration: underline;
+	font-weight:bold
+}
+a:hover {
+	font-size: 12px;
+	text-decoration: underline;
+	color: #336699;
+	font-weight:bold
+}/*页面默认连接*/
+.btn_2word {
+	font-size: 12px;
+	color: #5F87AF;
+	text-decoration: none;
+	background-image: url(Theme/1/images/btn_dl.jpg);
+	height: 18px;
+	width: 66px;
+	border: none;
+	cursor:hand;
+	letter-spacing: 2px;
+	margin: 0px;
+	padding: 2 0 0 0;
+}/*2个字的按钮*/
+.btn_4word {
+	font-size: 12px;
+	color: #5F87AF;
+	text-decoration: none;
+	background-image: url(Theme/1/images/btn_mm.jpg);
+	height: 18px;
+	width: 95px;
+	margin: 0px;
+	padding: 2 0 0 0;
+	border: none;
+	cursor:hand;
+	letter-spacing: 2px;
+}/*4个字的按钮*/
+</style>
+<script type="text/javascript" src="js/common.js"></script>
+<script type ="text/javascript" src="js/Ajax.js"></script>
+<script type="text/javascript">
+<!--
+var isLogin = false;
+var MACAddr ="";
+
+
+/**
+ * 让光标跳到下一个控件。
+ * 支持TAB键和回车键
+ */
+function doKeyDown(nextObject)
+{
+    if(window.event.keyCode == 13 || window.event.keyCode == 9)
+    {
+        if(null == nextObject)
+        {
+            return;
+        }
+        nextObject.focus();
+    }
+}
+
+function doLoginCheck() {
+    if (frmLogin.login_user.value == "") {
+        alert("登录名称不能为空!");
+        frmLogin.login_user.focus();
+        frmLogin.login_user.select();
+        return false;
+    }
+    if (frmLogin.login_password.value == "") {
+        alert("登录密码不能为空!");
+        frmLogin.login_password.focus();
+        frmLogin.login_password.select();
+        return false;
+    }
+	if(isLogin)
+	{
+		 alert("正在登录!");
+		 return false;
+	}
+	else
+		isLogin = true;
+    return true;
+}
+
+function EditPassword(){
+    var theUrl = "chgPswd.aspx";
+    popupWin(theUrl,349,184,'chgPswd');
+}
+function getPassword(){
+    var theUrl = "getPswd.aspx";
+    popupWin(theUrl,349,184,'chgPswd');
+}
+
+function MM_DoSubmit(){
+    if(window.event.keyCode == 13){
+ 	submitLoginForm();
+  }
+}
+function callbackRT(msg){alart(msg);
+   if(msg=="true"||msg==true){ 
+    alart("登录成功！");
+    window.close();
+   }
+   else
+    alert("登录失败，请确认输入密码正确！")
+}
+function submitLoginForm(){
+  if (doLoginCheck()){
+	  document.all("logstatus").innerHTML = "<strong>正在登录....</strong>";
+	  var surl = "&login_user="+document.getElementById("login_user").value
+	            +"&login_password="+document.getElementById("login_password").value
+	            +"&login_MacAddr=";
+      Ajax("/logined.aspx?method=fastCheckPriv"+surl,function(v){if(v=='true'){alert('登录成功！');window.close();}else{alert("登录失败！请检查密码是否正确！");isLogin = false;}});
+  }
+}
+//-->
+</script>
+<!--script FOR="foo" EVENT="OnObjectReady(objObject,objAsyncContext)" LANGUAGE="JScript">
+
+ if(objObject.IPEnabled != null && objObject.IPEnabled != "undefined" && objObject.IPEnabled == true)
+          {
+
+           if(objObject.MACAddress != null && objObject.MACAddress != "undefined")
+                 MACAddr = objObject.MACAddress;
+
+           }
+</script-->
+</head>
+<body>
+
+<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="5px">&nbsp;</td>
+    <td align="center">
+			<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" >
+			  <tr>
+			    <td width="5px">&nbsp;</td>
+				<td>
+					<table border="0" cellspacing="0" cellpadding="0">
+						  <tr>
+							<td colspan="2" align="center"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+							  <tr>
+								<td width="66" valign="top"><img src="Theme/1/images/login_ts.jpg" width="66" height="15"></td>
+								<td><span class="tstd" id="logstatus"><strong>欢迎登录，请输入您的信息</strong></span></td>
+							  </tr>
+							</table>
+					</td>
+				  </tr>
+				  <tr>
+					<td height="105" colspan="2" align="center">
+					<form name="frmLogin" method="post" action="logined.aspx">
+					<input type="hidden" name="actionName" value="login"/>
+								<input type="hidden" name="login_MacAddr" value=""/>
+								<input type="hidden" name="login_CASignedStr" value=""/>
+					<table width="400" border="0" cellpadding="0" cellspacing="0">
+					  <tr>
+						<td width="66" height="30" class="titl">用户名：</td>
+						<td width="180">
+						    <input name="login_user" id='login_user' type="text" class="input" value="" tabindex="1" onkeypress="javascript:if(event.keyCode==13){ document.getElementById('login_password').focus();}" /></td>
+						<td>
+						    <input type="button" name="Submit" value="登录" class="btn_2word"  onclick="submitLoginForm()" />
+						    <!--input type="reset" name="reset" value="重置" class="btn_2word" onclick="resetLoginForm()"-->
+						</td>
+						</tr>
+					  <tr>
+						<td height="30" class="titl">密&nbsp;&nbsp;码：</td>
+						<td>
+						    <input name="login_password" id="login_password" type="password" class="input" onkeypress="MM_DoSubmit()" value="" tabindex="2"/></td>
+						<td>
+						    <!--input type="button" name="btn01" value="修改密码" class="btn_2word" onclick="EditPassword()"-->
+						    <input type="reset" name="reset" value="重置" class="btn_2word" onclick="resetLoginForm()" />
+                            <!--input type="button" name="btn02" value="密码获取" class="btn_2word" onclick="getPassword()"--></td>
+						</tr>
+					</table>
+					</form>
+					</td>
+				  </tr>
+				</table>
+			</td>
+		  </tr>
+		</table>
+	</td>
+  </tr>
+</table>
+</body>
+</html>
+<script type="text/javascript">
+<!--
+    function resetLoginForm(){
+        document.getElementsByName('login_password').value="";
+    }
+
+	document.getElementById('login_user').value = getParamerValue("loginUser");
+	document.getElementById('login_user').disabled = true;
+	document.getElementById('login_password').focus();
+//-->
+</script>
