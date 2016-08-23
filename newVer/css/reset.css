@@ -1,0 +1,33 @@
+html,
+body{
+    height: 100% !important;
+}
+
+.x-grid-panel{
+    width: 100% !important;
+}
+
+.x-panel-body{
+    width: 100% !important;
+}
+
+.x-grid3-scroller{
+    width: 100% !important;
+}
+
+.x-grid3-body{
+    width: 100% !important;
+}
+
+.x-grid3-row{
+    width: 100% !important;
+}
+
+.x-grid3-row-table{
+    width: 100% !important;
+}
+
+.x-grid3-cell{
+    height: 40px !important;
+    vertical-align: middle !important;
+}
