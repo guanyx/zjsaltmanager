@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=gb2312"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>style</title>
+	<link href="scss/index.scss?__inline" rel="stylesheet" type="text/css" id="styles">
+</head>
+<body>
+    let style = document.createElement('style'); <br>
+    style.innerHTML = ` <br>
+    <script>
+        document.write(document.getElementById('styles').innerHTML);
+    </script>
+    `;<br>
+    document.head.appendChild(style);<br>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
