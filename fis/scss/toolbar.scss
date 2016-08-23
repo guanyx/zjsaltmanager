@@ -1,0 +1,30 @@
+#toolbar{
+  .x-toolbar{
+    padding: 0px !important;
+    background-color: rgb(247, 249, 250) !important;
+    background-image: none !important;
+    height: 40px !important;
+
+    table{
+      height: 100%;
+    }
+
+    .x-btn-tl, .x-btn-tr, .x-btn-tc, .x-btn-ml, .x-btn-mr, .x-btn-mc, .x-btn-bl, .x-btn-br, .x-btn-bc{
+      background-image: none !important;
+    }
+
+    .x-btn-over{
+      background-color: rgb(236, 236, 236) !important;
+    }
+
+    .x-btn-text-icon .x-btn-icon-small-left .x-btn-text{
+      background-image: none !important;
+      padding: 0 30px !important;
+    }
+
+    .xtb-sep{
+      margin: 0 !important;
+      width: 2px !important;
+    }
+  }
+}

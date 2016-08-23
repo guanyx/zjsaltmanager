@@ -7,8 +7,9 @@ body{
     width: 100% !important;
 }
 
-.x-panel-body{
+.x-grid-panel .x-panel-body{
     width: 100% !important;
+    overflow: auto !important;
 }
 
 .x-grid3-scroller{
@@ -35,6 +36,10 @@ body{
     vertical-align: middle !important;
 }
 
+.x-grid3-row-checker, .x-grid3-hd-checker{
+    width: 18px !important;
+}
+
 .x-grid3-col-checker{
     height: auto !important;
 }
@@ -44,5 +49,10 @@ td.sort-desc .x-grid3-hd-inner,
 td.sort-asc .x-grid3-hd-inner,
 td.x-grid3-hd-menu-open .x-grid3-hd-inner{
     background-color: transparent !important;
+    background-image: none !important;
+}
+
+.x-grid3-body .x-grid3-td-numberer,
+.x-grid3-body .x-grid3-td-checker{
     background-image: none !important;
 }
