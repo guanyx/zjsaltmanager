@@ -1,8 +1,13 @@
-@import '../reset.css';
+@import './reset.css';
 
 
-$imghost: 'http://127.0.0.1:8080';
+$imghost: 'http://192.168.99.143:8080/';
 
 @function imgurl($path){
     @return $imghost + $path;
+}
+
+.x-grid3-hd-btn{
+    background-image: url(imgurl('images/default/grid/grid3-hd-btn.gif'));
+    background-color: transparent;
 }
