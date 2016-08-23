@@ -7,13 +7,15 @@
 	<link href="scss/index.scss?__inline" rel="stylesheet" type="text/css" id="styles">
 </head>
 <body>
-    var style = document.createElement('style'); <br>
-    style.innerHTML = ` <br>
+
+    link = document.createElement('link');
+    link.href=
     <script>
-        document.write(document.getElementById('styles').innerHTML);
+        document.write(`"${location.protocol}//${location.host}/scss/index.css";`)
     </script>
-    `;<br>
-    document.head.appendChild(style);<br>
+    link.rel = 'stylesheet';
+    link.type = "text/css";
+    document.head.appendChild(link);
 <script type="text/javascript" src="index.js"></script>
 </body>
 </html>

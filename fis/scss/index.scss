@@ -1,9 +1,18 @@
 @import './reset.css';
+
 @import "./toolbar";
 
 
-$imghost: 'http://127.0.0.1:8080';
+$imghost: 'http://192.168.99.143:8080/';
 
 @function imgurl($path){
-    @return $imghost + $path;
+    @return url($imghost + $path);
+}
+
+.x-grid3-hd-btn{
+    background-image: imgurl('images/default/grid/grid3-hd-btn.gif');
+    background-color: transparent;
+}
+.x-toolbar .xtb-sep {
+    background-image: imgurl('images/default/grid/grid-blue-split.gif');
 }
