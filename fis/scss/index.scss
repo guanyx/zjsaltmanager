@@ -1,13 +1,15 @@
 @import './reset.css';
 
+@import "./toolbar";
+
 
 $imghost: 'http://192.168.99.143:8080/';
 
 @function imgurl($path){
-    @return $imghost + $path;
+    @return url($imghost + $path);
 }
 
 .x-grid3-hd-btn{
-    background-image: url(imgurl('images/default/grid/grid3-hd-btn.gif'));
+    background-image: imgurl('images/default/grid/grid3-hd-btn.gif');
     background-color: transparent;
 }
