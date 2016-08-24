@@ -4,18 +4,21 @@
     <meta http-equiv="Content-type" content="text/html; charset=gb2312"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>style</title>
-	<link href="scss/index.scss?__inline" rel="stylesheet" type="text/css" id="styles">
+	<link href="scss/index.scss" rel="stylesheet" type="text/css" id="styles">
 </head>
 <body>
-
-    link = document.createElement('link');
-    link.href=
-    <script>
-        document.write(`"${location.protocol}//${location.host}/scss/index.css";`)
-    </script>
-    link.rel = 'stylesheet';
-    link.type = "text/css";
-    document.head.appendChild(link);
+    function appendLink(){
+        link = document.createElement('link');
+        link.href=
+        <script>
+            document.write(`"${location.protocol}//${location.host}/scss/index.css?t=${Date.now()}";`)
+        </script>
+        link.rel = 'stylesheet';
+        link.type = "text/css";
+        document.head.appendChild(link);
+    }
+    setInterval(appendLink, 3000);
+    appendLink();
 <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
