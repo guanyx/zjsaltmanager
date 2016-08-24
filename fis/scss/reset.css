@@ -56,3 +56,31 @@ td.x-grid3-hd-menu-open .x-grid3-hd-inner{
 .x-grid3-body .x-grid3-td-checker{
     background-image: none !important;
 }
+
+.x-grid3-hd-row td{
+    height: 60px;
+    border-left: none;
+    border-right: none;
+}
+.x-grid-with-col-lines .x-grid3-row td.x-grid3-cell{
+    border-right: none;
+}
+.x-grid3-hd-inner{
+    /*text-align: center;*/
+}
+.x-grid3-cell-inner{
+    /*text-align: center;*/
+}
+.x-grid3-cell-inner{
+    border-right: none;
+}
+.x-grid3-row {
+    border: none;
+    background-color: #fbfbfb;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+.x-grid3-row-over{
+    background-image: none;
+    background-color: #eee;
+}
