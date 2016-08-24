@@ -3,6 +3,11 @@ body{
     height: 100% !important;
 }
 
+body{
+    padding: 10px !important;
+    box-sizing: border-box;
+}
+
 .x-grid-panel{
     width: 100% !important;
 }

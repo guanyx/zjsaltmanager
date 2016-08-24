@@ -1,21 +1,75 @@
 #searchForm{
-  .x-table-layout-cell{
-    .x-panel{
-      margin-left: 5px;
+  background-color: rgb(249, 249, 249);
+
+  .x-panel-tl{
+    border: none;
+  }
+
+  .x-panel-ml{
+    background-color: rgb(249, 249, 249);
+  }
+
+  .x-panel-tl, .x-panel-tr, .x-panel-bl, .x-panel-br, .x-panel-bc{
+    background-image: none;
+    background-color: rgb(249, 249, 249);
+  }
+
+  .x-table-layout-cell {
+    .x-panel {
+
     }
+  }
+  .x-table-layout-ct{
+    height: auto !important;
+  }
+
+  .x-form-check-wrap{
+    height: auto;
   }
 
   .x-btn{
-    .x-btn-ml,
-    .x-btn-mt,
-    .x-btn-mr,
-    .x-btn-mb,
-    .x-btn-mc{
+    .x-btn-tl, .x-btn-tr, .x-btn-tc, .x-btn-ml, .x-btn-mr, .x-btn-mc, .x-btn-bl, .x-btn-br, .x-btn-bc{
       background-image: none;
     }
 
     .x-btn-text{
       background-color: rgb(107, 225, 245);
+      padding: 5px 10px;
+      height: auto;
+      color: #FFF;
+    }
+  }
+
+  & > .x-panel{
+    background-color: rgb(249, 249, 249);
+    & > .x-panel-bwrap{
+      & > .x-panel-ml{
+        & > .x-panel-mr{
+          & > .x-panel-mc{
+            & > .x-panel-body{
+              & > .x-table-layout{
+                & > tbody{
+                  & > tr{
+                    & > td{
+                      height: 30px;
+                      padding: 0 10px 0 0;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .x-form-text, textarea.x-form-field{
+      background-image: none;
+    }
+
+    .x-form-field-trigger-wrap{
+      width: auto !important;
+      padding-right: 17px !important;
     }
   }
 }
