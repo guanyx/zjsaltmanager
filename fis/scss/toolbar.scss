@@ -29,3 +29,43 @@
     }
   }
 }
+
+#datagrid{
+    border: 10px solid transparent;
+    padding: 10px;
+    box-sizing: border-box;
+    .x-grid3-header{
+        background-image:none;
+        background-color: #f4f4f4;
+        text-align: center;
+    }
+    .x-panel-bwrap {
+        padding: 15px;
+        border: 2px solid #e3e3e3;
+    }
+    .x-panel-body{
+        border: none;
+
+    }
+    .x-toolbar{
+        margin-top: 10px;
+        border-color: transparent !important;
+        background-color: transparent !important;
+        background-image: none;
+        .x-toolbar-right{
+            width: 1px;
+        }
+        .x-toolbar-ct{
+            position: relative;
+        }
+        .x-toolbar-left{
+            width: 100%;
+            position: absolute;
+            text-align: center;
+            table{
+                margin: 0 auto;
+                background-color: #cfe0eb;
+            }
+        }
+    }
+}
