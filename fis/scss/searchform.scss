@@ -1,0 +1,21 @@
+#searchForm{
+  .x-table-layout-cell{
+    .x-panel{
+      margin-left: 5px;
+    }
+  }
+
+  .x-btn{
+    .x-btn-ml,
+    .x-btn-mt,
+    .x-btn-mr,
+    .x-btn-mb,
+    .x-btn-mc{
+      background-image: none;
+    }
+
+    .x-btn-text{
+      background-color: rgb(107, 225, 245);
+    }
+  }
+}

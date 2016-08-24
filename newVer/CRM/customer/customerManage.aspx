@@ -16,6 +16,7 @@
     <link rel="stylesheet" type="text/css" href="../../Theme/1/css/salt.css" />
     <link rel="Stylesheet" type="text/css" href="../../css/gridPrint.css" />
     <script type="text/javascript" src="../../js/OrgsSelect.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
 </head>
 <body style="padding: 0px; margin: 0px; width: 100%; height: 100%">

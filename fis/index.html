@@ -7,15 +7,20 @@
 	<link href="scss/index.scss" rel="stylesheet" type="text/css" id="styles">
 </head>
 <body>
+var resetLink, resetFlag = false;
     function appendLink(){
-        link = document.createElement('link');
-        link.href=
+if(!resetLink) {resetLink = document.createElement('link')};
+resetLink.href=
         <script>
             document.write(`"${location.protocol}//${location.host}/scss/index.css?t=${Date.now()}";`)
         </script>
-        link.rel = 'stylesheet';
-        link.type = "text/css";
-        document.head.appendChild(link);
+
+if(!resetFlag){
+resetFlag = true;
+resetLink.rel = 'stylesheet';
+resetLink.type = "text/css";
+document.head.appendChild(resetLink);
+}
     }
     setInterval(appendLink, 3000);
     appendLink();
