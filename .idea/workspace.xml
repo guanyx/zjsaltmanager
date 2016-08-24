@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16a33806-1b35-4060-8b72-cf11fc761577" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fis/scss/customerManage.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fis/scss/index.scss" afterPath="$PROJECT_DIR$/fis/scss/index.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fis/scss/reset.css" afterPath="$PROJECT_DIR$/fis/scss/reset.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fis/scss/searchform.scss" afterPath="$PROJECT_DIR$/fis/scss/searchform.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fis/scss/toolbar.scss" afterPath="$PROJECT_DIR$/fis/scss/toolbar.scss" />
     </list>
     <ignored path="zjsaltmanager.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -82,21 +78,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="searchform.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="searchform.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fis/scss/searchform.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+            <state relative-caret-position="60">
+              <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reset.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="reset.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fis/scss/reset.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+            <state relative-caret-position="310">
+              <caret line="71" column="1" selection-start-line="71" selection-start-column="1" selection-end-line="71" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -165,8 +161,8 @@
         <option value="$PROJECT_DIR$/newVer/CRM/customer/customerManage.aspx" />
         <option value="$PROJECT_DIR$/fis/scss/customerManage.scss" />
         <option value="$PROJECT_DIR$/fis/scss/toolbar.scss" />
-        <option value="$PROJECT_DIR$/fis/scss/searchform.scss" />
         <option value="$PROJECT_DIR$/fis/scss/reset.css" />
+        <option value="$PROJECT_DIR$/fis/scss/searchform.scss" />
       </list>
     </option>
   </component>
@@ -440,12 +436,12 @@
       <updated>1471758924529</updated>
       <workItem from="1471758926035" duration="7447000" />
       <workItem from="1471836431727" duration="14887000" />
-      <workItem from="1472006837990" duration="12492000" />
+      <workItem from="1472006837990" duration="12603000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34826000" />
+    <option name="totallyTimeSpent" value="34937000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="33" y="45" width="1680" height="918" extended-state="0" />
@@ -701,18 +697,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fis/scss/searchform.scss">
+    <entry file="file://$PROJECT_DIR$/fis/scss/reset.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+        <state relative-caret-position="310">
+          <caret line="71" column="1" selection-start-line="71" selection-start-column="1" selection-end-line="71" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fis/scss/reset.css">
+    <entry file="file://$PROJECT_DIR$/fis/scss/searchform.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        <state relative-caret-position="60">
+          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
           <folding />
         </state>
       </provider>
