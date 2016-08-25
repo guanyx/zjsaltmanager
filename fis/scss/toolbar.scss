@@ -1,3 +1,9 @@
+$imghost: 'http://127.0.0.1:8080/';
+
+@function imgurl($path){
+    @return url($imghost + $path);
+}
+
 #toolbar{
   .x-toolbar{
     padding: 0px !important;
@@ -75,10 +81,31 @@
             width: 100%;
             position: absolute;
             text-align: center;
-            table{
+            > table{
                 margin: 0 auto;
+                padding:  0 10px;
                 background-color: #cfe0eb;
+                border-radius: 5px;
             }
         }
+        .x-item-disabled{
+            opacity: .4;
+        }
+    }
+    .x-btn-icon-small-left{
+        // margin-left: 10px;
+    }
+
+    .x-tbar-page-next{
+        background-image: imgurl('/images/default/grid/page-next.gif') !important;
+    }
+    .x-tbar-page-last{
+        background-image: imgurl('/images/default/grid/page-last.gif') !important;
+    }
+    .x-tbar-page-prev{
+        background-image: imgurl('/images/default/grid/page-prev.gif') !important;
+    }
+    .x-tbar-page-first{
+        background-image: imgurl('/images/default/grid/page-first.gif') !important;
     }
 }

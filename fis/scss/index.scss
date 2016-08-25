@@ -12,7 +12,7 @@
 @import "customerManage";
 
 
-$imghost: 'http://127.0.0.1:8080/fis/';
+$imghost: 'http://127.0.0.1:8080/';
 
 @function imgurl($path){
     @return url($imghost + $path);
