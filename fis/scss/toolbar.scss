@@ -52,7 +52,6 @@ $imghost: 'http://127.0.0.1:8080/';
 #datagrid{
     // border: 10px solid transparent;
     // padding: 10px;
-    box-sizing: border-box;
     .x-grid3-header{
         background-image:none;
         background-color: #f4f4f4;
@@ -97,15 +96,15 @@ $imghost: 'http://127.0.0.1:8080/';
     }
 
     .x-tbar-page-next{
-        background-image: imgurl('/images/default/grid/page-next.gif') !important;
+        background-image: imgurl('/images/default/grid/page-next.png') !important;
     }
     .x-tbar-page-last{
-        background-image: imgurl('/images/default/grid/page-last.gif') !important;
+        background-image: imgurl('/images/default/grid/page-last.png') !important;
     }
     .x-tbar-page-prev{
-        background-image: imgurl('/images/default/grid/page-prev.gif') !important;
+        background-image: imgurl('/images/default/grid/page-prev.png') !important;
     }
     .x-tbar-page-first{
-        background-image: imgurl('/images/default/grid/page-first.gif') !important;
+        background-image: imgurl('/images/default/grid/page-first.png') !important;
     }
 }
