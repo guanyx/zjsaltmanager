@@ -1,4 +1,9 @@
 @import './reset.css';
+@import "./font";
+@import "./xgrid3";
+@import "./xwindow";
+@import "./xbtn";
+@import "./xform";
 
 @import "./toolbar";
 @import "./searchform";
@@ -7,7 +12,7 @@
 @import "customerManage";
 
 
-$imghost: 'http://192.168.99.143:8080/';
+$imghost: 'http://127.0.0.1:8080/fis/';
 
 @function imgurl($path){
     @return url($imghost + $path);

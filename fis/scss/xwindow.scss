@@ -1,0 +1,114 @@
+.x-window{
+  .x-window-ml,
+  .x-window-mr,
+  .x-window-bl,
+  .x-window-br,
+  .x-window-bc,
+  .x-window-tl,
+  .x-window-tc,
+  .x-window-tr{
+    background-image: none;
+    background-color: #FFF;
+  }
+
+  .x-window-tl .x-window-header{
+    font-size: 16px;
+    color: rgb(150, 150, 150);
+    padding: 10px 0 !important;
+  }
+
+  .x-window-mc{
+    border: none;
+    background-color: #FFF !important;
+  }
+  .x-window-body{
+    border: none;
+    overflow: visible;
+
+    .x-btn{
+      .x-btn-text{
+        background-color: rgb(107, 225, 245);
+        padding: 0;
+        height: auto;
+        color: #FFF;
+      }
+    }
+  }
+  .x-tab-panel-header{
+    background-color: rgb(247, 249, 251);
+    border: 2px solid rgb(238, 238, 238);
+    border-bottom: none;
+    padding-bottom: 0;
+
+    ul.x-tab-strip-top{
+      background-image: none;
+      background-color: rgb(247, 249, 251);
+      padding-top: 0;
+      border-bottom: none;
+
+      li{
+        margin-left: 0;
+      }
+
+      span.x-tab-strip-text{
+        color: rgb(150, 150, 150) !important;
+        padding: 7px 0;
+      }
+
+      .x-tab-strip-active{
+        background-color: rgb(236, 236, 236);
+      }
+
+      .x-tab-strip-active span.x-tab-strip-text{
+        font-weight: normal !important;
+      }
+    }
+
+    .x-tab-strip-top .x-tab-right, .x-tab-strip-top .x-tab-left, .x-tab-strip-top .x-tab-strip-inner{
+      background-image: none;
+    }
+  }
+
+  .x-tab-panel{
+    overflow: visible;
+  }
+
+  .x-tab-panel-body-top{
+    border: 2px solid rgb(238, 238, 238);
+
+    .x-panel{
+      border: none;
+      box-sizing: border-box;
+    }
+
+
+
+    .x-panel-tl, .x-panel-tr, .x-panel-bl, .x-panel-br{
+      background-image: none;
+      border: none;
+    }
+
+    .x-panel-mr,
+    .x-panel-ml{
+      background-image: none;
+    }
+
+    .x-panel-mc{
+      background-color: #FFF;
+    }
+
+    .x-panel-bc{
+      background-image: none;
+    }
+  }
+
+  .x-toolbar-cell{
+    .x-btn-click{
+      width: auto !important;
+    }
+  }
+
+  .x-panel-btns{
+    padding: 5px;
+  }
+}
