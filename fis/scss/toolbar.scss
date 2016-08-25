@@ -70,6 +70,9 @@ $imghost: 'http://127.0.0.1:8080/';
         border-color: transparent !important;
         background-color: transparent !important;
         background-image: none;
+        div{
+          font-size: 14px;
+        }
         .x-toolbar-right{
             width: 1px;
         }
@@ -86,6 +89,14 @@ $imghost: 'http://127.0.0.1:8080/';
                 background-color: #cfe0eb;
                 border-radius: 5px;
             }
+        }
+        .x-toolbar-right{
+          > table{
+            margin-right: 15px;
+            td{
+              font-size: 14px;
+            }
+          }
         }
         .x-item-disabled{
             opacity: .4;
