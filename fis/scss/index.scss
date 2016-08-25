@@ -1,9 +1,16 @@
+$imghost: 'http://127.0.0.1:8080/';
+
+@function imgurl($path){
+    @return url($imghost + $path);
+}
+
 @import './reset.css';
 @import "./font";
 @import "./xgrid3";
 @import "./xwindow";
 @import "./xbtn";
 @import "./xform";
+@import "./xpanel";
 @import "./xtabpanel";
 
 @import "./toolbar";
@@ -13,11 +20,7 @@
 @import "customerManage";
 
 
-$imghost: 'http://127.0.0.1:8080/';
 
-@function imgurl($path){
-    @return url($imghost + $path);
-}
 
 .x-grid3-hd-btn{
     background-image: imgurl('images/default/grid/grid3-hd-btn.gif');
