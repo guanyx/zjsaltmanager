@@ -1,0 +1,71 @@
+.x-tab-panel{
+  overflow: visible;
+  position: relative;
+
+  .x-tab-panel-header{
+    background-color: rgb(247, 249, 251);
+    border: 2px solid rgb(238, 238, 238);
+    border-bottom: none;
+    padding-bottom: 0;
+
+    ul.x-tab-strip-top{
+      background-image: none;
+      background-color: rgb(247, 249, 251);
+      padding-top: 0;
+      border-bottom: none;
+
+      li{
+        margin-left: 0;
+      }
+
+      span.x-tab-strip-text{
+        color: rgb(150, 150, 150) !important;
+        padding: 7px 0;
+      }
+
+      .x-tab-strip-active{
+        background-color: rgb(236, 236, 236);
+      }
+
+      .x-tab-strip-active span.x-tab-strip-text{
+        font-weight: normal !important;
+      }
+    }
+
+    .x-tab-strip-top .x-tab-right, .x-tab-strip-top .x-tab-left, .x-tab-strip-top .x-tab-strip-inner{
+      background-image: none;
+    }
+  }
+
+  .x-tab-panel-body{
+    height: auto !important;
+  }
+
+  .x-tab-panel-body-top{
+    border: 2px solid rgb(238, 238, 238);
+
+    .x-panel{
+      border: none;
+      box-sizing: border-box;
+    }
+
+    .x-panel-tl, .x-panel-tr, .x-panel-bl, .x-panel-br{
+      background-image: none;
+      border: none;
+    }
+
+    .x-panel-mr,
+    .x-panel-ml{
+      background-image: none;
+    }
+
+    .x-panel-mc{
+      background-color: #FFF;
+    }
+
+    .x-panel-bc{
+      background-image: none;
+    }
+  }
+}
+
