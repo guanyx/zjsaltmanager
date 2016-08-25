@@ -109,20 +109,26 @@ $imghost: 'http://127.0.0.1:8080/';
         // margin-left: 10px;
     }
 
+  .x-panel-bbar{
+    .x-btn-text{
+      background-color: transparent;
+    }
+  }
+
     .x-tbar-page-next{
         background-image: imgurl('/images/default/grid/page-next.png') !important;
-        background-color: transparent !important;
+        //background-color: transparent !important;
     }
     .x-tbar-page-last{
         background-image: imgurl('/images/default/grid/page-last.png') !important;
-        background-color: transparent !important;
+        //background-color: transparent !important;
     }
     .x-tbar-page-prev{
         background-image: imgurl('/images/default/grid/page-prev.png') !important;
-        background-color: transparent !important;
+        //background-color: transparent !important;
     }
     .x-tbar-page-first{
         background-image: imgurl('/images/default/grid/page-first.png') !important;
-        background-color: transparent !important;
+        //background-color: transparent !important;
     }
 }
