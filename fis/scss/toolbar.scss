@@ -4,131 +4,66 @@ $imghost: 'http://127.0.0.1:8080/';
     @return url($imghost + $path);
 }
 
+//每个页面要保证有toolbar ID
 #toolbar{
   .x-toolbar{
-    padding: 0px !important;
+    padding: 0 !important;
     background-color: rgb(247, 249, 250) !important;
     background-image: none !important;
     height: 40px !important;
     border-bottom: 1px solid rgb(220, 229, 235);
 
-    table{
+    //center table
+    &-ct{
       height: 100%;
     }
 
-    .x-btn{
+    //左边部分
+    &-left{
+      & > table {
+        height: 100%;
+      }
 
-      .x-btn-text{
-        background-color: transparent;
-        color: #333;
+      &-row{
+        .x-toolbar-cell{
+          & > table{
+            height: 100%;
+          }
+
+          //覆写toolbar的x-btn
+          .x-btn{
+            &-text{
+              background-color: transparent;
+              color: #333;
+              background-image: none !important;
+              padding: 0 30px !important;
+            }
+
+            &-mc em.x-btn-split{
+              background-image: url(../images/default/button/s-arrow-noline.gif) !important;
+            }
+          }
+
+          .x-btn-over{
+            background-color: rgb(236, 236, 236) !important;
+          }
+        }
       }
     }
 
-    .x-btn-mc em.x-btn-split{
-      background-image: url(../images/default/button/s-arrow-noline.gif) !important;
-    }
+    //右边部分
+    &-right{}
 
-    .x-btn-tl, .x-btn-tr, .x-btn-tc, .x-btn-ml, .x-btn-mr, .x-btn-mc, .x-btn-bl, .x-btn-br, .x-btn-bc{
-      background-image: none !important;
-    }
+    //.x-btn-tl, .x-btn-tr, .x-btn-tc, .x-btn-ml, .x-btn-mr, .x-btn-mc, .x-btn-bl, .x-btn-br, .x-btn-bc{
+    //  background-image: none !important;
+    //}
 
-    .x-btn-over{
-      background-color: rgb(236, 236, 236) !important;
-    }
-
-    .x-btn-text-icon .x-btn-icon-small-left .x-btn-text{
-      background-image: none !important;
-      padding: 0 30px !important;
-    }
-
+    //按钮间的分隔线
     .xtb-sep{
       margin: 0 !important;
       width: 2px !important;
       height: 100% !important;
+      background-image: imgurl('images/default/grid/grid-blue-split.gif');
     }
   }
-}
-
-#datagrid,#divDataGrid{
-    // border: 10px solid transparent;
-    // padding: 10px;
-    .x-grid3-header{
-        background-image:none;
-        background-color: #f4f4f4;
-        // text-align: center;
-    }
-    .x-panel-bwrap {
-        // padding: 15px;
-        // border: 2px solid #e3e3e3;
-    }
-    .x-panel-body{
-        border: none;
-
-    }
-    .x-toolbar{
-        margin-top: 10px;
-        border-color: transparent !important;
-        background-color: transparent !important;
-        background-image: none;
-        height: 40px;
-
-        div{
-          font-size: 14px;
-        }
-        .x-toolbar-right{
-            width: 1px;
-        }
-        .x-toolbar-ct{
-            position: relative;
-        }
-        .x-toolbar-left{
-            width: 100%;
-            position: absolute;
-            text-align: center;
-            > table{
-                margin: 0 auto;
-                padding:  0 10px;
-                background-color: #cfe0eb;
-                border-radius: 5px;
-            }
-
-        }
-        .x-toolbar-right{
-          > table{
-            margin-right: 15px;
-            td{
-              font-size: 14px;
-            }
-          }
-        }
-        .x-item-disabled{
-            opacity: .4;
-        }
-    }
-    .x-btn-icon-small-left{
-        // margin-left: 10px;
-    }
-
-  .x-panel-bbar{
-    .x-btn-text{
-      background-color: transparent;
-    }
-  }
-
-    .x-tbar-page-next{
-        background-image: imgurl('/images/default/grid/page-next.png') !important;
-        //background-color: transparent !important;
-    }
-    .x-tbar-page-last{
-        background-image: imgurl('/images/default/grid/page-last.png') !important;
-        //background-color: transparent !important;
-    }
-    .x-tbar-page-prev{
-        background-image: imgurl('/images/default/grid/page-prev.png') !important;
-        //background-color: transparent !important;
-    }
-    .x-tbar-page-first{
-        background-image: imgurl('/images/default/grid/page-first.png') !important;
-        //background-color: transparent !important;
-    }
 }

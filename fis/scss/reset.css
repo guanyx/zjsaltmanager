@@ -8,17 +8,6 @@ body{
     font-size: 14px;
 }
 
-.x-grid-panel{
-    width: 100% !important;
-}
-
-.x-grid-panel .x-panel-body{
-    width: 100% !important;
-    overflow: auto !important;
-}
-
-
-
 input[type="text"]{
     background-image: none !important;
 }

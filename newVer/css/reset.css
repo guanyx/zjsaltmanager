@@ -3,6 +3,11 @@ body {
   height: 100% !important;
 }
 
+body {
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
 .x-grid-panel {
   width: 100% !important;
 }
@@ -10,6 +15,22 @@ body {
 .x-grid-panel .x-panel-body {
   width: 100% !important;
   overflow: auto !important;
+}
+
+input[type="text"] {
+  background-image: none !important;
+}
+
+.x-btn button {
+  font-size: 14px !important;
+}
+
+.x-grid3-hd-row td, .x-grid3-row td, .x-grid3-summary-row td {
+  font-size: 14px !important;
+}
+
+.x-panel-mc {
+  font-size: 14px !important;
 }
 
 .x-grid3-scroller {
@@ -21,11 +42,19 @@ body {
 }
 
 .x-grid3-row {
+  border: none;
+  background-color: #fbfbfb;
   width: 100% !important;
+  border-top: 4px solid #FFF !important;
 }
 
 .x-grid3-row-table {
   width: 100% !important;
+}
+
+.x-grid3-row-over {
+  background-image: none;
+  background-color: #eee;
 }
 
 .x-grid3-header-offset table, .x-grid3-header-offset {
@@ -35,6 +64,7 @@ body {
 .x-grid3-cell {
   height: 40px !important;
   vertical-align: middle !important;
+  border-right: none !important;
 }
 
 .x-grid3-row-checker, .x-grid3-hd-checker {
@@ -45,10 +75,10 @@ body {
   height: auto !important;
 }
 
-td.x-grid3-hd-over .x-grid3-hd-inner,
-td.sort-desc .x-grid3-hd-inner,
-td.sort-asc .x-grid3-hd-inner,
-td.x-grid3-hd-menu-open .x-grid3-hd-inner {
+.x-grid3 td.x-grid3-hd-over .x-grid3-hd-inner,
+.x-grid3 td.sort-desc .x-grid3-hd-inner,
+.x-grid3 td.sort-asc .x-grid3-hd-inner,
+.x-grid3 td.x-grid3-hd-menu-open .x-grid3-hd-inner {
   background-color: transparent !important;
   background-image: none !important;
 }
@@ -58,15 +88,193 @@ td.x-grid3-hd-menu-open .x-grid3-hd-inner {
   background-image: none !important;
 }
 
+.x-grid3-hd-row td {
+  height: 60px;
+  border-left: none;
+  border-right: none;
+}
+
+.x-grid3 .x-grid-with-col-lines .x-grid3-row td.x-grid3-cell {
+  border-right: none;
+}
+
+.x-grid3-cell-inner {
+  border-right: none;
+}
+
+.x-grid3 .x-grid3-body .x-grid3-td-checker .x-grid3-cell-inner, .x-grid3 .x-grid3-header .x-grid3-td-checker .x-grid3-hd-inner {
+  height: auto !important;
+}
+
+.x-window-ml, .x-window-mr, .x-window-bl, .x-window-br, .x-window-bc, .x-window-tl, .x-window-tc, .x-window-tr {
+  background-image: none;
+  background-color: #FFF;
+}
+
+.x-window-tl .x-window-header {
+  font-size: 16px;
+  color: #969696;
+  padding: 10px 0 !important;
+}
+
+.x-window-bwrap .x-window-mc {
+  border: none;
+  background-color: #FFF !important;
+}
+
+.x-window-bwrap .x-window-body {
+  border: none;
+  overflow: visible;
+  height: auto !important;
+}
+
+.x-window-bwrap .x-window-body .x-btn .x-btn-text {
+  background-color: #6be1f5;
+  padding: 0;
+  height: auto;
+  color: #FFF;
+}
+
+.x-window .x-toolbar-cell .x-btn-click {
+  width: auto !important;
+}
+
+.x-window .x-panel-btns {
+  padding: 5px;
+}
+
+.x-btn {
+  width: auto !important;
+  font-size: 14px;
+}
+
+.x-btn .x-btn-tl,
+.x-btn .x-btn-tr,
+.x-btn .x-btn-tc,
+.x-btn .x-btn-ml,
+.x-btn .x-btn-mr,
+.x-btn .x-btn-mc,
+.x-btn .x-btn-bl,
+.x-btn .x-btn-br,
+.x-btn .x-btn-bc {
+  background-image: none;
+}
+
+.x-btn .x-btn-text {
+  background-color: #6be1f5;
+  padding: 5px 10px;
+  height: auto !important;
+  color: #FFF;
+}
+
+.x-form {
+  height: auto !important;
+  padding: 0 !important;
+}
+
+.x-form .x-form-item {
+  font-size: 13px;
+}
+
+.x-form .x-form-item-label {
+  white-space: nowrap !important;
+}
+
+.x-panel {
+  background-color: #f9f9f9;
+  border: none;
+}
+
+.x-tab-panel {
+  overflow: visible;
+  position: relative;
+}
+
+.x-tab-panel .x-tab-panel-header {
+  background-color: #f7f9fb;
+  border: 2px solid #eeeeee;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.x-tab-panel .x-tab-panel-header ul.x-tab-strip-top {
+  background-image: none;
+  background-color: #f7f9fb;
+  padding-top: 0;
+  border-bottom: none;
+}
+
+.x-tab-panel .x-tab-panel-header ul.x-tab-strip-top li {
+  margin-left: 0;
+}
+
+.x-tab-panel .x-tab-panel-header ul.x-tab-strip-top span.x-tab-strip-text {
+  color: #969696 !important;
+  padding: 7px 0;
+}
+
+.x-tab-panel .x-tab-panel-header ul.x-tab-strip-top .x-tab-strip-active {
+  background-color: #ececec;
+}
+
+.x-tab-panel .x-tab-panel-header ul.x-tab-strip-top .x-tab-strip-active span.x-tab-strip-text {
+  font-weight: normal !important;
+}
+
+.x-tab-panel .x-tab-panel-header .x-tab-strip-top .x-tab-right, .x-tab-panel .x-tab-panel-header .x-tab-strip-top .x-tab-left, .x-tab-panel .x-tab-panel-header .x-tab-strip-top .x-tab-strip-inner {
+  background-image: none;
+}
+
+.x-tab-panel .x-tab-panel-body {
+  height: auto !important;
+}
+
+.x-tab-panel .x-tab-panel-body-top {
+  border: 2px solid #eeeeee;
+}
+
+.x-tab-panel .x-tab-panel-body-top .x-panel {
+  border: none;
+  box-sizing: border-box;
+}
+
+.x-tab-panel .x-tab-panel-body-top .x-panel-tl, .x-tab-panel .x-tab-panel-body-top .x-panel-tr, .x-tab-panel .x-tab-panel-body-top .x-panel-bl, .x-tab-panel .x-tab-panel-body-top .x-panel-br {
+  background-image: none;
+  border: none;
+}
+
+.x-tab-panel .x-tab-panel-body-top .x-panel-mr,
+.x-tab-panel .x-tab-panel-body-top .x-panel-ml {
+  background-image: none;
+}
+
+.x-tab-panel .x-tab-panel-body-top .x-panel-mc {
+  background-color: #FFF;
+}
+
+.x-tab-panel .x-tab-panel-body-top .x-panel-bc {
+  background-image: none;
+}
+
 #toolbar .x-toolbar {
   padding: 0px !important;
   background-color: #f7f9fa !important;
   background-image: none !important;
   height: 40px !important;
+  border-bottom: 1px solid #dce5eb;
 }
 
 #toolbar .x-toolbar table {
   height: 100%;
+}
+
+#toolbar .x-toolbar .x-btn .x-btn-text {
+  background-color: transparent;
+  color: #333;
+}
+
+#toolbar .x-toolbar .x-btn-mc em.x-btn-split {
+  background-image: url("../images/default/button/s-arrow-noline.gif") !important;
 }
 
 #toolbar .x-toolbar .x-btn-tl, #toolbar .x-toolbar .x-btn-tr, #toolbar .x-toolbar .x-btn-tc, #toolbar .x-toolbar .x-btn-ml, #toolbar .x-toolbar .x-btn-mr, #toolbar .x-toolbar .x-btn-mc, #toolbar .x-toolbar .x-btn-bl, #toolbar .x-toolbar .x-btn-br, #toolbar .x-toolbar .x-btn-bc {
@@ -88,11 +296,163 @@ td.x-grid3-hd-menu-open .x-grid3-hd-inner {
   height: 100% !important;
 }
 
+#datagrid .x-grid3-header, #divDataGrid .x-grid3-header {
+  background-image: none;
+  background-color: #f4f4f4;
+}
+
+#datagrid .x-panel-body, #divDataGrid .x-panel-body {
+  border: none;
+}
+
+#datagrid .x-toolbar, #divDataGrid .x-toolbar {
+  margin-top: 10px;
+  border-color: transparent !important;
+  background-color: transparent !important;
+  background-image: none;
+  height: 40px;
+}
+
+#datagrid .x-toolbar div, #divDataGrid .x-toolbar div {
+  font-size: 14px;
+}
+
+#datagrid .x-toolbar .x-toolbar-right, #divDataGrid .x-toolbar .x-toolbar-right {
+  width: 1px;
+}
+
+#datagrid .x-toolbar .x-toolbar-ct, #divDataGrid .x-toolbar .x-toolbar-ct {
+  position: relative;
+}
+
+#datagrid .x-toolbar .x-toolbar-left, #divDataGrid .x-toolbar .x-toolbar-left {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+}
+
+#datagrid .x-toolbar .x-toolbar-left > table, #divDataGrid .x-toolbar .x-toolbar-left > table {
+  margin: 0 auto;
+  padding: 0 10px;
+  background-color: #cfe0eb;
+  border-radius: 5px;
+}
+
+#datagrid .x-toolbar .x-toolbar-right > table, #divDataGrid .x-toolbar .x-toolbar-right > table {
+  margin-right: 15px;
+}
+
+#datagrid .x-toolbar .x-toolbar-right > table td, #divDataGrid .x-toolbar .x-toolbar-right > table td {
+  font-size: 14px;
+}
+
+#datagrid .x-toolbar .x-item-disabled, #divDataGrid .x-toolbar .x-item-disabled {
+  opacity: .4;
+}
+
+#datagrid .x-panel-bbar .x-btn-text, #divDataGrid .x-panel-bbar .x-btn-text {
+  background-color: transparent;
+}
+
+#datagrid .x-tbar-page-next, #divDataGrid .x-tbar-page-next {
+  background-image: url("../images/default/grid/page-next.png") !important;
+  background-color: transparent !important;
+}
+
+#datagrid .x-tbar-page-last, #divDataGrid .x-tbar-page-last {
+  background-image: url("../images/default/grid/page-last.png") !important;
+  background-color: transparent !important;
+}
+
+#datagrid .x-tbar-page-prev, #divDataGrid .x-tbar-page-prev {
+  background-image: url("../images/default/grid/page-prev.png") !important;
+  background-color: transparent !important;
+}
+
+#datagrid .x-tbar-page-first, #divDataGrid .x-tbar-page-first {
+  background-image: url("../images/default/grid/page-first.png") !important;
+  background-color: transparent !important;
+}
+
+#searchForm {
+  background-color: #f9f9f9;
+  margin-bottom: 5px;
+}
+
+#searchForm .x-panel-tl {
+  border: none;
+}
+
+#searchForm .x-panel-mc,
+#searchForm .x-panel-mr,
+#searchForm .x-panel-ml {
+  background-color: #f9f9f9;
+  background-image: none;
+}
+
+#searchForm .x-panel-tl, #searchForm .x-panel-tr, #searchForm .x-panel-bl, #searchForm .x-panel-br, #searchForm .x-panel-bc {
+  background-image: none;
+  background-color: #f9f9f9;
+}
+
+#searchForm .x-table-layout-ct {
+  height: auto !important;
+}
+
+#searchForm .x-form-check-wrap {
+  height: auto;
+}
+
+#searchForm .x-btn .x-btn-tl, #searchForm .x-btn .x-btn-tr, #searchForm .x-btn .x-btn-tc, #searchForm .x-btn .x-btn-ml, #searchForm .x-btn .x-btn-mr, #searchForm .x-btn .x-btn-mc, #searchForm .x-btn .x-btn-bl, #searchForm .x-btn .x-btn-br, #searchForm .x-btn .x-btn-bc {
+  background-image: none;
+}
+
+#searchForm .x-btn .x-btn-text {
+  background-color: #6be1f5;
+  padding: 5px 10px;
+  height: auto;
+  color: #FFF;
+}
+
+#searchForm > .x-panel {
+  background-color: #f9f9f9;
+}
+
+#searchForm > .x-panel > .x-panel-bwrap > .x-panel-ml > .x-panel-mr > .x-panel-mc > .x-panel-body > .x-table-layout > tbody > tr > td {
+  height: 30px;
+  padding: 0 10px 0 0;
+}
+
+#searchForm > .x-panel .x-form-text, #searchForm > .x-panel textarea.x-form-field {
+  background-image: none;
+}
+
+#searchForm > .x-panel .x-form-field-trigger-wrap {
+  width: auto !important;
+  padding-right: 17px !important;
+}
+
+#cmbDateTypeCreateDate {
+  width: 40px !important;
+}
+
+#cmbYearCreateDate {
+  width: 60px !important;
+}
+
+#cmbMonthCreateDate {
+  width: 85px !important;
+}
+
+#cmbEndMonthCreateDate {
+  width: 85px !important;
+}
+
 .x-grid3-hd-btn {
-  background-image: url(../images/default/grid/grid3-hd-btn.gif);
+  background-image: url("../images/default/grid/grid3-hd-btn.gif");
   background-color: transparent;
 }
 
 .x-toolbar .xtb-sep {
-  background-image: url(../images/default/grid/grid-blue-split.gif);
+  background-image: url("../images/default/grid/grid-blue-split.gif");
 }
