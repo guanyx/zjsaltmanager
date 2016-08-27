@@ -1,6 +1,6 @@
 
-//表格控件
-#datagrid{
+//琛ㄦ牸鎺т欢
+#divDataGrid{
   width: 100% !important;
 
   .x-panel-body{
@@ -10,7 +10,7 @@
   }
 
   & > .x-panel-bwrap{
-    //表格区域
+    //琛ㄦ牸鍖哄煙
     & > .x-panel-body{
       .x-grid3{
 
@@ -102,7 +102,7 @@
       }
     }
 
-    //分页区域
+    //鍒嗛〉鍖哄煙
     & > .x-panel-bbar{
       .x-toolbar{
         margin-top: 10px;
@@ -137,7 +137,7 @@
           position: relative;
         }
 
-        //页码
+        //椤电爜
         &-left{
           width: 100%;
           position: absolute;
@@ -150,7 +150,7 @@
           }
         }
 
-        //分页信息
+        //鍒嗛〉淇℃伅
         &-right{
           width: 1px;
 

@@ -13,9 +13,13 @@ $imghost: 'http://127.0.0.1:8080/';
 //@import "./xpanel";
 @import "./xtabpanel";
 @import "./datagrid";
+@import "./divDataGrid";
 
 @import "./toolbar";
 @import "./searchform";
+
+//新增 弹窗
+@import './formwindow';
 
 
 @import "customerManage";
