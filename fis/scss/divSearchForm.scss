@@ -1,0 +1,37 @@
+@import "./xbtn";
+
+
+
+#divSearchForm,
+#divDataGrid,
+#seachFormDiv{
+
+    $bg : #f9f9f9;
+    @include xbtn;
+    .x-panel{
+        background-color: $bg;
+        border-color:$bg;
+    }
+    .x-panel-mc{
+        background-color:$bg;
+    }
+    .x-panel-tl, .x-panel-tr, .x-panel-bl, .x-panel-br,.x-panel-bc,.x-panel-mr,.x-panel-ml{
+        background-image: none;
+        background-color: $bg;
+        border-color: $bg;
+    }
+    // .x-btn-icon {
+    //     margin-top: 10px;
+    //     padding:0 5px;
+    //     height: 20px !important;
+    //     border: 1px solid #b5b8c8;
+    //     background-color: #fff;
+    //     border-top-right-radius: 3px;
+    //     border-bottom-right-radius: 3px;
+    // }
+    .x-btn-text.find{
+        height: 20px !important
+    }
+
+
+}

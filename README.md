@@ -28,13 +28,13 @@
         小包装盒盐购销存报表                  rpt/scm/frmReport.aspx                       done!
 
 综合查询
-    销售查询                             SCM/frmSaleQuery.aspx
+    销售查询                             SCM/frmSaleQuery.aspx                          done!
     销售对比查询                          RPT/WMS/frmWmsSaleCompareSearch.aspx
-    仓库库存报表                          RPT/WMS/rptWmsStockCurrent.aspx
-    成本分类查询                          RPT/WMS/frmProductCostView.aspx
-    应收账款余额                          fm/frmFmvReceivableMst.aspx
-    应收账款明细                          RPT/FM/frmFmAccountRecList.aspx
+    仓库库存报表                          RPT/WMS/rptWmsStockCurrent.aspx                 done!
+    成本分类查询                          RPT/WMS/frmProductCostView.aspx                 
+    应收账款余额                          fm/frmFmvReceivableMst.aspx                     done!
+    应收账款明细                          RPT/FM/frmFmAccountRecList.aspx                 done!
 
 资金管理
     应收账款管理
-        应收账款跟踪                      fm/frmFmAccReceTrack.aspx
+        应收账款跟踪                      fm/frmFmAccReceTrack.aspx                       done!
