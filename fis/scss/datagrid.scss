@@ -1,4 +1,4 @@
-
+@import "xbtn";
 //表格控件
 #datagrid{
   width: 100% !important;
@@ -102,6 +102,8 @@
 
     //分页区域
     & > .x-panel-bbar{
+      @include xbtn;
+
       .x-toolbar{
         margin-top: 10px;
         border-color: transparent !important;
