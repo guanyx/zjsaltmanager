@@ -1,7 +1,10 @@
-
+@import './xbtn';
 //表格控件
-#divDataGrid{
+#divDataGrid,
+#fmReceiveGridDiv,
+#sendGrid{
   width: 100% !important;
+  border: none;
 
 
   @include xbtn;
@@ -13,8 +16,34 @@
   }
 
   & > .x-panel-bwrap{
+      // 销售查询 》 销售总量
+      & > .x-panel-ml > .x-panel-mr > .x-panel-mc > .x-panel-body > .x-panel{
+          .x-form-item-label{
+              font-size: 14px;
+          }
+          & .x-panel-bwrap{
+              background-color: transparent;
+          }
+          .x-panel-tl, .x-panel-tr, .x-panel-bl, .x-panel-br,.x-panel-tc{
+              background-image: none;
+              border-color: none;
+              border: none;
+          }
+
+      }
+  }
+
+  //应收账款明细
+  & > .x-panel-header.x-unselectable{
+      background-image: none;
+      font-size: 14px;
+      line-height: 3;
+      border: 1px solid #eee;
+  }
+
+  & > .x-panel-bwrap{
     //表格区域
-    & > .x-panel-body{
+    .x-panel-body{
       .x-grid3{
 
         &-header{

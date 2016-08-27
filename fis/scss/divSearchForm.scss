@@ -2,7 +2,9 @@
 
 
 
-#divSearchForm{
+#divSearchForm,
+#divDataGrid,
+#seachFormDiv{
 
     $bg : #f9f9f9;
     @include xbtn;
@@ -18,15 +20,15 @@
         background-color: $bg;
         border-color: $bg;
     }
-    .x-btn-icon {
-        margin-top: 10px;
-        padding:0 5px;
-        height: 20px !important;
-        border: 1px solid #b5b8c8;
-        background-color: #fff;
-        border-top-right-radius: 3px;
-        border-bottom-right-radius: 3px;
-    }
+    // .x-btn-icon {
+    //     margin-top: 10px;
+    //     padding:0 5px;
+    //     height: 20px !important;
+    //     border: 1px solid #b5b8c8;
+    //     background-color: #fff;
+    //     border-top-right-radius: 3px;
+    //     border-bottom-right-radius: 3px;
+    // }
     .x-btn-text.find{
         height: 20px !important
     }
