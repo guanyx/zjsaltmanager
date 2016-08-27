@@ -1,4 +1,4 @@
-
+@import "xbtn";
 //表格控件
 #datagrid{
   width: 100% !important;
@@ -104,6 +104,12 @@
 
     //分页区域
     & > .x-panel-bbar{
+      @include xbtn;
+
+      .x-btn{
+        padding: 2px;
+      }
+
       .x-toolbar{
         margin-top: 10px;
         border-color: transparent !important;
@@ -161,6 +167,10 @@
             }
           }
         }
+      }
+
+      .x-small-editor .x-form-field-wrap .x-form-trigger{
+        height: 21px;
       }
     }
   }

@@ -1,4 +1,5 @@
 $imghost: 'http://127.0.0.1:8080/';
+@import "xbtn";
 
 @function imgurl($path){
     @return url($imghost + $path);
@@ -6,6 +7,7 @@ $imghost: 'http://127.0.0.1:8080/';
 
 //每个页面要保证有toolbar ID
 #toolbar{
+  @include xbtn;
   .x-toolbar{
     padding: 0 !important;
     background-color: rgb(247, 249, 250) !important;

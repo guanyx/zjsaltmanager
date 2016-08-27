@@ -1,29 +1,35 @@
-.x-btn{
-  width: auto !important;
-  font-size: 14px;
+@mixin xbtn{
+  .x-btn{
+    width: auto !important;
+    font-size: 14px;
 
-  .x-btn-tl,
-  .x-btn-tr,
-  .x-btn-tc,
-  .x-btn-ml,
-  .x-btn-mr,
-  .x-btn-mc,
-  .x-btn-bl,
-  .x-btn-br,
-  .x-btn-bc{
-    background-image: none;
+    .x-btn-tl,
+    .x-btn-tr,
+    .x-btn-tc,
+    .x-btn-ml,
+    .x-btn-mr,
+    .x-btn-bl,
+    .x-btn-br,
+    .x-btn-bc{
+      background-image: none;
+      display: none;
+    }
+    .x-btn-mc{
+      background-image: none;
+    }
+
+
+    .x-btn-text{
+      background-color: rgb(107, 225, 245);
+      padding: 3px 10px;
+      height: auto !important;
+      color: #FFF;
+    }
   }
 
-  .x-btn-text{
-    background-color: rgb(107, 225, 245);
-    padding: 5px 10px;
-    height: auto !important;
-    color: #FFF;
-  }
-}
-
-.x-btn.x-btn-icon{
-  .x-btn-text{
-    background-color: transparent;
+  .x-btn.x-btn-icon{
+    .x-btn-text{
+      background-color: transparent;
+    }
   }
 }
