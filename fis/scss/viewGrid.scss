@@ -1,0 +1,28 @@
+@import "pagnition";
+@import "xgrid3";
+
+#stockGridDiv,
+#inOutGridDiv,
+#viewGrid{
+  & > .x-panel-header{
+    background-image: none;
+    border: none;
+    background-color: #f9f9f9;
+    color: rgb(128, 128, 128);
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  & > .x-panel-bwrap{
+    //表格区域
+    & > .x-panel-body{
+      border: none;
+      @include xgrid3;
+    }
+
+    //分页区域
+    & > .x-panel-bbar{
+      @include pagnition;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+#pnlDate{
+  background-color: rgb(249, 249, 249);
+
+  & > table{
+    & > tbody{
+      & > tr{
+        & > td{
+          padding-left: 10px;
+          & > table{
+            td{
+              height: 40px;
+              width: auto !important;
+
+              input[type="submit"]{
+                background-color: rgb(107, 225, 245);
+                padding: 3px 10px;
+                height: auto !important;
+                color: #FFF;
+                border: none;
+                width: auto !important;
+                margin-right: 5px;
+              }
+
+            }
+          }
+
+          select{
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+#form1{
+  table{
+    border-spacing: 0;
+  }
+}
