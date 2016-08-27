@@ -10,6 +10,8 @@ form[action^="frmProductCostView.aspx"]{
   }
 
   #GridView1{
-
+      td,th{
+          padding: 3px;
+      }
   }
 }
