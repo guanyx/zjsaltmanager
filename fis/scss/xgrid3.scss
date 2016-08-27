@@ -20,6 +20,15 @@
         border-left: none;
         border-right: none;
       }
+
+      .x-grid3-hd-row .x-grid3-gcell{
+        height: 25px;
+
+        &.x-grid3-td-beginStartDate,
+        &.x-grid3-td-endStartDate{
+          background-color: #ccc;
+        }
+      }
     }
 
     &-cell{

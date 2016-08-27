@@ -1,18 +1,23 @@
 #pnlDate{
   background-color: rgb(249, 249, 249);
 
+  #mulSelect{
+    display: inline-block;
+  }
+
   & > table{
     & > tbody{
       & > tr{
         & > td{
           padding-left: 10px;
+          height: 34px;
+
           & > table{
             td{
-              height: 40px;
               width: auto !important;
 
               input[type="submit"]{
-                background-color: rgb(107, 225, 245);
+                background-color: #44dcf7;
                 padding: 3px 10px;
                 height: auto !important;
                 color: #FFF;

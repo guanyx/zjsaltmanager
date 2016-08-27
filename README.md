@@ -20,12 +20,12 @@
 
 综合报表
     营业报表(按开票)                       rpt/scm/frmReport.aspx                          done!
-    销售毛利分析                          rpt/scm/frmReportHtml.aspx
-    客户毛利分析                          rpt/scm/frmReportHtml.aspx
+    销售毛利分析                          rpt/scm/frmReportHtml.aspx                      done!
+    客户毛利分析                          rpt/scm/frmReportHtml.aspx                      done!
     库存报表
-        仓库业务报表                      rpt/scm/frmreport.aspx
-        仓库进销存报表                     rpt/scm/frmreport.aspx
-        小包装盒盐购销存报表                  rpt/scm/frmReport.aspx
+        仓库业务报表                      rpt/scm/frmreport.aspx                          done!
+        仓库进销存报表                     rpt/scm/frmreport.aspx                          done!
+        小包装盒盐购销存报表                  rpt/scm/frmReport.aspx                       done!
 
 综合查询
     销售查询                             SCM/frmSaleQuery.aspx
