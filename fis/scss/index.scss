@@ -22,5 +22,9 @@ $imghost: 'http://127.0.0.1:8080/';
 //新增 弹窗
 @import './formwindow';
 
+@import "./viewGrid";
+
+@import "./pnlDate";
+
 
 @import "customerManage";

@@ -1,0 +1,72 @@
+@import "xbtn";
+
+@mixin pagnition{
+  @include xbtn;
+
+  .x-btn{
+    padding: 2px;
+  }
+
+  .x-toolbar{
+    margin-top: 10px;
+    border-color: transparent !important;
+    background-color: transparent !important;
+    background-image: none;
+    height: 40px;
+
+    div{
+      font-size: 14px;
+    }
+
+    .x-item-disabled{
+      opacity: .4;
+    }
+
+    .x-tbar-page-next{
+      background-image: imgurl('/images/default/grid/page-next.png') !important;
+    }
+    .x-tbar-page-last{
+      background-image: imgurl('/images/default/grid/page-last.png') !important;
+    }
+    .x-tbar-page-prev{
+      background-image: imgurl('/images/default/grid/page-prev.png') !important;
+    }
+    .x-tbar-page-first{
+      background-image: imgurl('/images/default/grid/page-first.png') !important;
+    }
+
+    //center table
+    &-ct{
+      position: relative;
+    }
+
+    //Ò³Âë
+    &-left{
+      width: 100%;
+      position: absolute;
+      text-align: center;
+      > table{
+        margin: 0 auto;
+        padding:  0 10px;
+        background-color: #cfe0eb;
+        border-radius: 5px;
+      }
+    }
+
+    //·ÖÒ³ÐÅÏ¢
+    &-right{
+      width: 1px;
+
+      > table{
+        margin-right: 15px;
+        td{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .x-small-editor .x-form-field-wrap .x-form-trigger{
+    height: 21px;
+  }
+}

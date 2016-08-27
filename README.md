@@ -9,17 +9,17 @@
 
 订单管理
     简易订单                            SCM/frmPOSOrder.aspx
-    订单产品查询                          Common/frmViewList.aspx
+    订单产品查询                          Common/frmViewList.aspx                         done!
 
 销售管理
-    销售收款                            fm/frmFmAccRece.aspx
+    销售收款                            fm/frmFmAccRece.aspx                            done!
 
 仓库管理
-    仓库进出查询                          wms/frmWmsStockInOutSta.aspx
-    实时库存查询                          WMS/frmWmsStockCurrent.aspx
+    仓库进出查询                          wms/frmWmsStockInOutSta.aspx                    done!
+    实时库存查询                          WMS/frmWmsStockCurrent.aspx                     done!
 
 综合报表
-    营业报表(按开票)                       rpt/scm/frmReport.aspx
+    营业报表(按开票)                       rpt/scm/frmReport.aspx                          done!
     销售毛利分析                          rpt/scm/frmReportHtml.aspx
     客户毛利分析                          rpt/scm/frmReportHtml.aspx
     库存报表
