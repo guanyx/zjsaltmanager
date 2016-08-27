@@ -3,6 +3,9 @@
 #divDataGrid{
   width: 100% !important;
 
+
+  @include xbtn;
+
   .x-panel-body{
     border: none;
     width: 100% !important;
