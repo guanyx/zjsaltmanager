@@ -8,7 +8,7 @@
         客户资料维护                     CRM/customer/customerManage.aspx                done!
 
 订单管理
-    简易订单                            SCM/frmPOSOrder.aspx
+    简易订单                            SCM/frmPOSOrder.aspx                             done!
     订单产品查询                          Common/frmViewList.aspx                         done!
 
 销售管理
@@ -29,7 +29,7 @@
 
 综合查询
     销售查询                             SCM/frmSaleQuery.aspx                          done!
-    销售对比查询                          RPT/WMS/frmWmsSaleCompareSearch.aspx
+    销售对比查询                          RPT/WMS/frmWmsSaleCompareSearch.aspx            done!
     仓库库存报表                          RPT/WMS/rptWmsStockCurrent.aspx                 done!
     成本分类查询                          RPT/WMS/frmProductCostView.aspx                 
     应收账款余额                          fm/frmFmvReceivableMst.aspx                     done!

@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16a33806-1b35-4060-8b72-cf11fc761577" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fis/scss/xdatapicker.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fis/scss/form.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fis/scss/index.scss" afterPath="$PROJECT_DIR$/fis/scss/index.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fis/scss/pnlDate.scss" afterPath="$PROJECT_DIR$/fis/scss/pnlDate.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fis/scss/searchform.scss" afterPath="$PROJECT_DIR$/fis/scss/searchform.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fis/scss/xgrid3.scss" afterPath="$PROJECT_DIR$/fis/scss/xgrid3.scss" />
     </list>
     <ignored path="zjsaltmanager.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -139,16 +136,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="datagrid.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fis/scss/datagrid.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="xgrid3.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fis/scss/xgrid3.scss">
           <provider selected="true" editor-type-id="text-editor">
@@ -169,12 +156,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="searchform.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="searchform.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fis/scss/searchform.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-              <folding />
+              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding>
+                <marker date="1472284432000" expanded="true" signature="28:1363" placeholder="{...}" />
+                <marker date="1472284432000" expanded="true" signature="138:168" placeholder="{...}" />
+                <marker date="1472284432000" expanded="true" signature="363:438" placeholder="{...}" />
+                <marker date="1472284432000" expanded="true" signature="466:493" placeholder="{...}" />
+                <marker date="1472284432000" expanded="true" signature="531:640" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -192,8 +185,8 @@
       <file leaf-file-name="index.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fis/scss/index.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+            <state relative-caret-position="140">
+              <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -212,8 +205,18 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="35" column="67" selection-start-line="35" selection-start-column="67" selection-end-line="35" selection-end-column="67" />
+            <state relative-caret-position="341">
+              <caret line="33" column="84" selection-start-line="33" selection-start-column="84" selection-end-line="33" selection-end-column="84" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="form.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/fis/scss/form.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -280,11 +283,12 @@
         <option value="$PROJECT_DIR$/fis/scss/serchform.scss" />
         <option value="$PROJECT_DIR$/fis/scss/viewGrid.scss" />
         <option value="$PROJECT_DIR$/fis/scss/pnlDate.scss" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/fis/scss/xgrid3.scss" />
-        <option value="$PROJECT_DIR$/fis/scss/index.scss" />
         <option value="$PROJECT_DIR$/fis/scss/xdatapicker.scss" />
         <option value="$PROJECT_DIR$/fis/scss/searchform.scss" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/fis/scss/index.scss" />
+        <option value="$PROJECT_DIR$/fis/scss/form.scss" />
       </list>
     </option>
   </component>
@@ -503,16 +507,16 @@
       <workItem from="1471836431727" duration="14887000" />
       <workItem from="1472006837990" duration="14440000" />
       <workItem from="1472127977860" duration="13819000" />
-      <workItem from="1472222322778" duration="16300000" />
+      <workItem from="1472222322778" duration="16924000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66893000" />
+    <option name="totallyTimeSpent" value="67517000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="23" width="1535" height="950" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20805812" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -548,7 +552,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/ejs-compiled-loader/index.js" />
     <entry file="file://$PROJECT_DIR$/src/index.ejs" />
     <entry file="file://$PROJECT_DIR$/node_modules/val-loader/index.js" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -935,18 +938,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="35" column="67" selection-start-line="35" selection-start-column="67" selection-end-line="35" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fis/scss/viewGrid.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fis/scss/xgrid3.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fis/scss/xdatapicker.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fis/scss/serchform.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fis/scss/searchform.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <marker date="1472284432000" expanded="true" signature="28:1363" placeholder="{...}" />
+            <marker date="1472284432000" expanded="true" signature="138:168" placeholder="{...}" />
+            <marker date="1472284432000" expanded="true" signature="363:438" placeholder="{...}" />
+            <marker date="1472284432000" expanded="true" signature="466:493" placeholder="{...}" />
+            <marker date="1472284432000" expanded="true" signature="531:640" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="33" column="84" selection-start-line="33" selection-start-column="84" selection-end-line="33" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fis/scss/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fis/scss/form.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -1008,46 +1065,6 @@
             <element signature="n#style#0;n#div#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#div#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fis/scss/xgrid3.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fis/scss/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fis/scss/xdatapicker.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fis/scss/serchform.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fis/scss/searchform.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>

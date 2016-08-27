@@ -1,0 +1,15 @@
+form[action^="frmProductCostView.aspx"]{
+  #lblStatDate,
+  #Label1{
+    padding: 10px 0;
+    display: inline-block;
+  }
+
+  & > div{
+    background-color: rgb(249, 249, 249) !important;
+  }
+
+  #GridView1{
+
+  }
+}
