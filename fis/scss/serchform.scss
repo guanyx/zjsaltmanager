@@ -1,0 +1,19 @@
+@import "xbtn";
+
+#serchform{
+  @include xbtn;
+
+  .x-panel-tr,
+  .x-panel-tc,
+  .x-panel-ml,
+  .x-panel-mr,
+  .x-panel-mc,
+  .x-panel-bl,
+  .x-panel-br,
+  .x-panel-bc,
+  .x-panel-tl{
+    background-image: none;
+    background-color: rgb(249, 249, 249);
+    border: none;
+  }
+}

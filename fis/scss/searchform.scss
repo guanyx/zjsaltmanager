@@ -26,6 +26,10 @@
 
   @include xbtn;
 
+  .x-btn{
+    margin-left: 5px;
+  }
+
   //search form
   & > .x-panel-bwrap{
     .x-panel-body{

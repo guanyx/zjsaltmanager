@@ -8,16 +8,20 @@
     .x-btn-tc,
     .x-btn-ml,
     .x-btn-mr,
-    .x-btn-mc,
     .x-btn-bl,
     .x-btn-br,
     .x-btn-bc{
       background-image: none;
+      display: none;
     }
+    .x-btn-mc{
+      background-image: none;
+    }
+
 
     .x-btn-text{
       background-color: rgb(107, 225, 245);
-      padding: 5px 10px;
+      padding: 3px 10px;
       height: auto !important;
       color: #FFF;
     }
