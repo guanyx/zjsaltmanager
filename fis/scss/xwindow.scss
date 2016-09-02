@@ -1,3 +1,5 @@
+@import "xsgrid3";
+
 .x-window{
   &-ml,
   &-mr,
@@ -29,6 +31,8 @@
       overflow: visible;
       //height: auto !important;
 
+
+
       .x-tab-panel-bwrap{
         overflow: visible !important;
       }
@@ -42,8 +46,7 @@
       .x-panel{
         border-color: #dadada;
 
-        .x-panel-tl, .x-panel-tr, .x-panel-bl, .x-panel-br,
-        {
+        .x-panel-tl, .x-panel-tr, .x-panel-bl, .x-panel-br{
           display: none;
         }
 
@@ -72,6 +75,8 @@
       .x-panel-bwrap{
         .x-panel-body{
           border-color: #dadada;
+
+          @include xsgrid3;
         }
       }
     }
