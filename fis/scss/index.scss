@@ -19,6 +19,28 @@ input[type="text"]{
     background-image: none !important;
 }
 
+@font-face{
+    font-family:'FontAwesome';
+    src:url(http://122.224.134.21:8079/25a32416abee198dd821b0b17a198a8f.eot);
+    src:url(http://122.224.134.21:8079/25a32416abee198dd821b0b17a198a8f.eot?#iefix&v=4.6.3) format('embedded-opentype'),
+
+    url(http://122.224.134.21:8079/1dc35d25e61d819a9c357074014867ab.ttf) format('truetype'),
+    url(http://122.224.134.21:8079/d7c639084f684d66a1bc66855d193ed8.svg#fontawesomeregular) format('svg');
+    font-weight:normal;
+    font-style:normal
+}
+
+.fa{
+    display:inline-block;
+    font:normal normal normal 14px/1 FontAwesome;
+    font-size:inherit;
+    text-rendering:auto;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale
+}
+
+
+
 @import "./font";
 //@import "./xgrid3";
 @import "./xwindow";

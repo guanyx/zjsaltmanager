@@ -37,6 +37,19 @@ $imghost: 'http://127.0.0.1:8080/';
               background-image: none !important;
               padding: 0 30px !important;
               border: none;
+              position: relative;
+
+              &:before{
+                display:inline-block;
+                font:normal normal normal 14px/1 FontAwesome;
+                font-size:inherit;
+                text-rendering:auto;
+                -webkit-font-smoothing:antialiased;
+                -moz-osx-font-smoothing:grayscale;
+                position: absolute;
+                left: 12px;
+                color: #666;
+              }
             }
 
             &-mc em.x-btn-split{

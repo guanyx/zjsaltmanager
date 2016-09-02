@@ -11,6 +11,20 @@ body {
 input[type="text"] {
   background-image: none !important; }
 
+@font-face {
+  font-family: 'FontAwesome';
+  src: url(http://122.224.134.21:8079/25a32416abee198dd821b0b17a198a8f.eot);
+  src: url(http://122.224.134.21:8079/25a32416abee198dd821b0b17a198a8f.eot?#iefix&v=4.6.3) format("embedded-opentype"), url(http://122.224.134.21:8079/1dc35d25e61d819a9c357074014867ab.ttf) format("truetype"), url(http://122.224.134.21:8079/d7c639084f684d66a1bc66855d193ed8.svg#fontawesomeregular) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
 .x-btn button {
   font-size: 14px !important; }
 
@@ -650,7 +664,18 @@ a.x-menu-item {
     color: #333;
     background-image: none !important;
     padding: 0 30px !important;
-    border: none; }
+    border: none;
+    position: relative; }
+    #toolbar .x-toolbar-left-row .x-toolbar-cell .x-btn-text:before {
+      display: inline-block;
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      position: absolute;
+      left: 12px;
+      color: #666; }
   #toolbar .x-toolbar-left-row .x-toolbar-cell .x-btn-mc em.x-btn-split {
     background-image: url(../images/default/button/s-arrow-noline.gif) !important; }
   #toolbar .x-toolbar-left-row .x-toolbar-cell .x-btn-over {
@@ -1006,5 +1031,35 @@ form[action^="frmProductCostView.aspx"] #GridView1 td, form[action^="frmProductC
 
 #cmbEndMonthCreateDate {
   width: 85px !important; }
+
+#ext-gen6:before {
+  content: "\f067"; }
+
+#ext-gen11:before {
+  content: "\f00d"; }
+
+#ext-gen16:before {
+  content: "\f044"; }
+
+#ext-gen21:before {
+  content: "\f05e"; }
+
+#ext-gen26:before {
+  content: "\f157"; }
+
+#ext-gen31:before {
+  content: "\f06c"; }
+
+#ext-gen36:before {
+  content: "\f234"; }
+
+#ext-gen41:before {
+  content: "\f013"; }
+
+#ext-gen46:before {
+  content: "\f05a"; }
+
+#ext-gen51:before {
+  content: "\f1d8"; }
 
 /*# sourceMappingURL=index.css.map */
