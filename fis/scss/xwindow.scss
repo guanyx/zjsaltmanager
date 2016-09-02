@@ -63,22 +63,60 @@
             background-color: #f8f9fb;
           }
         }
-      }
 
-      .x-panel-header{
-        background-image: none;
-        background-color: #f8f9fb;
-        border-color: #dadada;
-        color: rgb(123, 123, 123);
-      }
-
-      .x-panel-bwrap{
-        .x-panel-body{
+        .x-panel-header{
+          background-image: none;
+          background-color: #f8f9fb;
           border-color: #dadada;
+          color: rgb(123, 123, 123);
+        }
 
-          @include xsgrid3;
+        .x-panel-bwrap{
+          .x-panel-body{
+            border-color: #dadada;
+
+            @include xsgrid3;
+          }
+
+          .x-panel-tbar{
+            .x-toolbar{
+              background-image: none;
+              border-color: #dadada;
+              background-color: #f8f9fb;
+
+              .x-btn-icon-small-left{
+                .x-btn-text{
+                  background-image: none !important;
+                  position: relative;
+                  padding-left: 15px;
+
+                  &:before{
+                    display:inline-block;
+                    font:normal normal normal 14px/1 FontAwesome;
+                    font-size:inherit;
+                    text-rendering:auto;
+                    -webkit-font-smoothing:antialiased;
+                    -moz-osx-font-smoothing:grayscale;
+                    position: absolute;
+                    left: 12px;
+                    color: #666;
+                  }
+                }
+              }
+            }
+          }
+
+          .x-panel-bbar{
+            .x-toolbar{
+              background-image: none;
+              border-color: #dadada;
+              background-color: #FFF;
+            }
+          }
         }
       }
+
+
     }
   }
 
