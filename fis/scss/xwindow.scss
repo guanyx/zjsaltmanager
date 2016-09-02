@@ -14,7 +14,8 @@
   &-tl &-header{
     font-size: 14px;
     color: rgb(150, 150, 150);
-    padding: 10px 0 !important;
+    //padding: 10px 0 !important;
+    padding-left: 0 !important;
   }
 
   &-bwrap{
@@ -26,7 +27,11 @@
     .x-window-body{
       border: none;
       overflow: visible;
-      height: auto !important;
+      //height: auto !important;
+
+      .x-tab-panel-bwrap{
+        overflow: visible !important;
+      }
 
       .x-btn{
         .x-btn-text{

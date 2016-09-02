@@ -5,7 +5,6 @@ $imghost: 'http://127.0.0.1:8080/';
     @return url($imghost + $path);
 }
 
-//每个页面要保证有toolbar ID
 #toolbar{
   @include xbtn;
   .x-toolbar{
@@ -20,7 +19,6 @@ $imghost: 'http://127.0.0.1:8080/';
       height: 100%;
     }
 
-    //左边部分
     &-left{
       & > table {
         height: 100%;
@@ -32,7 +30,6 @@ $imghost: 'http://127.0.0.1:8080/';
             height: 100%;
           }
 
-          //覆写toolbar的x-btn
           .x-btn{
             &-text{
               background-color: transparent;
@@ -54,14 +51,12 @@ $imghost: 'http://127.0.0.1:8080/';
       }
     }
 
-    //右边部分
     &-right{}
 
     //.x-btn-tl, .x-btn-tr, .x-btn-tc, .x-btn-ml, .x-btn-mr, .x-btn-mc, .x-btn-bl, .x-btn-br, .x-btn-bc{
     //  background-image: none !important;
     //}
 
-    //按钮间的分隔线
     .xtb-sep{
       margin: 0 !important;
       width: 2px !important;
