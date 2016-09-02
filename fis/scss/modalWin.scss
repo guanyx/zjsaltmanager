@@ -1,4 +1,4 @@
-
+@import './xbtn';
 
 @mixin modalWin{
     .x-panel-tl, .x-panel-tr, .x-panel-bl, .x-panel-br{
@@ -21,8 +21,12 @@
     .x-panel-body-noheader, .x-panel-mc .x-panel-body{
         border-color: #eee;
     }
+    .x-window-ml,.x-window-tl{
+        background-image: none;
+    }
 }
 
-#openModWin{
+#openModWin,#openAcctWindow,#groupFieldSelect{
     @include modalWin;
+    @include xbtn;
 }
