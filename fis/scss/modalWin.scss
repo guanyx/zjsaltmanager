@@ -1,0 +1,28 @@
+
+
+@mixin modalWin{
+    .x-panel-tl, .x-panel-tr, .x-panel-bl, .x-panel-br{
+        background-image: none;
+        border-bottom-color: #eee;;
+    }
+    .x-panel-mr,.x-panel-ml,.x-panel-mc{
+        background-image:none;
+        background-color: #f9f9f9
+    }
+    .x-panel-bc,.x-panel-bl,.x-panel-br,{
+        background-color: #f9f9f9;
+        background-image: none;
+    }
+    .x-toolbar{
+        background-color: #f9f9f9;
+        background-image: none;
+        border-color: #eee !important;
+    }
+    .x-panel-body-noheader, .x-panel-mc .x-panel-body{
+        border-color: #eee;
+    }
+}
+
+#openModWin{
+    @include modalWin;
+}
