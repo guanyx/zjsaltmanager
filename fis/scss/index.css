@@ -53,8 +53,6 @@ a.x-menu-item {
     overflow: visible !important; }
   .x-window-bwrap .x-window-body .x-btn .x-btn-text {
     padding: 0; }
-.x-window .x-toolbar-cell .x-btn-click {
-  width: auto !important; }
 .x-window .x-panel-btns {
   padding: 5px; }
 
