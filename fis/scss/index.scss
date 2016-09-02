@@ -4,6 +4,8 @@ $imghost: 'http://127.0.0.1:8080/';
     @return url($imghost + $path);
 }
 
+@import '//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css';
+
 @import './reset.css';
 @import "./font";
 //@import "./xgrid3";
