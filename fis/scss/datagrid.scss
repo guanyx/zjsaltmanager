@@ -1,7 +1,7 @@
 @import "xbtn";
 @import "xgrid3";
 @import "pagnition";
-//表格控件
+
 #datagrid{
   width: 100% !important;
 
@@ -12,12 +12,10 @@
   }
 
   & > .x-panel-bwrap{
-    //表格区域
     & > .x-panel-body{
       @include xgrid3
     }
 
-    //分页区域
     & > .x-panel-bbar{
       @include pagnition
     }

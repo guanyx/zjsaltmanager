@@ -20,11 +20,15 @@
 
       span.x-tab-strip-text{
         color: rgb(150, 150, 150) !important;
-        padding: 7px 0;
+        //padding: 7px 0;
       }
 
       .x-tab-strip-active{
         background-color: rgb(236, 236, 236);
+
+        .x-tab-right{
+          margin-bottom: 0;
+        }
       }
 
       .x-tab-strip-active span.x-tab-strip-text{

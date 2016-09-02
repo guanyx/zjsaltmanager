@@ -14,13 +14,11 @@
   }
 
   & > .x-panel-bwrap{
-    //表格区域
     & > .x-panel-body{
       border: none;
       @include xgrid3;
     }
 
-    //分页区域
     & > .x-panel-bbar{
       @include pagnition;
     }

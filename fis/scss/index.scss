@@ -4,9 +4,22 @@ $imghost: 'http://127.0.0.1:8080/';
     @return url($imghost + $path);
 }
 
-@import '//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css';
-
 @import './reset.css';
+html,
+body{
+    height: 100% !important;
+    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+}
+
+body{
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+input[type="text"]{
+    background-image: none !important;
+}
+
 @import "./font";
 //@import "./xgrid3";
 @import "./xwindow";
@@ -22,7 +35,7 @@ $imghost: 'http://127.0.0.1:8080/';
 @import "./toolbar";
 @import "./searchform";
 
-//新增 弹窗
+
 @import './formwindow';
 
 @import "./viewGrid";
