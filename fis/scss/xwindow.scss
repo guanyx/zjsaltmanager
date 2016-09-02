@@ -92,13 +92,13 @@
 
                   &:before{
                     display:inline-block;
-                    font:normal normal normal 14px/1 FontAwesome;
+                    font:normal normal normal 12px/1 FontAwesome;
                     font-size:inherit;
                     text-rendering:auto;
                     -webkit-font-smoothing:antialiased;
                     -moz-osx-font-smoothing:grayscale;
                     position: absolute;
-                    left: 12px;
+                    left: 0;
                     color: #666;
                   }
                 }

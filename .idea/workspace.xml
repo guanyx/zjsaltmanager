@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="16a33806-1b35-4060-8b72-cf11fc761577" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fis/scss/iframeWin.scss" afterPath="$PROJECT_DIR$/fis/scss/iframeWin.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fis/scss/index.css" afterPath="$PROJECT_DIR$/fis/scss/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fis/scss/index.css.map" afterPath="$PROJECT_DIR$/fis/scss/index.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fis/scss/index.scss" afterPath="$PROJECT_DIR$/fis/scss/index.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fis/scss/xwindow.scss" afterPath="$PROJECT_DIR$/fis/scss/xwindow.scss" />
     </list>
     <ignored path="zjsaltmanager.iws" />
@@ -56,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fis/scss/index.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+            <state relative-caret-position="330">
+              <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -69,8 +71,8 @@
       <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fis/scss/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1245">
-              <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+            <state relative-caret-position="1035">
+              <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -79,9 +81,11 @@
       <file leaf-file-name="toolbar.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fis/scss/toolbar.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="51" selection-end-column="15" />
-              <folding />
+            <state relative-caret-position="135">
+              <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+              <folding>
+                <marker date="1472815100000" expanded="true" signature="2161:2163" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -106,21 +110,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="customerManage.aspx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../zjsaltsvn2/newVer/CRM/customer/customerManage.aspx">
+      <file leaf-file-name="xwindow.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fis/scss/xwindow.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+            <state relative-caret-position="585">
+              <caret line="39" column="6" selection-start-line="39" selection-start-column="6" selection-end-line="43" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="xwindow.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/fis/scss/xwindow.scss">
+      <file leaf-file-name="iframeWin.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fis/scss/iframeWin.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
-              <caret line="94" column="42" selection-start-line="94" selection-start-column="42" selection-end-line="94" selection-end-column="42" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -182,9 +186,10 @@
         <option value="$PROJECT_DIR$/fis/scss/toolbar.scss" />
         <option value="$PROJECT_DIR$/../zjsaltsvn2/newVer/CRM/customer/customerManage.aspx" />
         <option value="$PROJECT_DIR$/fis/scss/customerManage.scss" />
-        <option value="$PROJECT_DIR$/fis/scss/index.scss" />
         <option value="$PROJECT_DIR$/fis/scss/xsgrid3.scss" />
         <option value="$PROJECT_DIR$/fis/scss/xwindow.scss" />
+        <option value="$PROJECT_DIR$/fis/scss/iframeWin.scss" />
+        <option value="$PROJECT_DIR$/fis/scss/index.scss" />
       </list>
     </option>
   </component>
@@ -313,12 +318,34 @@
               <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zjsaltmanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zjsaltmanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iframeWin.scss" />
+              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="JavaScriptPreferStrict" value="false" />
@@ -414,18 +441,18 @@
       <workItem from="1472222322778" duration="19292000" />
       <workItem from="1472390460033" duration="1453000" />
       <workItem from="1472484995425" duration="432000" />
-      <workItem from="1472781644551" duration="13372000" />
+      <workItem from="1472781644551" duration="14566000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85142000" />
+    <option name="totallyTimeSpent" value="86336000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1680" height="950" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2079566" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2079566" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -459,7 +486,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/ejs-compiled-loader/index.js" />
     <entry file="file://$PROJECT_DIR$/src/index.ejs" />
     <entry file="file://$PROJECT_DIR$/node_modules/val-loader/index.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/html-loader/index.js" />
@@ -761,32 +787,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fis/scss/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1245">
-          <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fis/scss/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        <state relative-caret-position="1035">
+          <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fis/scss/toolbar.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="51" selection-end-column="15" />
-          <folding />
+        <state relative-caret-position="135">
+          <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+          <folding>
+            <marker date="1472815100000" expanded="true" signature="2161:2163" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fis/scss/xwindow.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="94" column="42" selection-start-line="94" selection-start-column="42" selection-end-line="94" selection-end-column="42" />
+        <state relative-caret-position="585">
+          <caret line="39" column="6" selection-start-line="39" selection-start-column="6" selection-end-line="43" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fis/scss/iframeWin.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fis/scss/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
           <folding />
         </state>
       </provider>
