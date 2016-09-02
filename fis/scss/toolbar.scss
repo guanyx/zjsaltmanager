@@ -5,76 +5,80 @@ $imghost: 'http://127.0.0.1:8080/';
     @return url($imghost + $path);
 }
 
-#toolbar{
-  @include xbtn;
-  .x-toolbar{
-    padding: 0 !important;
-    background-color: rgb(247, 249, 250) !important;
-    background-image: none !important;
-    height: 40px !important;
-    border-bottom: 1px solid rgb(220, 229, 235);
 
-    //center table
-    &-ct{
-      height: 100%;
-    }
+@mixin toolbar{
+    #toolbar{
+      @include xbtn;
+      .x-toolbar{
+        padding: 0 !important;
+        background-color: rgb(247, 249, 250) !important;
+        background-image: none !important;
+        height: 40px !important;
+        border-bottom: 1px solid rgb(220, 229, 235);
 
-    &-left{
-      & > table {
-        height: 100%;
-      }
+        //center table
+        &-ct{
+          height: 100%;
+        }
 
-      &-row{
-        .x-toolbar-cell{
-          & > table{
+        &-left{
+          & > table {
             height: 100%;
           }
 
-          .x-btn{
-            &-text{
-              background-color: transparent;
-              color: #333;
-              background-image: none !important;
-              padding: 0 30px !important;
-              border: none;
-              position: relative;
+          &-row{
+            .x-toolbar-cell{
+              & > table{
+                height: 100%;
+              }
 
-              &:before{
-                display:inline-block;
-                font:normal normal normal 14px/1 FontAwesome;
-                font-size:inherit;
-                text-rendering:auto;
-                -webkit-font-smoothing:antialiased;
-                -moz-osx-font-smoothing:grayscale;
-                position: absolute;
-                left: 12px;
-                color: #666;
+              .x-btn{
+                &-text{
+                  background-color: transparent;
+                  color: #333;
+                  background-image: none !important;
+                  padding: 0 30px !important;
+                  border: none;
+                  position: relative;
+
+                  &:before{
+                    display:inline-block;
+                    font:normal normal normal 14px/1 FontAwesome;
+                    font-size:inherit;
+                    text-rendering:auto;
+                    -webkit-font-smoothing:antialiased;
+                    -moz-osx-font-smoothing:grayscale;
+                    position: absolute;
+                    left: 12px;
+                    color: #666;
+                  }
+                }
+
+                &-mc em.x-btn-split{
+                  background-image: url(../images/default/button/s-arrow-noline.gif) !important;
+                }
+              }
+
+              .x-btn-over{
+                background-color: rgb(236, 236, 236) !important;
               }
             }
-
-            &-mc em.x-btn-split{
-              background-image: url(../images/default/button/s-arrow-noline.gif) !important;
-            }
           }
+        }
 
-          .x-btn-over{
-            background-color: rgb(236, 236, 236) !important;
-          }
+        &-right{}
+
+        //.x-btn-tl, .x-btn-tr, .x-btn-tc, .x-btn-ml, .x-btn-mr, .x-btn-mc, .x-btn-bl, .x-btn-br, .x-btn-bc{
+        //  background-image: none !important;
+        //}
+
+        .xtb-sep{
+          margin: 0 !important;
+          width: 2px !important;
+          height: 100% !important;
+          background-image: imgurl('images/default/grid/grid-blue-split.gif');
         }
       }
     }
 
-    &-right{}
-
-    //.x-btn-tl, .x-btn-tr, .x-btn-tc, .x-btn-ml, .x-btn-mr, .x-btn-mc, .x-btn-bl, .x-btn-br, .x-btn-bc{
-    //  background-image: none !important;
-    //}
-
-    .xtb-sep{
-      margin: 0 !important;
-      width: 2px !important;
-      height: 100% !important;
-      background-image: imgurl('images/default/grid/grid-blue-split.gif');
-    }
-  }
 }

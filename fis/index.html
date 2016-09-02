@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>style</title>
 	<link href="scss/index.scss" rel="stylesheet" type="text/css" id="styles">
+    <link href="scss/iframeWin.scss" rel="stylesheet" type="text/css" id="styles">
 </head>
 <body>
 var resetLink, resetFlag = false;
@@ -14,7 +15,6 @@ resetLink.href=
         <script>
             document.write(`"${location.protocol}//${location.host}/scss/index.css?t=${Date.now()}";`)
         </script>
-
 if(!resetFlag){
 resetFlag = true;
 resetLink.rel = 'stylesheet';
@@ -24,6 +24,7 @@ document.head.appendChild(resetLink);
     }
     setInterval(appendLink, 3000);
     appendLink();
+
 <script type="text/javascript" src="index.js"></script>
 </body>
 </html>

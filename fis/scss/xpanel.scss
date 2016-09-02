@@ -1,7 +1,4 @@
-//.x-panel {
-//    background-color: #f9f9f9;
-//    border: none;
-//}
+
 @mixin noBluePanel{
     .x-panel-tl, .x-panel-tr, .x-panel-bl, .x-panel-br,.x-panel-mr,.x-panel-ml,.x-panel-bc,.x-panel-mc{
         background-image: none;
@@ -13,14 +10,6 @@
             margin-top: 5px;
         }
     }
-    // .x-panel-bwrap{
-    //     .x-panel-mr,.x-panel-ml,.x-panel-bc{
-    //         background-image: none;
-    //     }
-    //     {
-    //         background-color: transparent;
-    //     }
-    // }
 }
 
 @mixin greyBorderPanel{
