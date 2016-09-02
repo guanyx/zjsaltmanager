@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(./reset.css);
 html,
 body {
   height: 100% !important;
@@ -67,8 +68,39 @@ a.x-menu-item {
     overflow: visible !important; }
   .x-window-bwrap .x-window-body .x-btn .x-btn-text {
     padding: 0; }
+  .x-window-bwrap .x-window-body .x-panel {
+    border-color: #dadada; }
+    .x-window-bwrap .x-window-body .x-panel .x-panel-tl, .x-window-bwrap .x-window-body .x-panel .x-panel-tr, .x-window-bwrap .x-window-body .x-panel .x-panel-bl, .x-window-bwrap .x-window-body .x-panel .x-panel-br {
+      display: none; }
+    .x-window-bwrap .x-window-body .x-panel .x-panel-ml, .x-window-bwrap .x-window-body .x-panel .x-panel-mr {
+      background-image: none; }
+    .x-window-bwrap .x-window-body .x-panel .x-panel-mc {
+      background-color: #FFF; }
+      .x-window-bwrap .x-window-body .x-panel .x-panel-mc .x-toolbar {
+        background-image: none;
+        border-color: #dadada;
+        background-color: #f8f9fb; }
+  .x-window-bwrap .x-window-body .x-panel-header {
+    background-image: none;
+    background-color: #f8f9fb;
+    border-color: #dadada;
+    color: #7b7b7b; }
+  .x-window-bwrap .x-window-body .x-panel-bwrap .x-panel-body {
+    border-color: #dadada; }
 .x-window .x-panel-btns {
   padding: 5px; }
+
+#useraddfrom .x-panel-tl, #useraddfrom .x-panel-tr, #useraddfrom .x-panel-bl, #useraddfrom .x-panel-br, #useraddfrom .x-panel-mr, #useraddfrom .x-panel-ml, #useraddfrom .x-panel-bc, #useraddfrom .x-panel-mc {
+  background-image: none;
+  border-bottom-color: #eee;
+  background-color: #f9f9f9; }
+#useraddfrom .x-form-check-wrap input[type='checkbox'] {
+  margin-top: 5px; }
+#useraddfrom #x-form-el-UserPassword input {
+  background-image: none; }
+
+#ext-comp-1011 .x-panel-body, #ext-comp-1011 .x-panel-body-noheader, #ext-comp-1011 .x-panel-mc .x-panel-body {
+  border-color: #eee; }
 
 .x-tab-panel {
   overflow: visible;
@@ -1019,47 +1051,5 @@ form[action^="frmProductCostView.aspx"] > div {
   background-color: #f9f9f9 !important; }
 form[action^="frmProductCostView.aspx"] #GridView1 td, form[action^="frmProductCostView.aspx"] #GridView1 th {
   padding: 3px; }
-
-#cmbDateTypeCreateDate {
-  width: 40px !important; }
-
-#cmbYearCreateDate {
-  width: 60px !important; }
-
-#cmbMonthCreateDate {
-  width: 85px !important; }
-
-#cmbEndMonthCreateDate {
-  width: 85px !important; }
-
-#ext-gen6:before {
-  content: "\f067"; }
-
-#ext-gen11:before {
-  content: "\f00d"; }
-
-#ext-gen16:before {
-  content: "\f044"; }
-
-#ext-gen21:before {
-  content: "\f05e"; }
-
-#ext-gen26:before {
-  content: "\f157"; }
-
-#ext-gen31:before {
-  content: "\f06c"; }
-
-#ext-gen36:before {
-  content: "\f234"; }
-
-#ext-gen41:before {
-  content: "\f013"; }
-
-#ext-gen46:before {
-  content: "\f05a"; }
-
-#ext-gen51:before {
-  content: "\f1d8"; }
 
 /*# sourceMappingURL=index.css.map */

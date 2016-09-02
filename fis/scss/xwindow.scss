@@ -38,6 +38,42 @@
           padding: 0;
         }
       }
+
+      .x-panel{
+        border-color: #dadada;
+
+        .x-panel-tl, .x-panel-tr, .x-panel-bl, .x-panel-br,
+        {
+          display: none;
+        }
+
+        .x-panel-ml, .x-panel-mr{
+          background-image: none;
+        }
+
+        .x-panel-mc{
+          background-color: #FFF;
+
+          .x-toolbar{
+            background-image: none;
+            border-color: #dadada;
+            background-color: #f8f9fb;
+          }
+        }
+      }
+
+      .x-panel-header{
+        background-image: none;
+        background-color: #f8f9fb;
+        border-color: #dadada;
+        color: rgb(123, 123, 123);
+      }
+
+      .x-panel-bwrap{
+        .x-panel-body{
+          border-color: #dadada;
+        }
+      }
     }
   }
 
