@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url(/fontawesome-webfont.eot);
+  src: url(/fontawesome-webfont.eot?#iefix&v=4.6.3) format("embedded-opentype"), url("/fontawesome-webfont.woff2?v=4.6.3") format("woff2"), url("/fontawesome-webfont.woff?v=4.6.3") format("woff"), url(/1dc35d25e61d819a9c357074014867ab.ttf) format("truetype"), url(/d7c639084f684d66a1bc66855d193ed8.svg#fontawesomeregular) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+#toolbar .x-toolbar {
+  background-color: #f9f9f9;
+  background-image: none;
+  border-color: #eee; }
+#toolbar .x-btn .x-btn-text {
+  padding: 0; }
+#toolbar .x-btn-icon-small-left .x-btn-text {
+  background-image: none !important;
+  position: relative;
+  padding-left: 15px; }
+  #toolbar .x-btn-icon-small-left .x-btn-text:before {
+    display: inline-block;
+    font: normal normal normal 12px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    left: 0;
+    color: #666; }
+
+.x-panel-tl, .x-panel-tr, .x-panel-bl, .x-panel-br {
+  background-image: none;
+  border-bottom-color: #eee; }
+
+.x-panel-mr, .x-panel-ml, .x-panel-mc {
+  background-image: none;
+  background-color: #f9f9f9; }
+
+.x-panel-bc, .x-panel-bl, .x-panel-br {
+  background-color: #f9f9f9;
+  background-image: none; }
+
+.x-toolbar {
+  background-color: #f9f9f9;
+  background-image: none;
+  border-color: #eee !important; }
+
+.x-panel-body-noheader, .x-panel-mc .x-panel-body {
+  border-color: #eee; }
+
+/*# sourceMappingURL=/scss/iframeWin.css.map */
