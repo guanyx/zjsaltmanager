@@ -4,6 +4,7 @@ $imghost: 'http://127.0.0.1:8080/';
     @return url($imghost + $path);
 }
 
+@import './reset.css';
 html,
 body{
     height: 100% !important;
@@ -46,7 +47,7 @@ input[type="text"]{
 @import "./xwindow";
 @import "./xbtn";
 //@import "./xform";
-//@import "./xpanel";
+@import "./xpanel";
 @import "./xtabpanel";
 @import "./datagrid";
 @import "./divDataGrid";
